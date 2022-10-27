@@ -1,0 +1,160 @@
+.create-event {
+  padding: 2rem;
+  width: 80vw;
+  margin: 3rem auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+p {
+  width: 40rem;
+}
+
+/* form styling */
+.form {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 42rem;
+}
+.event-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 3rem;
+}
+.event-form input {
+  /* width: 42rem; */
+  height: 3rem;
+}
+
+.event-form textarea {
+  height: 6rem;
+}
+.input {
+  position: absolute;
+  top: -35%;
+  left: 3%;
+  background: #fff;
+  padding: 0.3rem 0.8rem;
+  letter-spacing: 1px;
+}
+.textarea {
+  position: absolute;
+  top: -14%;
+  left: 3%;
+  background: #fff;
+  padding: 0.3rem 0.8rem;
+  letter-spacing: 1px;
+}
+.selects {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.selects select {
+  position: relative;
+}
+.selects label {
+  position: absolute;
+  top: -12%;
+}
+.selects select {
+  display: flex;
+  width: 50%;
+  height: 3rem;
+  font-size: 1em;
+}
+.selects-long select {
+  width: 100%;
+  height: 3rem;
+  font-size: 1em;
+}
+.imagepicker {
+  margin-top: 2rem;
+}
+.imagepicker h5 {
+  font-size: 1.3rem;
+}
+.picker {
+  margin-top: 1rem;
+  width: 42rem;
+  height: 7rem;
+  object-fit: cover;
+}
+.displayed-img {
+  margin-top: 1rem;
+  height: 4.5rem;
+  width: 7.5rem;
+}
+.rendered-img {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  opacity: 0.7rem;
+}
+.image-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+.image-size {
+  font-weight: lighter;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+.location {
+  margin-top: 2rem;
+}
+.subtext {
+  margin-bottom: 2rem;
+}
+.dt {
+  margin-top: 2rem;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.btn-active {
+  padding: 1rem 3rem;
+  font-size: 0.9rem;
+  color: #1c2b66;
+  background: #dde1ef;
+  border: 1px solid #1c2b66;
+}
+.submit {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+.btn-normal {
+  padding: 1rem 3rem;
+  font-size: 0.9rem;
+  color: #1c2b66;
+  background: #fff;
+  border: 1px solid #1c2b66;
+}
+.btn-cancel {
+  padding: 1rem 4rem;
+  font-size: 0.9rem;
+  color: #1c2b66;
+  background: #fff;
+  border: 1px solid #1c2b66;
+}
+.btn-continue {
+  padding: 1rem 4rem;
+  font-size: 0.9rem;
+  color: #fff;
+  background: #1c2b66;
+  border: 1px solid #1c2b66;
+}

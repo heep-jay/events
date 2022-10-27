@@ -1,0 +1,105 @@
+<app-header></app-header>
+<div class="create-event">
+  <div class="create-content">
+    <h2>Basic Info</h2>
+    <p>
+      Name your event-goers why they should come. Add details that higlights
+      what makes it unique
+    </p>
+
+    <div class="form">
+      <div class="event-form">
+        <label for="title" class="input">Title</label>
+        <input type="text" name="title" />
+      </div>
+      <div class="event-form">
+        <label for="eventDetails" class="textarea">Event Details</label>
+        <textarea name="eventDetails"> </textarea>
+      </div>
+      <div class="selects">
+        <select name="" id="">
+          <option value="Type">Type</option>
+        </select>
+        <select name="" id="">
+          <option value="Type">Category</option>
+        </select>
+      </div>
+      <div class="imagepicker">
+        <h5>Attached files</h5>
+        <!-- <img src="https://www.htmlhints.com/image/article/drag.png" alt="" /> -->
+        <img class="picker" src="/assets/picker.png" alt="" />
+        <div class="rendered-img">
+          <img
+            class="displayed-img"
+            src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F184375039%2F474927372937%2F1%2Foriginal.20211111-155142?w=512&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C236%2C4724%2C2362&s=ff52e826c551abbd9a90a39cccc5c303"
+            alt=""
+          />
+          <div class="">
+            <p class="image-name">Image.png</p>
+            <p class="image-size">36.87kb</p>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="location">
+        <h2>Location</h2>
+        <p class="subtext">
+          Help people in your are discover your event and let's attendees know
+          where to show up
+        </p>
+        <div class="selects">
+          <label for="state">State</label>
+          <select name="state" id="">
+            <option value="Type">State</option>
+          </select>
+          <label for="lga">LGA</label>
+          <select name="lga" id="">
+            <option value="Type">LGA</option>
+          </select>
+        </div>
+        <div class="event-form" style="margin-top: 2.5rem">
+          <label for="title" class="input">Title</label>
+          <input type="text" name="title" />
+        </div>
+      </div>
+      <hr />
+      <div class="dt">
+        <h2>Date and Time</h2>
+        <p class="subtext">
+          Name your event-goers why they should come. Add details that higlights
+          what makes it unique
+        </p>
+        <div class="btn">
+          <button class="btn-active">Single Event</button>
+          <button class="btn-normal">Recurring Event</button>
+        </div>
+        <div class="selects-long" style="margin-top: 2.5rem">
+          <select name="" id="">
+            <option value="Type">GMT(0100) Nigerian Time</option>
+          </select>
+        </div>
+        <div class="selects" style="margin-top: 2.5rem">
+          <select name="" id="">
+            <option value="Type">📆Start Date</option>
+          </select>
+          <select name="" id="">
+            <option value="Type">🕒Start Time</option>
+          </select>
+        </div>
+        <div class="selects" style="margin-top: 2.5rem">
+          <select name="" id="">
+            <option value="Type">📆End Date</option>
+          </select>
+          <select name="" id="">
+            <option value="Type">🕒End Time</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="submit">
+        <button class="btn-cancel">Cancel</button>
+        <button class="btn-continue">Continue</button>
+      </div>
+    </div>
+  </div>
+</div>

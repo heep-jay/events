@@ -1,0 +1,42 @@
+.add {
+  width: 80vw;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.add-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  background: #fff;
+  width: 82vw;
+  margin: 2rem auto;
+}
+.add-title h1 {
+  margin-left: 2rem;
+}
+.add-title button {
+  padding: 1rem 4rem;
+  background: #1c2b66;
+  color: #fff;
+}
+table {
+  width: 100%;
+  border: 1px solid #1c2b66;
+  margin-left: 4rem;
+  border-radius: 4px;
+}
+tr.mat-header-row {
+  height: 4rem;
+  background: #f9fafd;
+  color: #1c2b66;
+}
+tr.cdk-row {
+  height: 5rem;
+}
+td.cdk-cell {
+  width: 20rem;
+}
