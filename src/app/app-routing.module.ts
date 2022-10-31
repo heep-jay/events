@@ -6,8 +6,13 @@ import { CreateTicketsComponent } from './Component/create-tickets/create-ticket
 import { ReviewComponent } from './Component/review/review.component';
 import { DashboardComponent } from './Component/dashboard/dashboard.component';
 import { PlanComponent } from './Component/plan/plan.component';
+import { PublishedComponent } from './Component/published/published.component';
 
 const routes: Routes = [
+  {
+    component: PublishedComponent,
+    path: 'publish'
+  },
   {
     component: PlanComponent,
     path: 'plan'
