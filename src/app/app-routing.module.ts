@@ -4,23 +4,32 @@ import { CreateEventComponent } from './Component/create-event/create-event.comp
 import { AddTicketsComponent } from './Component/add-tickets/add-tickets.component';
 import { CreateTicketsComponent } from './Component/create-tickets/create-tickets.component';
 import { ReviewComponent } from './Component/review/review.component';
+import { DashboardComponent } from './Component/dashboard/dashboard.component';
+import { PlanComponent } from './Component/plan/plan.component';
 
-
-const routes: Routes = [{
-  component: CreateTicketsComponent,
-  path: 'create'
-},
-{
-  component: ReviewComponent,
-  path: 'review'
-},
-{
-  component: AddTicketsComponent,
-  path: 'add'
-}, {
-  component: CreateEventComponent,
-  path: ""
-}];
+const routes: Routes = [
+  {
+    component: PlanComponent,
+    path: 'plan'
+  },
+  {
+    component: DashboardComponent,
+    path: 'dashboard'
+  }, {
+    component: CreateTicketsComponent,
+    path: 'create'
+  },
+  {
+    component: ReviewComponent,
+    path: 'review'
+  },
+  {
+    component: AddTicketsComponent,
+    path: 'add'
+  }, {
+    component: CreateEventComponent,
+    path: ""
+  }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

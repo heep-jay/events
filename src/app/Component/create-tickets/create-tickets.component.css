@@ -18,12 +18,23 @@
   background: #1c2b66;
   font-size: 1rem;
   color: #fff;
+  cursor: pointer;
+}
+.create-banner button:hover {
+  background: #0b153a;
+  transition: all ease-in-out 0.5s;
 }
 .btn button {
   padding: 0.8rem 2.5rem;
   border: 1px solid #1c2b66;
   background: #fff;
   font-size: 1rem;
+  cursor: pointer;
+}
+.btn button:hover {
+  background: #1c2b66;
+  transition: all ease-in-out 0.5s;
+  color: #fff;
 }
 .banner-text {
   display: flex;

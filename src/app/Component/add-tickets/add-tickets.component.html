@@ -9,6 +9,11 @@
                 The actual rendered columns are set as a property on the row definition" -->
 
     <!-- Position Column -->
+    <ng-container matColumnDef="serial">
+      <th mat-header-cell *matHeaderCellDef></th>
+      <td mat-cell *matCellDef="let element">{{ element.serial }}</td>
+    </ng-container>
+
     <ng-container matColumnDef="ticketName">
       <th mat-header-cell *matHeaderCellDef>Ticket Name.</th>
       <td mat-cell *matCellDef="let element">{{ element.ticketName }}</td>
@@ -36,8 +41,18 @@
       <th mat-header-cell *matHeaderCellDef>Sales End</th>
       <td mat-cell *matCellDef="let element">{{ element.end }}</td>
     </ng-container>
+    <ng-container matColumnDef="more">
+      <th mat-header-cell *matHeaderCellDef></th>
+      <td mat-cell *matCellDef="let element">
+        <img src="/assets/more.png" alt="" />
+      </td>
+    </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
   </table>
+  <div class="save">
+    <p></p>
+    <button class="btn-save">Save and Continue</button>
+  </div>
 </div>

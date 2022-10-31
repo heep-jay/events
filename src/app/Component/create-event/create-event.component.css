@@ -131,6 +131,7 @@ p {
   color: #1c2b66;
   background: #dde1ef;
   border: 1px solid #1c2b66;
+  cursor: pointer;
 }
 .submit {
   margin-top: 2rem;
@@ -143,18 +144,31 @@ p {
   color: #1c2b66;
   background: #fff;
   border: 1px solid #1c2b66;
+  cursor: pointer;
 }
 .btn-cancel {
   padding: 1rem 4rem;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: #1c2b66;
   background: #fff;
   border: 1px solid #1c2b66;
 }
 .btn-continue {
   padding: 1rem 4rem;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: #fff;
   background: #1c2b66;
   border: 1px solid #1c2b66;
+  cursor: pointer;
+}
+.btn-continue:hover {
+  color: #fff;
+  background: #0b153a;
+  transition: all ease-in-out 0.5s;
+}
+.btn-cancel:hover {
+  color: #fff;
+  background: #1c2b66;
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
 }

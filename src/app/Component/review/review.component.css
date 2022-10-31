@@ -65,7 +65,7 @@ span {
   text-align: center;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 1.5rem;
   gap: 1rem;
   color: #2d3748;
@@ -93,4 +93,90 @@ span {
   height: 20px;
   width: 20px;
   margin-left: 30px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.socials img {
+  height: 30px;
+  width: 30px;
+}
+
+/* responsivenes */
+
+@media screen and (max-width: 1811px) {
+  .review-img img {
+    height: 400px;
+    width: 670px;
+  }
+}
+@media screen and (max-width: 1554px) {
+  .review-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .review-img img {
+    height: 400px;
+    width: 570px;
+  }
+}
+@media screen and (max-width: 1345px) {
+  .review-img img {
+    height: 370px;
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 1221px) {
+  .review-img img {
+    height: 370px;
+    width: 500px;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  .mid h3 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  .special {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 1221px) {
+  .review-img img {
+    height: 300px;
+    width: 450px;
+  }
+}
+@media screen and (max-width: 1221px) {
+  .review-img img {
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 1221px) {
+  h1 {
+    font-size: 1.8rem;
+    margin-top: 0.9rem;
+  }
+  h3 {
+    font-size: 0.85rem;
+  }
+  .mid h3 {
+    font-size: 1.1rem;
+  }
 }

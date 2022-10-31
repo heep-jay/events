@@ -9,7 +9,10 @@ import { AddTicketsComponent } from './Component/add-tickets/add-tickets.compone
 import { HeaderComponent } from './Component/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTableModule } from '@angular/material/table';
-import { ReviewComponent } from './Component/review/review.component'
+import { ReviewComponent } from './Component/review/review.component';
+import { DashboardComponent } from './Component/dashboard/dashboard.component';
+import { PlanComponent } from './Component/plan/plan.component';
+import { PublishedComponent } from './Component/published/published.component'
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { ReviewComponent } from './Component/review/review.component'
     CreateTicketsComponent,
     AddTicketsComponent,
     HeaderComponent,
-    ReviewComponent
+    ReviewComponent,
+    DashboardComponent,
+    PlanComponent,
+    PublishedComponent
   ],
   imports: [
     BrowserModule,
