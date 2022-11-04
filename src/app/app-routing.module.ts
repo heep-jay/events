@@ -7,8 +7,17 @@ import { ReviewComponent } from './Component/review/review.component';
 import { DashboardComponent } from './Component/dashboard/dashboard.component';
 import { PlanComponent } from './Component/plan/plan.component';
 import { PublishedComponent } from './Component/published/published.component';
-
+import { FoodvendorComponent } from './Component/foodvendor/foodvendor.component';
+import { FoodDetailsComponent } from './Component/food-details/food-details.component';
 const routes: Routes = [
+  {
+    component: FoodDetailsComponent,
+    path: 'fooddetails'
+  },
+  {
+    component: FoodvendorComponent,
+    path: 'food'
+  },
   {
     component: PublishedComponent,
     path: 'publish'

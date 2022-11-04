@@ -12,7 +12,11 @@ import { MatTableModule } from '@angular/material/table';
 import { ReviewComponent } from './Component/review/review.component';
 import { DashboardComponent } from './Component/dashboard/dashboard.component';
 import { PlanComponent } from './Component/plan/plan.component';
-import { PublishedComponent } from './Component/published/published.component'
+import { PublishedComponent } from './Component/published/published.component';
+import { FoodvendorComponent } from './Component/foodvendor/foodvendor.component';
+import { FoodDetailsComponent } from './Component/food-details/food-details.component';
+
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 
 @NgModule({
   declarations: [
@@ -24,13 +28,17 @@ import { PublishedComponent } from './Component/published/published.component'
     ReviewComponent,
     DashboardComponent,
     PlanComponent,
-    PublishedComponent
+    PublishedComponent,
+    FoodvendorComponent,
+    FoodDetailsComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatTableModule
+    MatTableModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

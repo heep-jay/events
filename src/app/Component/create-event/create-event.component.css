@@ -105,6 +105,14 @@ p {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 0.3rem;
+  max-width: 10rem;
+  margin-right: 0;
+}
+.image-text {
+  width: 15rem;
+}
+.image-size {
+  width: 15rem;
 }
 .image-size {
   font-weight: lighter;
@@ -172,3 +180,54 @@ p {
   cursor: pointer;
   transition: all ease-in-out 0.5s;
 }
+
+@media screen and (max-width: 712px) {
+  .form {
+    width: 32rem;
+  }
+  .imagepicker img {
+    width: 32rem;
+  }
+  .content-header {
+    width: 32rem;
+  }
+  p {
+    width: 30rem;
+  }
+  .rendered-img {
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .form {
+    width: 25rem;
+  }
+  .imagepicker img {
+    width: 25rem;
+  }
+  .rendered-img {
+    /* width: 5rem; */
+    gap: 0;
+  }
+  .content-header {
+    width: 25rem;
+  }
+  p {
+    width: 25rem;
+  }
+  .image-text {
+    width: 7rem;
+  }
+
+  .create-event {
+    padding: 0rem;
+    margin: 1rem auto;
+  }
+}
+
+/* @media screen and (max-width: 390px) {
+  .form {
+    width: 15rem;
+  }
+} */
