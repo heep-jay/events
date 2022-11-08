@@ -12,11 +12,15 @@ import { FoodDetailsComponent } from './Component/food-details/food-details.comp
 const routes: Routes = [
   {
     component: FoodDetailsComponent,
-    path: 'fooddetails'
+    path: 'food/:id'
   },
   {
     component: FoodvendorComponent,
     path: 'food'
+  },
+  {
+    component: FoodvendorComponent,
+    path: 'food/search/:searchTerm'
   },
   {
     component: PublishedComponent,

@@ -55,7 +55,7 @@
           <img src="/assets/add.png" alt="" />
         </div>
         <div class="cards">
-          <div class="cat-item cat">
+          <div class="cat-item cat" (click)="foodToggle()">
             <img class="cat-img" src="/assets/food.png" alt="" />
             <div class="cat-text">
               <h3>Food</h3>
@@ -97,5 +97,8 @@
         alt=""
       />
     </div>
+    <ng-container *ngIf="toggle">
+      <app-foodvendor> </app-foodvendor>
+    </ng-container>
   </div>
 </div>

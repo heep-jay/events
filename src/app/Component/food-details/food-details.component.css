@@ -7,6 +7,9 @@
   display: flex;
   align-items: center;
 }
+.back img {
+  cursor: pointer;
+}
 .detail-header {
   display: flex;
   justify-content: space-between;
@@ -41,11 +44,18 @@
   border: 1pc solid gray;
 } */
 .food-img img {
-  height: 350px;
+  height: 330px;
   width: 100%;
 
   border-radius: 15px;
   object-fit: cover;
+}
+.mat-tab-label-content {
+  /* font-size: 1.4rem; */
+}
+.ng-star-inserted {
+  margin-top: 1rem;
+  font-size: 0.9rem;
 }
 .vl {
   border-left: 3px solid rgba(28, 43, 102, 0.25);
@@ -91,9 +101,10 @@
 }
 .food-title h2 {
   font-size: 1.8rem;
+  font-weight: 700;
 }
 .food-title p {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 .review {
   font-size: 0.8rem;
@@ -104,12 +115,13 @@
   width: 20px;
 }
 .description-title {
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: flex;
   gap: 2rem;
 }
 .description-title h3 {
   cursor: pointer;
+  font-size: 1.3rem;
 }
 .active-title {
   color: #1c2b66;
@@ -120,6 +132,7 @@
 .horizontal-rule {
   display: flex;
   /* margin-top: 1rem; */
+  margin-top: -1.5rem;
 }
 .horizontal-rule hr {
   width: 100%;
@@ -137,6 +150,9 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+}
+.service-title h2 {
+  font-size: 1.5rem;
 }
 .service-search {
   margin: 1.5rem 0;
@@ -172,7 +188,7 @@
   gap: 1.5rem;
 }
 .service-item {
-  height: 180px;
+  height: fit-content;
   border: 0.5px solid rgba(28, 43, 102, 0.25);
   border-radius: 10px;
   padding: 0.5rem 1rem;
@@ -183,9 +199,13 @@
   display: flex;
   align-items: center;
 }
+.item-desc h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
 .item-img img {
-  height: 150px;
-  width: 180px;
+  height: 120px;
+  width: 150px;
   object-fit: cover;
   border-radius: 10px;
   margin-right: 2rem;
@@ -198,15 +218,16 @@
 }
 .btn {
   background: #1c2b66;
-  padding: 0.3rem 0.6rem;
+  padding: 0.1rem 0.4rem;
   color: #fff;
   border-radius: 3px;
   cursor: pointer;
 }
 .add {
   padding: 0.3rem 1.2rem;
-  border-radius: 10px;
+  border-radius: 5px;
   background: #fff;
-  font-size: 1rem;
+  border: 1px solid #1c2b66;
+  font-size: 0.8rem;
   cursor: pointer;
 }

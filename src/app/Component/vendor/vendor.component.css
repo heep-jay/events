@@ -41,7 +41,6 @@
   background: #1c2b66;
   padding: 7px;
   border-radius: 10px;
-  cursor: pointer;
 }
 .sidebar-search input {
   width: 85%;
@@ -147,6 +146,11 @@ hr {
 }
 .item-header {
   padding: 0rem 1.5rem;
+}
+.item-header h3 {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  font-weight: 700;
 }
 .item-body {
   font-size: 0.8rem;

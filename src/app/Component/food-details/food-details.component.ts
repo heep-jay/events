@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { VendorService } from 'src/app/Services/vendor.service';
+import { Vendor } from 'src/app/Vendors';
 
 @Component({
   selector: 'app-food-details',
@@ -7,9 +10,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FoodDetailsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: ActivatedRoute, private vendorService: VendorService) { }
+  vendorId: string | null = null
+  vendor!: Vendor;
 
   ngOnInit(): void {
+    console.log("Vendor id is:", this.route.snapshot.paramMap.get('id'))
+
+    this.vendorId = this.route.snapshot.paramMap.get('id')
+
+    this.vendorService.getVendor(this.vendorId).subscribe((vendor) => {
+
+      this.vendor = vendor
+      console.log(this.vendor)
+    })
+
+
   }
 
 }

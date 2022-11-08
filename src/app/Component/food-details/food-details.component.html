@@ -1,7 +1,7 @@
 <div class="food-details">
   <div class="detail-header">
     <div class="back">
-      <img src="/assets/less.png" alt="" />
+      <img src="/assets/less.png" alt="" routerLink="/food" />
       <h2>Back</h2>
     </div>
     <div class="sort">
@@ -15,10 +15,7 @@
   <div class="bottom">
     <div class="left">
       <div class="food-img">
-        <img
-          src="https://img.freepik.com/premium-photo/concept-indian-cuisine-baked-chicken-wings-legs-honey-mustard-sauce-serving-dishes-restaurant-black-plate-indian-spices-wooden-table-background-image_127425-18.jpg?w=2000"
-          alt=""
-        />
+        <img src="{{ vendor.image }}" />
         <div class="carousel">
           <img src="/assets/less.png" alt="" />
           <hr class="active" />
@@ -28,9 +25,10 @@
           <img src="/assets/great.png" alt="" />
         </div>
         <div class="food-title">
-          <h2>Balo Chips</h2>
+          <h2>{{ vendor.name }}</h2>
           <p class="item-rating">
-            ⭐⭐⭐⭐⭐ <span class="review">[45 reviews]</span>
+            {{ vendor.rating }}
+            <span class="review">[{{ vendor.reviews }} reviews]</span>
           </p>
           <p>
             <span
@@ -40,7 +38,7 @@
           </p>
         </div>
         <div class="food-description">
-          <div class="description-title">
+          <!-- <div class="description-title">
             <h3 class="active-title">Description</h3>
             <h3>Reviews</h3>
           </div>
@@ -49,18 +47,19 @@
           </div>
           <div class="description-text">
             <p>
-              Cupidatat consectetur eiusmod ex fugiat qui sunt nisi pariatur id.
-              Deserunt ad fugiat deserunt ipsum in exercitation sint velit nulla
-              ad et dolor ullamco enim. Ea non culpa nulla excepteur et laboris
-              incididunt esse dolor nisi. Irure est officia in ea do occaecat
-              cillum cillum in reprehenderit quis ipsum enim. Cupidatat
-              consectetur eiusmod ex fugiat qui sunt nisi pariatur id. Deserunt
-              ad fugiat deserunt ipsum in exercitation sint velit nulla ad et
-              dolor ullamco enim. Ea non culpa nulla excepteur et laboris
-              incididunt esse dolor nisi. Irure est officia in ea do occaecat
-              cillum cillum in reprehenderit quis ipsum enim.
+              {{ vendor.desc }}
             </p>
-          </div>
+
+          </div>-->
+
+          <mat-tab-group mat-align-tabs="start">
+            <mat-tab label="Description"
+              ><p>
+                {{ vendor.desc }}
+              </p></mat-tab
+            >
+            <mat-tab label="Review"><p>Content 2</p></mat-tab>
+          </mat-tab-group>
         </div>
       </div>
     </div>

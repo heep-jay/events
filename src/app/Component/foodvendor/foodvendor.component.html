@@ -7,9 +7,18 @@
         <button>Reset</button>
       </div>
       <div class="sidebar-search">
-        <input type="text" />
+        <input
+          type="text"
+          #searchtext
+          (keyup.enter)="searchVendor(searchtext.value)"
+        />
+        <!-- {{ searchtext.value }} -->
         <div class="sidebar-btn">
-          <img src="/assets/search.png" alt="" />
+          <img
+            src="/assets/search.png"
+            alt=""
+            (click)="searchVendor(searchtext.value)"
+          />
         </div>
       </div>
       <hr />
@@ -59,154 +68,12 @@
           </select>
         </div>
       </div>
-      <p class="found">Found 85 items on your search</p>
+      <p class="found">Found {{ vendors.length }} items on your search</p>
     </div>
     <div class="bottom">
       <div class="vendors">
-        <div class="vendor-item">
-          <img
-            src="https://img.freepik.com/premium-photo/concept-indian-cuisine-baked-chicken-wings-legs-honey-mustard-sauce-serving-dishes-restaurant-black-plate-indian-spices-wooden-table-background-image_127425-18.jpg?w=2000"
-            alt=""
-          />
-          <div class="item-header">
-            <h3>Balo Chops</h3>
-            <h5>#25,000</h5>
-            <p class="item-body">
-              Velit officia mollit in minim. Non voluptate amet exercitation
-              velit ex fugiat enim reprehenderit culpa excepteur qui. Irure
-            </p>
-            <p class="item-rating">⭐⭐⭐⭐⭐ <span>[45 reviews]</span></p>
-          </div>
-          <div class="item-btn">
-            <button>Select</button>
-          </div>
-        </div>
-        <div class="vendor-item">
-          <img
-            src="https://img.freepik.com/premium-photo/concept-indian-cuisine-baked-chicken-wings-legs-honey-mustard-sauce-serving-dishes-restaurant-black-plate-indian-spices-wooden-table-background-image_127425-18.jpg?w=2000"
-            alt=""
-          />
-          <div class="item-header">
-            <h3>Balo Chops</h3>
-            <h5>#25,000</h5>
-            <p class="item-body">
-              Velit officia mollit in minim. Non voluptate amet exercitation
-              velit ex fugiat enim reprehenderit culpa excepteur qui. Irure
-            </p>
-            <p class="item-rating">⭐⭐⭐⭐⭐ <span>[45 reviews]</span></p>
-          </div>
-          <div class="item-btn">
-            <button>Select</button>
-          </div>
-        </div>
-        <div class="vendor-item">
-          <img
-            src="https://img.freepik.com/premium-photo/concept-indian-cuisine-baked-chicken-wings-legs-honey-mustard-sauce-serving-dishes-restaurant-black-plate-indian-spices-wooden-table-background-image_127425-18.jpg?w=2000"
-            alt=""
-          />
-          <div class="item-header">
-            <h3>Balo Chops</h3>
-            <h5>#25,000</h5>
-            <p class="item-body">
-              Velit officia mollit in minim. Non voluptate amet exercitation
-              velit ex fugiat enim reprehenderit culpa excepteur qui. Irure
-            </p>
-            <p class="item-rating">⭐⭐⭐⭐⭐ <span>[45 reviews]</span></p>
-          </div>
-          <div class="item-btn">
-            <button>Select</button>
-          </div>
-        </div>
-        <div class="vendor-item">
-          <img
-            src="https://img.freepik.com/premium-photo/concept-indian-cuisine-baked-chicken-wings-legs-honey-mustard-sauce-serving-dishes-restaurant-black-plate-indian-spices-wooden-table-background-image_127425-18.jpg?w=2000"
-            alt=""
-          />
-          <div class="item-header">
-            <h3>Balo Chops</h3>
-            <h5>#25,000</h5>
-            <p class="item-body">
-              Velit officia mollit in minim. Non voluptate amet exercitation
-              velit ex fugiat enim reprehenderit culpa excepteur qui. Irure
-            </p>
-            <p class="item-rating">⭐⭐⭐⭐⭐ <span>[45 reviews]</span></p>
-          </div>
-          <div class="item-btn">
-            <button>Select</button>
-          </div>
-        </div>
-        <div class="vendor-item">
-          <img
-            src="https://img.freepik.com/premium-photo/concept-indian-cuisine-baked-chicken-wings-legs-honey-mustard-sauce-serving-dishes-restaurant-black-plate-indian-spices-wooden-table-background-image_127425-18.jpg?w=2000"
-            alt=""
-          />
-          <div class="item-header">
-            <h3>Balo Chops</h3>
-            <h5>#25,000</h5>
-            <p class="item-body">
-              Velit officia mollit in minim. Non voluptate amet exercitation
-              velit ex fugiat enim reprehenderit culpa excepteur qui. Irure
-            </p>
-            <p class="item-rating">⭐⭐⭐⭐⭐ <span>[45 reviews]</span></p>
-          </div>
-          <div class="item-btn">
-            <button>Select</button>
-          </div>
-        </div>
-        <div class="vendor-item">
-          <img
-            src="https://img.freepik.com/premium-photo/concept-indian-cuisine-baked-chicken-wings-legs-honey-mustard-sauce-serving-dishes-restaurant-black-plate-indian-spices-wooden-table-background-image_127425-18.jpg?w=2000"
-            alt=""
-          />
-          <div class="item-header">
-            <h3>Balo Chops</h3>
-            <h5>#25,000</h5>
-            <p class="item-body">
-              Velit officia mollit in minim. Non voluptate amet exercitation
-              velit ex fugiat enim reprehenderit culpa excepteur qui. Irure
-            </p>
-            <p class="item-rating">⭐⭐⭐⭐⭐ <span>[45 reviews]</span></p>
-          </div>
-          <div class="item-btn">
-            <button>Select</button>
-          </div>
-        </div>
-        <div class="vendor-item">
-          <img
-            src="https://img.freepik.com/premium-photo/concept-indian-cuisine-baked-chicken-wings-legs-honey-mustard-sauce-serving-dishes-restaurant-black-plate-indian-spices-wooden-table-background-image_127425-18.jpg?w=2000"
-            alt=""
-          />
-          <div class="item-header">
-            <h3>Balo Chops</h3>
-            <h5>#25,000</h5>
-            <p class="item-body">
-              Velit officia mollit in minim. Non voluptate amet exercitation
-              velit ex fugiat enim reprehenderit culpa excepteur qui. Irure
-            </p>
-            <p class="item-rating">⭐⭐⭐⭐⭐ <span>[45 reviews]</span></p>
-          </div>
-          <div class="item-btn">
-            <button>Select</button>
-          </div>
-        </div>
-        <div class="vendor-item">
-          <img
-            src="https://img.freepik.com/premium-photo/concept-indian-cuisine-baked-chicken-wings-legs-honey-mustard-sauce-serving-dishes-restaurant-black-plate-indian-spices-wooden-table-background-image_127425-18.jpg?w=2000"
-            alt=""
-          />
-          <div class="item-header">
-            <h3>Balo Chops</h3>
-            <h5>#25,000</h5>
-            <p class="item-body">
-              Velit officia mollit in minim. Non voluptate amet exercitation
-              velit ex fugiat enim reprehenderit culpa excepteur qui. Irure
-            </p>
-            <p class="item-rating">⭐⭐⭐⭐⭐ <span>[45 reviews]</span></p>
-          </div>
-          <div class="item-btn">
-            <button>Select</button>
-          </div>
-        </div>
+        <app-vendor *ngFor="let vendor of vendors" [vendor]="vendor">
+        </app-vendor>
       </div>
       <div class="bottom-btn">
         <button>Load More</button>
@@ -214,3 +81,133 @@
     </div>
   </div>
 </div>
+
+<!--
+<div>
+  <div class="vendor-item">
+    <img
+      src="https://img.freepik.com/premium-photo/concept-indian-cuisine-baked-chicken-wings-legs-honey-mustard-sauce-serving-dishes-restaurant-black-plate-indian-spices-wooden-table-background-image_127425-18.jpg?w=2000"
+      alt=""
+    />
+    <div class="item-header">
+      <h3>Balo Chops</h3>
+      <h5>#25,000</h5>
+      <p class="item-body">
+        Velit officia mollit in minim. Non voluptate amet exercitation
+        velit ex fugiat enim reprehenderit culpa excepteur qui. Irure
+      </p>
+      <p class="item-rating">⭐⭐⭐⭐⭐ <span>[45 reviews]</span></p>
+    </div>
+    <div class="item-btn">
+      <button routerLink="/fooddetails">Select</button>
+    </div>
+  </div>
+  <div class="vendor-item">
+    <img
+      src="https://img.freepik.com/premium-photo/concept-indian-cuisine-baked-chicken-wings-legs-honey-mustard-sauce-serving-dishes-restaurant-black-plate-indian-spices-wooden-table-background-image_127425-18.jpg?w=2000"
+      alt=""
+    />
+    <div class="item-header">
+      <h3>Balo Chops</h3>
+      <h5>#25,000</h5>
+      <p class="item-body">
+        Velit officia mollit in minim. Non voluptate amet exercitation
+        velit ex fugiat enim reprehenderit culpa excepteur qui. Irure
+      </p>
+      <p class="item-rating">⭐⭐⭐⭐⭐ <span>[45 reviews]</span></p>
+    </div>
+    <div class="item-btn">
+      <button routerLink="/fooddetails">Select</button>
+    </div>
+  </div>
+  <div class="vendor-item">
+    <img
+      src="https://img.freepik.com/premium-photo/concept-indian-cuisine-baked-chicken-wings-legs-honey-mustard-sauce-serving-dishes-restaurant-black-plate-indian-spices-wooden-table-background-image_127425-18.jpg?w=2000"
+      alt=""
+    />
+    <div class="item-header">
+      <h3>Balo Chops</h3>
+      <h5>#25,000</h5>
+      <p class="item-body">
+        Velit officia mollit in minim. Non voluptate amet exercitation
+        velit ex fugiat enim reprehenderit culpa excepteur qui. Irure
+      </p>
+      <p class="item-rating">⭐⭐⭐⭐⭐ <span>[45 reviews]</span></p>
+    </div>
+    <div class="item-btn">
+      <button routerLink="/fooddetails">Select</button>
+    </div>
+  </div>
+  <div class="vendor-item">
+    <img
+      src="https://img.freepik.com/premium-photo/concept-indian-cuisine-baked-chicken-wings-legs-honey-mustard-sauce-serving-dishes-restaurant-black-plate-indian-spices-wooden-table-background-image_127425-18.jpg?w=2000"
+      alt=""
+    />
+    <div class="item-header">
+      <h3>Balo Chops</h3>
+      <h5>#25,000</h5>
+      <p class="item-body">
+        Velit officia mollit in minim. Non voluptate amet exercitation
+        velit ex fugiat enim reprehenderit culpa excepteur qui. Irure
+      </p>
+      <p class="item-rating">⭐⭐⭐⭐⭐ <span>[45 reviews]</span></p>
+    </div>
+    <div class="item-btn">
+      <button routerLink="/fooddetails">Select</button>
+    </div>
+  </div>
+  <div class="vendor-item">
+    <img
+      src="https://img.freepik.com/premium-photo/concept-indian-cuisine-baked-chicken-wings-legs-honey-mustard-sauce-serving-dishes-restaurant-black-plate-indian-spices-wooden-table-background-image_127425-18.jpg?w=2000"
+      alt=""
+    />
+    <div class="item-header">
+      <h3>Balo Chops</h3>
+      <h5>#25,000</h5>
+      <p class="item-body">
+        Velit officia mollit in minim. Non voluptate amet exercitation
+        velit ex fugiat enim reprehenderit culpa excepteur qui. Irure
+      </p>
+      <p class="item-rating">⭐⭐⭐⭐⭐ <span>[45 reviews]</span></p>
+    </div>
+    <div class="item-btn">
+      <button routerLink="/fooddetails">Select</button>
+    </div>
+  </div>
+  <div class="vendor-item">
+    <img
+      src="https://img.freepik.com/premium-photo/concept-indian-cuisine-baked-chicken-wings-legs-honey-mustard-sauce-serving-dishes-restaurant-black-plate-indian-spices-wooden-table-background-image_127425-18.jpg?w=2000"
+      alt=""
+    />
+    <div class="item-header">
+      <h3>Balo Chops</h3>
+      <h5>#25,000</h5>
+      <p class="item-body">
+        Velit officia mollit in minim. Non voluptate amet exercitation
+        velit ex fugiat enim reprehenderit culpa excepteur qui. Irure
+      </p>
+      <p class="item-rating">⭐⭐⭐⭐⭐ <span>[45 reviews]</span></p>
+    </div>
+    <div class="item-btn">
+      <button routerLink="/fooddetails">Select</button>
+    </div>
+  </div>
+  <div class="vendor-item">
+    <img
+      src="https://img.freepik.com/premium-photo/concept-indian-cuisine-baked-chicken-wings-legs-honey-mustard-sauce-serving-dishes-restaurant-black-plate-indian-spices-wooden-table-background-image_127425-18.jpg?w=2000"
+      alt=""
+    />
+    <div class="item-header">
+      <h3>Balo Chops</h3>
+      <h5>#25,000</h5>
+      <p class="item-body">
+        Velit officia mollit in minim. Non voluptate amet exercitation
+        velit ex fugiat enim reprehenderit culpa excepteur qui. Irure
+      </p>
+      <p class="item-rating">⭐⭐⭐⭐⭐ <span>[45 reviews]</span></p>
+    </div>
+    <div class="item-btn">
+      <button routerLink="/fooddetails">Select</button>
+    </div>
+  </div>
+</div> -->
