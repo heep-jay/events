@@ -1,10 +1,11 @@
 .review {
-  padding: 2rem;
-  width: 85vw;
-  margin: 1rem auto;
+  padding: 1rem;
+  width: 95%;
+  margin: 0 auto;
 }
 .review-main {
   display: flex;
+  align-items: flex-start;
 }
 .review-text {
   float: left;
@@ -42,14 +43,20 @@ h1 {
 span {
   margin-right: 0.5rem;
 }
-.btn {
-  text-align: center;
-  margin-top: 2rem;
+.bttn {
+  /* text-align: center; */
+  /* margin-top: 2rem auto; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  /* width: 70%; */
 }
 .btns {
-  padding: 1rem 4rem;
-  margin-right: 1rem;
+  padding: 1rem 3rem;
+
   font: 1.5rem;
+  cursor: pointer;
 }
 .btn-draft {
   background: #fff;
@@ -70,8 +77,7 @@ span {
   gap: 1rem;
   color: #2d3748;
 }
-.share-link {
-}
+
 .share-link {
   background: #f1f4fa;
   padding: 0.5rem 1rem;
@@ -118,12 +124,18 @@ span {
 @media screen and (max-width: 1554px) {
   .review-main {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
   }
   .review-img img {
     height: 400px;
     width: 570px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 1345px) {
@@ -155,28 +167,37 @@ span {
     font-size: 0.7rem;
   }
 }
-@media screen and (max-width: 1221px) {
+@media screen and (max-width: 1163px) {
+  .review-main {
+    flex-direction: column;
+  }
+  .review-text {
+    width: 100%;
+  }
+  .review-img {
+    width: 100%;
+    margin-right: 3rem;
+  }
   .review-img img {
-    height: 300px;
-    width: 450px;
+    /* height: 370px; */
+    width: 100%;
   }
-}
-@media screen and (max-width: 1221px) {
-  .review-img img {
-    height: 300px;
-    width: 400px;
-    object-fit: cover;
+  .btns {
+    padding: 0.7rem 2rem;
+
+    font: 1rem;
   }
-}
-@media screen and (max-width: 1221px) {
-  h1 {
-    font-size: 1.8rem;
-    margin-top: 0.9rem;
-  }
-  h3 {
+  .share h3 {
     font-size: 0.85rem;
   }
-  .mid h3 {
-    font-size: 1.1rem;
+  .share p {
+    font-size: 0.7rem;
+  }
+  .share-link {
+    background: #f1f4fa;
+    padding: 0.5rem 0.5rem;
+  }
+  .link img {
+    margin-left: 10px;
   }
 }

@@ -194,13 +194,6 @@
 }
 
 @media screen and (max-width: 1803px) {
-  .cards {
-    /* display: grid;
-    grid-template-columns: auto auto auto auto;
-    row-gap: 4rem;
-    column-gap: 1rem;
-    margin-top: 2rem; */
-  }
   .card-item {
     height: 190px;
     width: 380px;
@@ -259,8 +252,8 @@
 @media screen and (max-width: 949px) {
   .cards {
     grid-template-columns: auto auto;
-    row-gap: 2rem;
-    column-gap: 2rem;
+    row-gap: 1rem;
+    column-gap: 1rem;
   }
 }
 @media screen and (max-width: 658px) {

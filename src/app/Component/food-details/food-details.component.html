@@ -81,7 +81,7 @@
         </div>
         <div class="service-body">
           <div class="service-items">
-            <div class="service-item">
+            <!-- <div class="service-item">
               <div class="service-left">
                 <div class="item-img">
                   <img
@@ -101,19 +101,16 @@
                 <button class="btn">+</button>
                 <button class="add">Add to Plan</button>
               </div>
-            </div>
-            <div class="service-item">
+            </div> -->
+            <div class="service-item" *ngFor="let serv of vendor.services">
               <div class="service-left">
                 <div class="item-img">
-                  <img
-                    src="https://img.freepik.com/premium-photo/concept-indian-cuisine-baked-chicken-wings-legs-honey-mustard-sauce-serving-dishes-restaurant-black-plate-indian-spices-wooden-table-background-image_127425-18.jpg?w=2000"
-                    alt=""
-                  />
+                  <img src="{{ serv.image }}" alt="" />
                 </div>
                 <div class="item-desc">
-                  <h3>Pesto Pasta Grill</h3>
-                  <p>Special Food dish</p>
-                  <h3>$36.00</h3>
+                  <h3>{{ serv.name }}</h3>
+                  <p>{{ serv.type }}</p>
+                  <h3>{{ serv.price | currency }}</h3>
                 </div>
               </div>
               <div class="service-right">
