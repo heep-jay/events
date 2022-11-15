@@ -2,6 +2,8 @@
   background: #fff;
   display: flex;
   padding: 2rem;
+  justify-content: space-between;
+  gap: 1rem;
 }
 .left {
   flex: 0.2;
@@ -125,16 +127,17 @@ hr {
 }
 .vendors {
   margin-top: 3rem;
-  display: grid;
-  grid-template-columns: 355px 355px 355px 355px;
-  width: 100%;
-  row-gap: 4rem;
-  column-gap: 1rem;
+
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.vendors > * {
+  flex: 0 1 22em;
 }
 .vendor-item {
   height: fit-content;
-  /* width: 530px; */
-  width: auto;
   border: 0.5px solid rgba(28, 43, 102, 0.25);
   border-radius: 10px;
   background: #fff;
@@ -186,110 +189,36 @@ hr {
   color: #1c2b66;
   cursor: pointer;
 }
-@media screen and (max-width: 1522px) {
-  .right {
-    margin: 0 2rem;
-  }
-  .item-rating {
-    font-size: 0.75rem;
-  }
-  .item-body {
-    font-size: 0.75rem;
-  }
-  .item-btn button {
-    padding: 0.6rem 5rem;
-    font-size: 1rem;
-  }
-  .vendor-item img {
-    height: 140px;
+
+@media screen and (max-width: 1120px) {
+  .header-title h2 {
+    font-size: 1.5rem;
   }
 }
 
-@media screen and (max-width: 1465px) {
-  .vendors {
-    grid-template-columns: auto auto auto;
-  }
-  .vendor-item img {
-    height: 160px;
-  }
-}
-
-@media screen and (max-width: 1236px) {
-  .vendors {
-    grid-template-columns: auto auto;
-  }
-  .vendor-item img {
-    height: 190px;
-  }
-  .item-rating {
-    font-size: 0.85rem;
-  }
-  .item-body {
-    font-size: 0.85rem;
-  }
-}
-@media screen and (max-width: 942px) {
-  .vendors {
-    grid-template-columns: auto;
-  }
-  .vendor-item img {
-    height: 230px;
-  }
-
-  .item-rating {
-    font-size: 0.95rem;
-  }
-  .item-body {
-    font-size: 0.95rem;
-  }
-  .item-btn button {
-    padding: 0.9rem 8rem;
-  }
-}
-
-@media screen and (max-width: 942px) {
-  .item-rating {
-    font-size: 0.75rem;
-  }
-  .item-body {
-    font-size: 0.75rem;
-  }
-  .vendor-item img {
-    height: 180px;
-  }
+@media screen and (max-width: 883px) {
   .header-title h2 {
     font-size: 1.3rem;
   }
-}
-@media screen and (max-width: 862px) {
-  .header-title h2 {
-    font-size: 1rem;
-  }
-  .header-right p {
-    font-size: 0.8rem;
-  }
-  .found {
+  .header-right p,
+  .found,
+  select {
     font-size: 0.85rem;
   }
 }
-@media screen and (max-width: 759px) {
-  .item-btn button {
-    padding: 0.7rem 6rem;
-  }
-  .vendor-item img {
-    height: 140px;
-  }
-}
-
-@media screen and (max-width: 689px) {
+@media screen and (max-width: 710px) {
   .vendor {
+    display: flex;
     flex-direction: column;
+    width: 85%;
+    margin: 0 auto;
   }
-  .vendors {
-    grid-template-columns: auto auto;
-    /* margin-top: 2rem; */
+  .header-title h2 {
+    font-size: 1rem;
   }
-  .header-title {
-    margin-top: 2rem;
+  .header-right p,
+  .found,
+  select {
+    font-size: 0.75rem;
   }
 }

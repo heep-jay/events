@@ -9,6 +9,7 @@ import { PlanComponent } from './Component/plan/plan.component';
 import { PublishedComponent } from './Component/published/published.component';
 import { FoodvendorComponent } from './Component/foodvendor/foodvendor.component';
 import { FoodDetailsComponent } from './Component/food-details/food-details.component';
+import { SolutionsComponent } from './Component/solutions/solutions.component'
 const routes: Routes = [
   {
     component: FoodDetailsComponent,
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     component: FoodvendorComponent,
     path: 'food/search/:searchTerm'
+  },
+  {
+    component: SolutionsComponent,
+    path: 'solution'
   },
   {
     component: PublishedComponent,

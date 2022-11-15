@@ -20,7 +20,8 @@ import { FoodDetailsComponent } from './Component/food-details/food-details.comp
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { VendorComponent } from './Component/vendor/vendor.component';
-import { TestComponent } from './Component/test/test.component'
+import { TestComponent } from './Component/test/test.component';
+import { SolutionsComponent } from './Component/solutions/solutions.component'
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { TestComponent } from './Component/test/test.component'
     FoodDetailsComponent,
     VendorComponent,
     TestComponent,
+    SolutionsComponent,
 
   ],
   imports: [

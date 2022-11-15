@@ -14,6 +14,8 @@
 }
 .top {
   height: 90px;
+  max-width: 1320px;
+  min-width: fit-content;
   padding: 1.5rem;
   display: flex;
   align-items: center;
@@ -51,6 +53,8 @@
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   padding: 1.5rem;
+  max-width: 1320px;
+  min-width: fit-content;
 }
 .event-details {
   display: flex;
@@ -67,7 +71,7 @@
 }
 .file-images {
   display: flex;
-  gap: 10rem;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -228,5 +232,64 @@ hr {
   .left {
     width: 100%;
     flex: 1;
+  }
+}
+@media screen and (max-width: 774px) {
+  .header h5 {
+    font-size: 0.9rem;
+  }
+  .header-text {
+    font-size: 0.75rem;
+  }
+  .event-details h3 {
+    font-size: 1.2rem;
+  }
+  .description {
+    font-size: 0.8rem;
+    max-width: 35rem;
+  }
+
+  .file-img img {
+    height: 70px;
+    width: 120px;
+  }
+  .checkbox {
+    height: 15px;
+    width: 15px;
+  }
+  .div h5,
+  .checkbox-text p,
+  .status-text,
+  .files p {
+    font-size: 0.8rem;
+  }
+  .small-text {
+    font-size: 0.66rem;
+  }
+  .management h3 {
+    font-size: 1.2rem;
+  }
+  .notes {
+    font-size: 0.9rem;
+    font-weight: 800;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .file-images {
+    flex-direction: column;
+    float: left;
+  }
+  .description {
+    max-width: 26rem;
+  }
+  .top {
+    max-width: 27rem;
+  }
+  .bottom {
+    max-width: 27rem;
+  }
+  .mgmt-bottom {
+    width: 30rem;
   }
 }
