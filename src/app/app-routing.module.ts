@@ -9,7 +9,11 @@ import { PlanComponent } from './Component/plan/plan.component';
 import { PublishedComponent } from './Component/published/published.component';
 import { FoodvendorComponent } from './Component/foodvendor/foodvendor.component';
 import { FoodDetailsComponent } from './Component/food-details/food-details.component';
-import { SolutionsComponent } from './Component/solutions/solutions.component'
+import { SolutionsComponent } from './Component/solutions/solutions.component';
+import { SecurityComponent } from './Component/security/security.component';
+import { ModalFormComponent } from './Component/modal-form/modal-form.component'
+
+
 const routes: Routes = [
   {
     component: FoodDetailsComponent,
@@ -26,6 +30,14 @@ const routes: Routes = [
   {
     component: SolutionsComponent,
     path: 'solution'
+  },
+  {
+    component: SecurityComponent,
+    path: 'security'
+  },
+  {
+    component: ModalFormComponent,
+    path: 'modal'
   },
   {
     component: PublishedComponent,

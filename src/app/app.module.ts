@@ -11,6 +11,8 @@ import { HeaderComponent } from './Component/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatIconModule } from '@angular/material/icon';
+
 import { ReviewComponent } from './Component/review/review.component';
 import { DashboardComponent } from './Component/dashboard/dashboard.component';
 import { PlanComponent } from './Component/plan/plan.component';
@@ -21,7 +23,9 @@ import { FoodDetailsComponent } from './Component/food-details/food-details.comp
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { VendorComponent } from './Component/vendor/vendor.component';
 import { TestComponent } from './Component/test/test.component';
-import { SolutionsComponent } from './Component/solutions/solutions.component'
+import { SolutionsComponent } from './Component/solutions/solutions.component';
+import { SecurityComponent } from './Component/security/security.component';
+import { ModalFormComponent } from './Component/modal-form/modal-form.component'
 
 @NgModule({
   declarations: [
@@ -39,6 +43,8 @@ import { SolutionsComponent } from './Component/solutions/solutions.component'
     VendorComponent,
     TestComponent,
     SolutionsComponent,
+    SecurityComponent,
+    ModalFormComponent,
 
   ],
   imports: [
@@ -48,6 +54,7 @@ import { SolutionsComponent } from './Component/solutions/solutions.component'
     MatTableModule,
     MatTabsModule,
     HttpClientModule,
+    MatIconModule,
     NgbModule
   ],
   providers: [],
