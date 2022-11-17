@@ -25,7 +25,8 @@ import { VendorComponent } from './Component/vendor/vendor.component';
 import { TestComponent } from './Component/test/test.component';
 import { SolutionsComponent } from './Component/solutions/solutions.component';
 import { SecurityComponent } from './Component/security/security.component';
-import { ModalFormComponent } from './Component/modal-form/modal-form.component'
+import { ModalFormComponent } from './Component/modal-form/modal-form.component';
+import { RequestComponent } from './Component/request/request.component'
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { ModalFormComponent } from './Component/modal-form/modal-form.component'
     SolutionsComponent,
     SecurityComponent,
     ModalFormComponent,
+    RequestComponent,
 
   ],
   imports: [

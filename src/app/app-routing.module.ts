@@ -12,7 +12,7 @@ import { FoodDetailsComponent } from './Component/food-details/food-details.comp
 import { SolutionsComponent } from './Component/solutions/solutions.component';
 import { SecurityComponent } from './Component/security/security.component';
 import { ModalFormComponent } from './Component/modal-form/modal-form.component'
-
+import { RequestComponent } from './Component/request/request.component'
 
 const routes: Routes = [
   {
@@ -34,6 +34,10 @@ const routes: Routes = [
   {
     component: SecurityComponent,
     path: 'security'
+  },
+  {
+    component: RequestComponent,
+    path: 'request'
   },
   {
     component: ModalFormComponent,
