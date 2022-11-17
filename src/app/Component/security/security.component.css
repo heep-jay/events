@@ -4,7 +4,7 @@
   padding: 2rem;
 }
 .header {
-  max-width: 500px;
+  max-width: 800px;
   color: #1c2b66;
 }
 .small-text {
@@ -12,7 +12,7 @@
   font-weight: 600;
 }
 .big-text {
-  font-size: clamp(1.6875rem, -0.1094rem + 5.75vw, 3.125rem);
+  font-size: clamp(1.687rem, -1.3125rem + 9vw, 3.75rem);
   font-weight: 900;
 }
 .normal-text {
@@ -53,23 +53,103 @@
 }
 .hero-section,
 .banner-section {
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 .hero-section img {
   max-height: 450px;
   width: 100%;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 18px;
 }
 
 .banner-section {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 0.5px solid rgba(28, 43, 102, 0.21);
+  border-bottom: 0.5px solid rgba(28, 43, 102, 0.21);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .banner {
   max-width: 30rem;
-  margin: 3rem 0;
+  margin: 5rem 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+}
+/* .mat-icon {
+  height: 50px !important;
+} */
+.banner h3 {
+  font-size: clamp(1.25rem, 0.625rem + 2vw, 1.75rem);
+  color: #1c2b66;
+  font-weight: 700;
+}
+.banner p {
+  font-size: clamp(0.75rem, 0.5714rem + 0.5714vw, 1rem);
+}
+.more-info {
+  margin-top: 5rem;
+}
+.first-section,
+.second-section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5rem;
+  padding: 0 6rem;
+  justify-content: space-between;
+}
+.info-img {
+  width: 48%;
+  height: 450px;
+  border-bottom: 0.5px solid rgba(28, 43, 102, 0.21);
+}
+.info-img img {
+  max-height: 350px;
+  min-width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.info-text {
+  width: 47%;
+}
+.info-text h5,
+h2 {
+  color: #1c2b66;
+}
+.info-text h2 {
+  font-size: clamp(1.5625rem, 0.8929rem + 2.1429vw, 2.5rem);
+  font-weight: 700;
+}
+.info-text h5 {
+  font-size: clamp(0.85rem, -0.1875rem + 3vw, 1.35rem);
+  font-weight: 600;
+}
+.info-text p {
+  font-size: clamp(0.8125rem, 0.5781rem + 0.75vw, 1rem);
+}
+
+@media screen and (max-width: 840px) {
+  .first-section,
+  .second-section {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 2rem;
+  }
+  .banner-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner {
+    margin: 1rem 0;
+  }
+
+  .info-img,
+  .info-text {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
 }
