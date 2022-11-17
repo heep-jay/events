@@ -51,6 +51,25 @@ h5 {
   margin-bottom: 0rem;
   position: relative;
 }
+.date__ {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+.start-dt,
+.start-time {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.start-dt input,
+.start-time input {
+  width: 100%;
+  height: 3rem;
+  font-size: 1em;
+  padding: 0 0.5rem;
+}
 
 .selects select {
   position: relative;
