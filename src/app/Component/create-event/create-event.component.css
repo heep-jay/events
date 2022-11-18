@@ -13,29 +13,29 @@ h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
-p {
+.create__content-text {
   width: 40rem;
 }
 
 /* form styling */
-.form {
+.create-event__form {
   margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
   width: 42rem;
 }
-.event-form {
+.create-event__form-form {
   display: flex;
   flex-direction: column;
   position: relative;
   margin-bottom: 3rem;
 }
-.event-form input {
+.create-event__form-form input {
   /* width: 42rem; */
   height: 3rem;
 }
 
-.event-form textarea {
+.create-event__form-form textarea {
   height: 6rem;
 }
 .input {
@@ -54,46 +54,46 @@ p {
   padding: 0.3rem 0.8rem;
   letter-spacing: 1px;
 }
-.selects {
+.create-event__selects {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
 }
-.selects select {
+.create-event__selects select {
   position: relative;
 }
-.selects label {
+.create-event__selects label {
   position: absolute;
   top: -12%;
 }
 
-.selects select {
+.create-event__selects select {
   display: flex;
   width: 50%;
   height: 3rem;
   font-size: 1em;
 }
-.date__ {
+.create-event-date__ {
   display: flex;
   align-items: center;
   width: 100%;
   gap: 1rem;
 }
-.start-dt,
-.start-time {
+.ce__start-dt,
+.ce__start-time {
   display: flex;
   flex-direction: column;
   width: 50%;
 }
-.start-dt input,
-.start-time input {
+.ce__start-dt input,
+.ce__start-time input {
   width: 100%;
   height: 3rem;
   font-size: 1em;
   padding: 0 0.5rem;
 }
 
-.selects-long select {
+.create-event__selects-long select {
   width: 100%;
   height: 3rem;
   font-size: 1em;
@@ -143,18 +143,18 @@ p {
 .location {
   margin-top: 2rem;
 }
-.subtext {
+.create-event__dt-subtext {
   margin-bottom: 2rem;
 }
-.dt {
+.create-event__dt {
   margin-top: 2rem;
 }
-.btn {
+.create-event__btn {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-.btn-active {
+.create-event__btn-active {
   padding: 1rem 3rem;
   font-size: 0.9rem;
   color: #1c2b66;
@@ -167,7 +167,7 @@ p {
   display: flex;
   gap: 1rem;
 }
-.btn-normal {
+.create-event__btn-normal {
   padding: 1rem 3rem;
   font-size: 0.9rem;
   color: #1c2b66;
@@ -175,14 +175,14 @@ p {
   border: 1px solid #1c2b66;
   cursor: pointer;
 }
-.btn-cancel {
+.create-event__btn-cancel {
   padding: 1rem 4rem;
   font-size: 1.1rem;
   color: #1c2b66;
   background: #fff;
   border: 1px solid #1c2b66;
 }
-.btn-continue {
+.create-event__btn-continue {
   padding: 1rem 4rem;
   font-size: 1.1rem;
   color: #fff;
@@ -190,12 +190,12 @@ p {
   border: 1px solid #1c2b66;
   cursor: pointer;
 }
-.btn-continue:hover {
+.create-event__btn-continue:hover {
   color: #fff;
   background: #0b153a;
   transition: all ease-in-out 0.5s;
 }
-.btn-cancel:hover {
+.create-event__btn-cancel:hover {
   color: #fff;
   background: #1c2b66;
   cursor: pointer;
@@ -203,16 +203,16 @@ p {
 }
 
 @media screen and (max-width: 712px) {
-  .form {
+  .create-event__form {
     width: 32rem;
   }
   .imagepicker img {
     width: 32rem;
   }
-  .content-header {
+  .create__content-header {
     width: 32rem;
   }
-  p {
+  .create__content-text {
     width: 30rem;
   }
   .rendered-img {
@@ -221,7 +221,7 @@ p {
 }
 
 @media screen and (max-width: 650px) {
-  .form {
+  .create-event__form {
     width: 25rem;
   }
   .imagepicker img {
@@ -231,10 +231,10 @@ p {
     /* width: 5rem; */
     gap: 0;
   }
-  .content-header {
+  .create__content-header {
     width: 25rem;
   }
-  p {
+  .create__content-text {
     width: 25rem;
   }
   .image-text {

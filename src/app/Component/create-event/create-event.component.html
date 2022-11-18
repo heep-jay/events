@@ -1,24 +1,24 @@
 <!-- <app-header></app-header> -->
 <div class="create-event">
   <div class="create-content">
-    <div class="content-header">
+    <div class="create__content-header">
       <h2>Basic Info</h2>
-      <p>
+      <p class="create__content-text">
         Name your event-goers why they should come. Add details that higlights
         what makes it unique
       </p>
     </div>
 
-    <div class="form">
-      <div class="event-form">
+    <div class="create-event__form">
+      <div class="create-event__form-form">
         <label for="title" class="input">Title</label>
         <input type="text" name="title" />
       </div>
-      <div class="event-form">
+      <div class="create-event__form-form">
         <label for="eventDetails" class="textarea">Event Details</label>
         <textarea name="eventDetails"> </textarea>
       </div>
-      <div class="selects">
+      <div class="create-event__selects">
         <select name="" id="">
           <option value="Type">Type</option>
         </select>
@@ -45,11 +45,11 @@
       </div>
       <div class="location">
         <h2>Location</h2>
-        <p class="subtext">
+        <p class="create-event__dt-subtext">
           Help people in your are discover your event and let's attendees know
           where to show up
         </p>
-        <div class="selects">
+        <div class="create-event__selects">
           <label for="state">State</label>
           <select name="state" id="">
             <option value="Type">State</option>
@@ -59,46 +59,46 @@
             <option value="Type">LGA</option>
           </select>
         </div>
-        <div class="event-form" style="margin-top: 2.5rem">
-          <label for="title" class="input">Title</label>
-          <input type="text" name="title" />
+        <div class="create-event__form-form" style="margin-top: 2.5rem">
+          <label for="title" class="input">Address</label>
+          <input type="text" name="address" />
         </div>
       </div>
       <hr />
-      <div class="dt">
+      <div class="create-event__dt">
         <h2>Date and Time</h2>
-        <p class="subtext">
+        <p class="create-event__dt-subtext">
           Name your event-goers why they should come. Add details that higlights
           what makes it unique
         </p>
-        <div class="btn">
-          <button class="btn-active">Single Event</button>
-          <button class="btn-normal">Recurring Event</button>
+        <div class="create-event__btn">
+          <button class="create-event__btn-active">Single Event</button>
+          <button class="create-event__btn-normal">Recurring Event</button>
         </div>
-        <div class="selects-long" style="margin-top: 2.5rem">
+        <div class="create-event__selects-long" style="margin-top: 2.5rem">
           <select name="" id="">
             <option value="Type">GMT(0100) Nigerian Time</option>
           </select>
         </div>
-        <div class="selects" style="margin-top: 2.5rem">
-          <div class="date__">
-            <div class="start-dt">
+        <div class="create-event__selects" style="margin-top: 2.5rem">
+          <div class="create-event-date__">
+            <div class="ce__start-dt">
               <span>Start Date</span>
               <input type="date" name="start-date" />
             </div>
-            <div class="start-time">
+            <div class="ce__start-time">
               <span>Start Time</span>
               <input type="time" name="start-time" />
             </div>
           </div>
         </div>
-        <div class="selects" style="margin-top: 2.5rem">
-          <div class="date__">
-            <div class="start-dt">
+        <div class="create-event__selects" style="margin-top: 2.5rem">
+          <div class="create-event-date__">
+            <div class="ce__start-dt">
               <span>End Date</span>
               <input type="date" name="end-time" />
             </div>
-            <div class="start-time">
+            <div class="ce__start-time">
               <span>End Time</span>
               <input type="time" name="end-time" />
             </div>
@@ -107,8 +107,8 @@
       </div>
 
       <div class="submit">
-        <button class="btn-cancel">Cancel</button>
-        <button class="btn-continue">Continue</button>
+        <button class="create-event__btn-cancel">Cancel</button>
+        <button class="create-event__btn-continue">Continue</button>
       </div>
     </div>
   </div>

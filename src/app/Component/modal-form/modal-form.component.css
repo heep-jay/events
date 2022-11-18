@@ -161,9 +161,9 @@ h5 {
   .content-header {
     width: 32rem;
   }
-  p {
+  /* p {
     width: 30rem;
-  }
+  } */
   .rendered-img {
     width: 50px;
   }
@@ -183,9 +183,9 @@ h5 {
   .content-header {
     width: 25rem;
   }
-  p {
+  /* p {
     width: 25rem;
-  }
+  } */
   .image-text {
     width: 7rem;
   }
