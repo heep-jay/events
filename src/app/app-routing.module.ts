@@ -13,6 +13,9 @@ import { SolutionsComponent } from './Component/solutions/solutions.component';
 import { SecurityComponent } from './Component/security/security.component';
 import { ModalFormComponent } from './Component/modal-form/modal-form.component'
 import { RequestComponent } from './Component/request/request.component'
+import { TableComponent } from './Component/table/table.component'
+
+
 
 const routes: Routes = [
   {
@@ -57,6 +60,10 @@ const routes: Routes = [
   }, {
     component: CreateTicketsComponent,
     path: 'create'
+  },
+  {
+    component: TableComponent,
+    path: 'table'
   },
   {
     component: ReviewComponent,

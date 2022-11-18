@@ -1,0 +1,49 @@
+<div class="event__table">
+  <div class="event__table-title">
+    <h1>Tickets</h1>
+    <button>Add Tickets</button>
+  </div>
+  <!-- Table -->
+
+  <table class="table event__table-table">
+    <thead class="event__table-head">
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">Ticket Name</th>
+        <th scope="col">Ticket Quantity</th>
+        <th scope="col">Ticket Price</th>
+        <th scope="col">Status</th>
+        <th scope="col">Sales End</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        class="event__table-row"
+        *ngFor="let country of countries; index as i"
+      >
+        <td>{{ country.index }}</td>
+        <td>
+          {{ country.ticket_Name }}
+        </td>
+
+        <td>{{ country.ticket_Quantity }}</td>
+        <td>#{{ country.ticket_Price | number }}</td>
+        <td>🟢{{ country.status }}</td>
+        <td>{{ country.salesEnd }}</td>
+        <td>
+          <mat-icon
+            aria-hidden="false"
+            aria-label="Example home icon"
+            fontIcon="more_vert"
+          ></mat-icon>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="event__table-save">
+    <p></p>
+    <button class="btn-save">Save and Continue</button>
+  </div>
+</div>
