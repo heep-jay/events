@@ -162,7 +162,7 @@ h2 {
   border: 1px solid #1c2b66;
   cursor: pointer;
 }
-.submit {
+.create-event__submit {
   margin-top: 2rem;
   display: flex;
   gap: 1rem;

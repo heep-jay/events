@@ -1,42 +1,35 @@
-.create {
-  width: 75vw;
+.create-ticket {
+  max-width: 1600px;
   margin: 3rem auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
 }
-.create-banner {
-  height: 57vh;
+.create-ticket__banner {
+  min-height: fit-content;
+  height: 65vh;
+  width: 100%;
   background: #55608d;
   border-radius: 25px;
 }
-.btn {
-  width: 80%;
-  margin: 3rem auto;
-  text-align: center;
+.create-ticket__img {
+  width: 195px;
+  height: 195px;
 }
-.create-banner button {
+
+.create-ticket__banner button {
   padding: 0.8rem 5rem;
   border: 1px solid #1c2b66;
   background: #1c2b66;
-  font-size: 1rem;
-  color: #fff;
+  font-size: clamp(0.75rem, 0.4375rem + 1vw, 1rem);
   cursor: pointer;
-}
-.create-banner button:hover {
-  background: #0b153a;
-  transition: all ease-in-out 0.5s;
-}
-.btn button {
-  padding: 0.8rem 2.5rem;
-  border: 1px solid #1c2b66;
-  background: #fff;
-  font-size: 1rem;
-  cursor: pointer;
-}
-.btn button:hover {
-  background: #1c2b66;
-  transition: all ease-in-out 0.5s;
   color: #fff;
 }
-.banner-text {
+
+.create-banner__text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,10 +40,26 @@
   margin: auto 0;
   color: #fff;
 }
-.banner-text h2 {
-  font-size: 2.5rem;
+.create-banner__text h2 {
+  font-size: clamp(1.5rem, 0.25rem + 4vw, 2.5rem);
+  font-weight: 600;
 }
-img {
-  width: 195px;
-  height: 195px;
+.create-banner__text p {
+  font-size: clamp(0.75rem, 0.4375rem + 1vw, 1rem);
+}
+.create-banner__btn button:hover {
+  background: #0b153a;
+  transition: all ease-in-out 0.5s;
+}
+.create-banner__btn button {
+  padding: 0.8em 2em;
+  border: 1px solid #1c2b66;
+  background: #fff;
+  font-size: clamp(0.75rem, 0.4375rem + 1vw, 1rem);
+  cursor: pointer;
+}
+.create-banner__btn button:hover {
+  background: #1c2b66;
+  transition: all ease-in-out 0.5s;
+  color: #fff;
 }

@@ -3,29 +3,29 @@
 h5 {
   font-weight: 700;
 }
-.form {
+.modal-form {
   margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
   margin: 2rem;
   gap: 2.5rem;
 }
-.event-form {
+.modal__event-form {
   display: flex;
   flex-direction: column;
   position: relative;
   margin-bottom: 0rem;
 }
-.event-form input {
+.modal__event-form input {
   /* width: 42rem; */
   height: 3rem;
 }
 
-.event-form textarea {
+.modal__event-form textarea {
   height: 6rem;
 }
 .input,
-.tag,
+.modal__tag,
 .textarea {
   position: absolute;
 
@@ -41,44 +41,44 @@ h5 {
   top: -14%;
   left: 3%;
 }
-.tag {
+.modal__tag {
   top: -29%;
 }
-.selects {
+.modal__selects {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
   margin-bottom: 0rem;
   position: relative;
 }
-.date__ {
+.modal-date__ {
   display: flex;
   align-items: center;
   width: 100%;
   gap: 1rem;
 }
-.start-dt,
-.start-time {
+.modal__start-dt,
+.modal__start-time {
   display: flex;
   flex-direction: column;
   width: 50%;
 }
-.start-dt input,
-.start-time input {
+.modal__start-dt input,
+.modal__start-time input {
   width: 100%;
   height: 3rem;
   font-size: 1em;
   padding: 0 0.5rem;
 }
 
-.selects select {
+.modal__selects select {
   position: relative;
 }
-.selects label {
+.modal__selects label {
   position: absolute;
   top: -12%;
 }
-.selects select {
+.modal__selects select {
   display: flex;
   width: 100%;
   height: 3rem;
@@ -92,17 +92,15 @@ h5 {
 .subtext {
   margin-bottom: 2rem;
 }
-.dt {
-  margin-top: 0rem;
-}
-.bttn {
+
+.modal__bttn {
   display: flex;
   align-items: center;
   gap: 1rem;
   margin: 0 auto;
   justify-content: center;
 }
-.btn-active {
+.modal__btn-active {
   padding: 1rem 3rem;
   font-size: 0.9rem;
   color: #1c2b66;
@@ -110,13 +108,13 @@ h5 {
   border: 1px solid #1c2b66;
   cursor: pointer;
 }
-.submit {
+.modal__submit {
   margin-top: 0rem;
   display: flex;
   gap: 1rem;
   justify-content: center;
 }
-.btn-normal {
+.modal__btn-normal {
   padding: 1rem 3rem;
   font-size: 0.9rem;
   color: #1c2b66;
@@ -124,14 +122,14 @@ h5 {
   border: 1px solid #1c2b66;
   cursor: pointer;
 }
-.btn-cancel {
+.modal__btn-cancel {
   padding: 1rem 4rem;
   font-size: 1.1rem;
   color: #1c2b66;
   background: #fff;
   border: 1px solid #1c2b66;
 }
-.btn-continue {
+.modal__btn-continue {
   padding: 1rem 4rem;
   font-size: 1.1rem;
   color: #fff;
@@ -139,7 +137,7 @@ h5 {
   border: 1px solid #1c2b66;
   cursor: pointer;
 }
-.btn-continue:hover {
+.modal__btn-continue:hover {
   color: #fff;
   background: #0b153a;
   transition: all ease-in-out 0.5s;
@@ -149,49 +147,4 @@ h5 {
   background: #1c2b66;
   cursor: pointer;
   transition: all ease-in-out 0.5s;
-}
-
-@media screen and (max-width: 712px) {
-  .form {
-    width: 32rem;
-  }
-  .imagepicker img {
-    width: 32rem;
-  }
-  .content-header {
-    width: 32rem;
-  }
-  /* p {
-    width: 30rem;
-  } */
-  .rendered-img {
-    width: 50px;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .form {
-    width: 25rem;
-  }
-  .imagepicker img {
-    width: 25rem;
-  }
-  .rendered-img {
-    /* width: 5rem; */
-    gap: 0;
-  }
-  .content-header {
-    width: 25rem;
-  }
-  /* p {
-    width: 25rem;
-  } */
-  .image-text {
-    width: 7rem;
-  }
-
-  .create-event {
-    padding: 0rem;
-    margin: 1rem auto;
-  }
 }
