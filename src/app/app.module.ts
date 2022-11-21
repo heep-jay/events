@@ -27,7 +27,8 @@ import { SolutionsComponent } from './Component/solutions/solutions.component';
 import { SecurityComponent } from './Component/security/security.component';
 import { ModalFormComponent } from './Component/modal-form/modal-form.component';
 import { RequestComponent } from './Component/request/request.component';
-import { TableComponent } from './Component/table/table.component'
+import { TableComponent } from './Component/table/table.component';
+import { CategoriesComponent } from './Component/categories/categories.component'
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { TableComponent } from './Component/table/table.component'
     ModalFormComponent,
     RequestComponent,
     TableComponent,
+    CategoriesComponent,
 
   ],
   imports: [

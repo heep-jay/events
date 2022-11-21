@@ -13,7 +13,8 @@ import { SolutionsComponent } from './Component/solutions/solutions.component';
 import { SecurityComponent } from './Component/security/security.component';
 import { ModalFormComponent } from './Component/modal-form/modal-form.component'
 import { RequestComponent } from './Component/request/request.component'
-import { TableComponent } from './Component/table/table.component'
+import { TableComponent } from './Component/table/table.component';
+import { CategoriesComponent } from './Component/categories/categories.component'
 
 
 
@@ -41,6 +42,10 @@ const routes: Routes = [
   {
     component: RequestComponent,
     path: 'request'
+  },
+  {
+    component: CategoriesComponent,
+    path: 'categories'
   },
   {
     component: ModalFormComponent,
