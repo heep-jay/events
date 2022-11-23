@@ -1,20 +1,20 @@
-<div class="food-details">
-  <div class="detail-header">
-    <div class="back">
-      <img src="/assets/less.png" alt="" routerLink="/food" />
-      <h2 class="back-text">Back</h2>
+<div class="foodDetails">
+  <div class="foodDetails__header">
+    <div class="foodDetails__header-back">
+      <img src="/assets/less.png" alt="" routerLink="/plan" />
+      <h2 class="foodDetails__header-backText">Back</h2>
     </div>
-    <div class="sort">
-      <h4 class="sort-text">Sort By</h4>
+    <div class="foodDetails__header-sort">
+      <h4 class="foodDetails__header-sortText">Sort By</h4>
       <select name="" id="">
         <option value="">Popularity</option>
       </select>
     </div>
   </div>
-  <p class="search">Found 86 items on your serach</p>
-  <div class="bottom">
-    <div class="left">
-      <div class="food-img">
+  <p class="foodDetails__header-search">Found 86 items on your serach</p>
+  <div class="foodDetails__bottom">
+    <div class="foodDetails__left">
+      <div class="foodDetails__food-img">
         <!-- <img src="{{ vendor.image }}" />
         <div class="carousel">
           <img src="/assets/less.png" alt="" />
@@ -25,11 +25,11 @@
           <img src="/assets/great.png" alt="" />
         </div> -->
         <app-carousel></app-carousel>
-        <div class="food-title">
+        <div class="foodDetails__food-title">
           <h2>{{ vendor.name }}</h2>
-          <p class="item-rating">
+          <p class="foodDetails__item-rating">
             {{ vendor.rating }}
-            <span class="review">[{{ vendor.reviews }} reviews]</span>
+            <span class="foodDetails__review">[{{ vendor.reviews }} reviews]</span>
           </p>
           <p>
             <span
@@ -38,7 +38,7 @@
             >
           </p>
         </div>
-        <div class="food-description">
+        <div class="foodDetails__food-description">
           <mat-tab-group mat-align-tabs="start">
             <mat-tab label="Description"
               ><p>
@@ -52,38 +52,38 @@
     </div>
     <div class="vl"></div>
 
-    <div class="right">
-      <div class="service">
-        <div class="service-head">
-          <div class="service-title">
+    <div class="foodDetails__right">
+      <div class="foodDetails__service">
+        <div class="foodDetails__service-head">
+          <div class="foodDetails__service-title">
             <h2>Services</h2>
             <p>Found 86 Items on your search</p>
           </div>
-          <div class="service-search">
+          <div class="foodDetails__service-search">
             <input type="text" placeholder="Search services" />
-            <div class="service-btn">
+            <div class="foodDetails__service-btn">
               <img src="/assets/search.png" alt="" />
             </div>
           </div>
         </div>
-        <div class="service-body">
-          <div class="service-items">
-            <div class="service-item" *ngFor="let serv of vendor.services">
-              <div class="service-left">
-                <div class="item-img">
+        <div class="foodDetails__service-body">
+          <div class="foodDetails__service-items">
+            <div class="foodDetails__service-item" *ngFor="let serv of vendor.services">
+              <div class="foodDetails__service-left">
+                <div class="foodDetails__service-itemImg">
                   <img src="{{ serv.image }}" alt="" />
                 </div>
-                <div class="item-desc">
+                <div class="foodDetails__service-itemDesc">
                   <h3>{{ serv.name }}</h3>
                   <p>{{ serv.type }}</p>
                   <h3>{{ serv.price | currency }}</h3>
                 </div>
               </div>
-              <div class="service-right">
-                <button class="btn">-</button>
-                <span class="btn-span">3</span>
-                <button class="btn">+</button>
-                <button class="add">Add to Plan</button>
+              <div class="foodDetails__service-right">
+                <button class="foodDetails__btn">-</button>
+                <span class="foodDetails__btnSpan">3</span>
+                <button class="foodDetails__btn">+</button>
+                <button class="foodDetails__btn-add">Add to Plan</button>
               </div>
             </div>
           </div>
