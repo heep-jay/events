@@ -2,10 +2,10 @@
   <div class="detail-header">
     <div class="back">
       <img src="/assets/less.png" alt="" routerLink="/food" />
-      <h2>Back</h2>
+      <h2 class="back-text">Back</h2>
     </div>
     <div class="sort">
-      <h4>Sort By</h4>
+      <h4 class="sort-text">Sort By</h4>
       <select name="" id="">
         <option value="">Popularity</option>
       </select>
@@ -15,7 +15,7 @@
   <div class="bottom">
     <div class="left">
       <div class="food-img">
-        <img src="{{ vendor.image }}" />
+        <!-- <img src="{{ vendor.image }}" />
         <div class="carousel">
           <img src="/assets/less.png" alt="" />
           <hr class="active" />
@@ -23,7 +23,8 @@
           <hr />
 
           <img src="/assets/great.png" alt="" />
-        </div>
+        </div> -->
+        <app-carousel></app-carousel>
         <div class="food-title">
           <h2>{{ vendor.name }}</h2>
           <p class="item-rating">
@@ -38,20 +39,6 @@
           </p>
         </div>
         <div class="food-description">
-          <!-- <div class="description-title">
-            <h3 class="active-title">Description</h3>
-            <h3>Reviews</h3>
-          </div>
-          <div class="horizontal-rule">
-            <hr />
-          </div>
-          <div class="description-text">
-            <p>
-              {{ vendor.desc }}
-            </p>
-
-          </div>-->
-
           <mat-tab-group mat-align-tabs="start">
             <mat-tab label="Description"
               ><p>
@@ -81,27 +68,6 @@
         </div>
         <div class="service-body">
           <div class="service-items">
-            <!-- <div class="service-item">
-              <div class="service-left">
-                <div class="item-img">
-                  <img
-                    src="https://img.freepik.com/premium-photo/concept-indian-cuisine-baked-chicken-wings-legs-honey-mustard-sauce-serving-dishes-restaurant-black-plate-indian-spices-wooden-table-background-image_127425-18.jpg?w=2000"
-                    alt=""
-                  />
-                </div>
-                <div class="item-desc">
-                  <h3>Pesto Pasta Grill</h3>
-                  <p>Special Food dish</p>
-                  <h3>$36.00</h3>
-                </div>
-              </div>
-              <div class="service-right">
-                <button class="btn">-</button>
-                <span>3</span>
-                <button class="btn">+</button>
-                <button class="add">Add to Plan</button>
-              </div>
-            </div> -->
             <div class="service-item" *ngFor="let serv of vendor.services">
               <div class="service-left">
                 <div class="item-img">
@@ -115,7 +81,7 @@
               </div>
               <div class="service-right">
                 <button class="btn">-</button>
-                <span>3</span>
+                <span class="btn-span">3</span>
                 <button class="btn">+</button>
                 <button class="add">Add to Plan</button>
               </div>

@@ -13,6 +13,7 @@ export class FoodDetailsComponent implements OnInit {
   constructor(private route: ActivatedRoute, private vendorService: VendorService) { }
   vendorId: string | null = null
   vendor!: Vendor;
+  images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
 
   ngOnInit(): void {
     console.log("Vendor id is:", this.route.snapshot.paramMap.get('id'))

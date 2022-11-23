@@ -28,7 +28,8 @@ import { SecurityComponent } from './Component/security/security.component';
 import { ModalFormComponent } from './Component/modal-form/modal-form.component';
 import { RequestComponent } from './Component/request/request.component';
 import { TableComponent } from './Component/table/table.component';
-import { CategoriesComponent } from './Component/categories/categories.component'
+import { CategoriesComponent } from './Component/categories/categories.component';
+import { CarouselComponent } from './Component/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { CategoriesComponent } from './Component/categories/categories.component
     RequestComponent,
     TableComponent,
     CategoriesComponent,
+    CarouselComponent,
 
   ],
   imports: [

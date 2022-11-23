@@ -15,6 +15,7 @@ import { ModalFormComponent } from './Component/modal-form/modal-form.component'
 import { RequestComponent } from './Component/request/request.component'
 import { TableComponent } from './Component/table/table.component';
 import { CategoriesComponent } from './Component/categories/categories.component'
+import { CarouselComponent } from './Component/carousel/carousel.component';
 
 
 
@@ -50,6 +51,10 @@ const routes: Routes = [
   {
     component: ModalFormComponent,
     path: 'modal'
+  },
+  {
+    component: CarouselComponent,
+    path: 'carousel'
   },
   {
     component: PublishedComponent,

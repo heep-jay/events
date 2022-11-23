@@ -7,7 +7,7 @@
   position: relative;
 }
 .request-left {
-  width: 45%;
+  width: 35%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -21,6 +21,7 @@
   background: #fff;
   color: #1c2b66;
   font-size: clamp(0.9375rem, 0.5469rem + 1.25vw, 1.25rem);
+  margin-bottom: 1rem;
 }
 .header-text {
   font-size: clamp(1.25rem, 0.4063rem + 3vw, 2.175rem);
@@ -76,6 +77,14 @@
   border-radius: 10px;
   font-size: clamp(0.75rem, 0.4219rem + 1.05vw, 1.125rem);
 }
+.req-btn button {
+  width: 100%;
+  padding: 0.7rem;
+  background: #1c2b66;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
 
 .event-select-date,
 .event-select-time {
@@ -101,7 +110,7 @@
   font-size: clamp(0.75rem, 0.4219rem + 1.05vw, 1.125rem);
 }
 .request-right {
-  width: 50%;
+  width: 65%;
 }
 .circle {
   width: 100%;
