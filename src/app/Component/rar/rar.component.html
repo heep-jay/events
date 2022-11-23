@@ -1,0 +1,49 @@
+<div class="rar">
+  <div class="rar__back">
+    <mat-icon>arrow_back_ios</mat-icon>
+    <p>Back</p>
+  </div>
+  <div class="rar__header">
+    <h3>Requests Awaiting Response</h3>
+  </div>
+  <div class="rar__top">
+
+    <app-daterange></app-daterange>
+  </div>
+  <div class="rar__hr">
+
+  </div>
+  <div class="rar__table table-responsive">
+    <table class="rar__table-table table">
+      <thead class="rar__table-head">
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">SOLUTION</th>
+          <th scope="col">DESCRIPTION</th>
+          <th scope="col">REQUEST DATE</th>
+          <th scope="col">DUE DATE</th>
+
+          <th scope="col">
+            <mat-icon>delete</mat-icon>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let invoice of invoices" class="rar__row">
+          <th scope="row"><input type="checkbox" name="" id=""></th>
+          <td class="rar__column">
+
+            #{{ invoice.solution }}
+          </td>
+          <td class="rar__column">{{ invoice.description}}</td>
+          <td class="rar__column">{{ invoice.reqDate}}</td>
+          <td class="rar__column"><span class="ipr__status">Cancel</span></td>
+
+          <td class="rar__column">
+            <mat-icon>more_horiz</mat-icon>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

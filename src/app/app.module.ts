@@ -30,6 +30,9 @@ import { RequestComponent } from './Component/request/request.component';
 import { TableComponent } from './Component/table/table.component';
 import { CategoriesComponent } from './Component/categories/categories.component';
 import { CarouselComponent } from './Component/carousel/carousel.component';
+import { IprComponent } from './Component/ipr/ipr.component';
+import { DaterangeComponent } from './Component/daterange/daterange.component';
+import { RarComponent } from './Component/rar/rar.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +56,9 @@ import { CarouselComponent } from './Component/carousel/carousel.component';
     TableComponent,
     CategoriesComponent,
     CarouselComponent,
+    IprComponent,
+    DaterangeComponent,
+    RarComponent,
 
   ],
   imports: [

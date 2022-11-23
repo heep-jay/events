@@ -16,6 +16,8 @@ import { RequestComponent } from './Component/request/request.component'
 import { TableComponent } from './Component/table/table.component';
 import { CategoriesComponent } from './Component/categories/categories.component'
 import { CarouselComponent } from './Component/carousel/carousel.component';
+import { IprComponent } from './Component/ipr/ipr.component';
+import { RarComponent } from './Component/rar/rar.component';
 
 
 
@@ -35,6 +37,13 @@ const routes: Routes = [
   {
     component: SolutionsComponent,
     path: 'solution'
+  },
+  {
+    component: IprComponent,
+    path: 'ipr'
+  }, {
+    component: RarComponent,
+    path: 'rar'
   },
   {
     component: SecurityComponent,
