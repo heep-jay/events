@@ -6,17 +6,13 @@
     <p class="categories__modal-headerText">You can select multiple times</p>
   </div>
   <div class="categories__modal-body">
-    <div
-      *ngFor="let vendor of vendors"
-      (dblclick)="vendor.active = !vendor.active"
-      [className]="
+    <div *ngFor="let vendor of vendors" (dblclick)="vendor.active = !vendor.active" [className]="
         vendor.active
           ? 'categories__modal-bodyItems-active categories__modal-bodyItems'
           : 'categories__modal-bodyItems-notActive categories__modal-bodyItems'
-      "
-    >
+      ">
       <img class="categories__modal-bodyImg" src="{{ vendor.image }}" alt="" />
-      <p class="categories__modal-bodyText">{{ vendor.type }}</p>
+      <p class="categories__modal-bodyText" [style.color]="vendor.color">{{ vendor.type }}</p>
     </div>
   </div>
   <div class="categories__modal-btn">

@@ -5,6 +5,72 @@
     <p>Lörem ipsum egogåde gyssa. Fare egoligen. Lakask velädera tuktiga</p>
   </div>
   <div class="subscription__bottom">
+    <div class="subscription__bottom-btn">
+      <!-- <mat-button-toggle-group #group="matButtonToggleGroup">
+        <mat-button-toggle value="left" aria-label="Text align left" (click)="showMonthly()">
 
+          Monthly
+        </mat-button-toggle>
+
+        <mat-button-toggle value="justify" aria-label="Text align justify" (click)="showYearly()">
+
+          Yearly
+        </mat-button-toggle>
+      </mat-button-toggle-group> -->
+
+
+
+    </div>
+    <!-- sub componenet -->
+    <ng-template [ngIf]="cards == 'monthly'">
+      <div class="subscription__cards-monthly">
+        <div class="subscription__card">
+          <div class="subscription__card-title">
+            <h3>Basic</h3>
+            <p>#15,000 <span>/month</span></p>
+
+            <h4>Upgrade your event experience</h4>
+          </div>
+
+          <div>
+            <ul class="subscription__card-list">
+              <li>
+                <mat-icon>task_alt</mat-icon> Event Creation
+              </li>
+              <li>
+                <mat-icon>task_alt</mat-icon> Ticketing
+              </li>
+              <li>
+                <mat-icon>task_alt</mat-icon> Access Control
+              </li>
+              <li>
+                <mat-icon>task_alt</mat-icon> Reporting
+              </li>
+              <li>
+                <mat-icon>task_alt</mat-icon> Monitoring
+              </li>
+              <li>
+                <mat-icon>task_alt</mat-icon> Parking
+              </li>
+              <li>
+                <mat-icon>task_alt</mat-icon> Collaborations
+              </li>
+            </ul>
+          </div>
+          <button class="card-btn">Choose Plan</button>
+        </div>
+
+
+        <div class="subscription__card">Standard</div>
+        <div class="subscription__card">Premium</div>
+      </div>
+    </ng-template>
+    <ng-template [ngIf]="cards == 'yearly'">
+      <div class="subscription__cards-monthly">
+        <div class="subscription__card"> Yearly Basic</div>
+        <div class="subscription__card">Standard</div>
+        <div class="subscription__card">Premium</div>
+      </div>
+    </ng-template>
   </div>
 </div>

@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./subscription.component.css']
 })
 export class SubscriptionComponent implements OnInit {
-
+  cards: string = 'monthly'
   constructor() { }
 
   ngOnInit(): void {
   }
+  showMonthly() {
+    this.cards = 'monthly'
+    console.log(
+      'working'
+    )
+  }
+  showYearly() {
+    this.cards = 'yearly'
 
+  }
 }

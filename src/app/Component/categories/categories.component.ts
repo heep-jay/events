@@ -14,157 +14,185 @@ export class CategoriesComponent implements OnInit {
     {
       image: '/assets/food.png',
       type: 'Food',
+      color: '#FC9A6B',
       active: false
     }, {
       image: '/assets/music.png',
       type: 'Music',
+      color: '#04CFAC',
       active: false
     },
     {
       image: '/assets/print.png',
       type: 'Print',
+      color: '#FCCD44',
       active: false
     },
     {
       image: '/assets/food.png',
       type: 'Food',
-      active: false
-    },
-    {
-      image: '/assets/music.png',
-      type: 'Music',
-      active: false
-    },
-    {
-      image: '/assets/print.png',
-      type: 'Print',
-      active: false
-    },
-    {
-      image: '/assets/music.png',
-      type: 'Music',
-      active: false
-    },
-    {
-      image: '/assets/print.png',
-      type: 'Print',
-      active: false
-    }, {
-      image: '/assets/food.png',
-      type: 'Food',
+      color: '#FC9A6B',
       active: false
     }, {
       image: '/assets/music.png',
       type: 'Music',
+      color: '#04CFAC',
       active: false
     },
     {
       image: '/assets/print.png',
       type: 'Print',
+      color: '#FCCD44',
+      active: false
+    },
+    {
+      image: '/assets/music.png',
+      type: 'Music',
+      color: '#04CFAC',
+      active: false
+    },
+    {
+      image: '/assets/print.png',
+      type: 'Print',
+      color: '#FCCD44',
       active: false
     },
     {
       image: '/assets/food.png',
       type: 'Food',
-      active: false
-    },
-    {
-      image: '/assets/music.png',
-      type: 'Music',
-      active: false
-    },
-    {
-      image: '/assets/print.png',
-      type: 'Print',
-      active: false
-    },
-    {
-      image: '/assets/music.png',
-      type: 'Music',
-      active: false
-    },
-    {
-      image: '/assets/print.png',
-      type: 'Print',
-      active: false
-    }, {
-      image: '/assets/food.png',
-      type: 'Food',
+      color: '#FC9A6B',
       active: false
     }, {
       image: '/assets/music.png',
       type: 'Music',
+      color: '#04CFAC',
       active: false
     },
     {
       image: '/assets/print.png',
       type: 'Print',
+      color: '#FCCD44',
       active: false
     },
     {
       image: '/assets/food.png',
       type: 'Food',
-      active: false
-    },
-    {
-      image: '/assets/music.png',
-      type: 'Music',
-      active: false
-    },
-    {
-      image: '/assets/print.png',
-      type: 'Print',
-      active: false
-    },
-    {
-      image: '/assets/music.png',
-      type: 'Music',
-      active: false
-    },
-    {
-      image: '/assets/print.png',
-      type: 'Print',
-      active: false
-    }, {
-      image: '/assets/food.png',
-      type: 'Food',
+      color: '#FC9A6B',
       active: false
     }, {
       image: '/assets/music.png',
       type: 'Music',
+      color: '#04CFAC',
       active: false
     },
     {
       image: '/assets/print.png',
       type: 'Print',
+      color: '#FCCD44',
+      active: false
+    },
+    {
+      image: '/assets/music.png',
+      type: 'Music',
+      color: '#04CFAC',
+      active: false
+    },
+    {
+      image: '/assets/print.png',
+      type: 'Print',
+      color: '#FCCD44',
+      active: false
+    }, {
+      image: '/assets/food.png',
+      type: 'Food',
+      color: '#FC9A6B',
+      active: false
+    }, {
+      image: '/assets/music.png',
+      type: 'Music',
+      color: '#04CFAC',
+      active: false
+    },
+    {
+      image: '/assets/print.png',
+      type: 'Print',
+      color: '#FCCD44',
       active: false
     },
     {
       image: '/assets/food.png',
       type: 'Food',
+      color: '#FC9A6B',
       active: false
-    },
-    {
+    }, {
       image: '/assets/music.png',
       type: 'Music',
+      color: '#04CFAC',
       active: false
     },
     {
       image: '/assets/print.png',
       type: 'Print',
+      color: '#FCCD44',
       active: false
     },
     {
       image: '/assets/music.png',
       type: 'Music',
+      color: '#04CFAC',
       active: false
     },
     {
       image: '/assets/print.png',
       type: 'Print',
+      color: '#FCCD44',
       active: false
-    }
-
+    }, {
+      image: '/assets/food.png',
+      type: 'Food',
+      color: '#FC9A6B',
+      active: false
+    }, {
+      image: '/assets/music.png',
+      type: 'Music',
+      color: '#04CFAC',
+      active: false
+    },
+    {
+      image: '/assets/print.png',
+      type: 'Print',
+      color: '#FCCD44',
+      active: false
+    },
+    {
+      image: '/assets/food.png',
+      type: 'Food',
+      color: '#FC9A6B',
+      active: false
+    }, {
+      image: '/assets/music.png',
+      type: 'Music',
+      color: '#04CFAC',
+      active: false
+    },
+    {
+      image: '/assets/print.png',
+      type: 'Print',
+      color: '#FCCD44',
+      active: false
+    },
+    {
+      image: '/assets/music.png',
+      type: 'Music',
+      color: '#04CFAC',
+      active: false
+    },
+    {
+      image: '/assets/print.png',
+      type: 'Print',
+      color: '#FCCD44',
+      active: false
+    },
   ];
 
 
