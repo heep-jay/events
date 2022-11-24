@@ -18,8 +18,8 @@ import { CategoriesComponent } from './Component/categories/categories.component
 import { CarouselComponent } from './Component/carousel/carousel.component';
 import { IprComponent } from './Component/ipr/ipr.component';
 import { RarComponent } from './Component/rar/rar.component';
-
-
+import { SubscriptionComponent } from './Component/subscription/subscription.component';
+import { FoodDeetComponent } from './Component/food-deet/food-deet.component';
 
 const routes: Routes = [
   {
@@ -50,6 +50,10 @@ const routes: Routes = [
     path: 'security'
   },
   {
+    component: FoodDeetComponent,
+    path: 'foodie'
+  },
+  {
     component: RequestComponent,
     path: 'request'
   },
@@ -64,6 +68,10 @@ const routes: Routes = [
   {
     component: CarouselComponent,
     path: 'carousel'
+  },
+  {
+    component: SubscriptionComponent,
+    path: 'sub'
   },
   {
     component: PublishedComponent,

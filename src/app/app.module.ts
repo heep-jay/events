@@ -33,6 +33,8 @@ import { CarouselComponent } from './Component/carousel/carousel.component';
 import { IprComponent } from './Component/ipr/ipr.component';
 import { DaterangeComponent } from './Component/daterange/daterange.component';
 import { RarComponent } from './Component/rar/rar.component';
+import { SubscriptionComponent } from './Component/subscription/subscription.component';
+import { FoodDeetComponent } from './Component/food-deet/food-deet.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +61,8 @@ import { RarComponent } from './Component/rar/rar.component';
     IprComponent,
     DaterangeComponent,
     RarComponent,
+    SubscriptionComponent,
+    FoodDeetComponent,
 
   ],
   imports: [
