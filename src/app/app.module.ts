@@ -40,6 +40,10 @@ import { SubscriptionComponent } from './Component/subscription/subscription.com
 import { FoodDeetComponent } from './Component/food-deet/food-deet.component';
 import { EventplanComponent } from './Component/eventplan/eventplan.component';
 import { WalletComponent } from './Component/wallet/wallet.component';
+import { PasscodeComponent } from './Component/passcode/passcode.component';
+import { WarningComponent } from './Component/warning/warning.component';
+import { InfoComponent } from './Component/info/info.component';
+import { TrpasscodeComponent } from './Component/trpasscode/trpasscode.component';
 
 @NgModule({
   declarations: [
@@ -70,6 +74,10 @@ import { WalletComponent } from './Component/wallet/wallet.component';
     FoodDeetComponent,
     EventplanComponent,
     WalletComponent,
+    PasscodeComponent,
+    WarningComponent,
+    InfoComponent,
+    TrpasscodeComponent,
 
 
   ],

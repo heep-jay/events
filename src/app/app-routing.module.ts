@@ -22,6 +22,10 @@ import { SubscriptionComponent } from './Component/subscription/subscription.com
 import { FoodDeetComponent } from './Component/food-deet/food-deet.component';
 import { EventplanComponent } from './Component/eventplan/eventplan.component';
 import { WalletComponent } from './Component/wallet/wallet.component';
+import { PasscodeComponent } from './Component/passcode/passcode.component';
+import { TrpasscodeComponent } from './Component/trpasscode/trpasscode.component';
+
+
 
 
 const routes: Routes = [
@@ -59,6 +63,14 @@ const routes: Routes = [
   {
     component: WalletComponent,
     path: 'wallet'
+  },
+  {
+    component: TrpasscodeComponent,
+    path: 'transpin'
+  },
+  {
+    component: PasscodeComponent,
+    path: 'passcode'
   },
   {
     component: RequestComponent,
