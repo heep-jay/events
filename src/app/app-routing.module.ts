@@ -20,6 +20,9 @@ import { IprComponent } from './Component/ipr/ipr.component';
 import { RarComponent } from './Component/rar/rar.component';
 import { SubscriptionComponent } from './Component/subscription/subscription.component';
 import { FoodDeetComponent } from './Component/food-deet/food-deet.component';
+import { EventplanComponent } from './Component/eventplan/eventplan.component';
+import { WalletComponent } from './Component/wallet/wallet.component';
+
 
 const routes: Routes = [
   {
@@ -52,6 +55,10 @@ const routes: Routes = [
   {
     component: FoodDeetComponent,
     path: 'foodie'
+  },
+  {
+    component: WalletComponent,
+    path: 'wallet'
   },
   {
     component: RequestComponent,

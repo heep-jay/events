@@ -38,6 +38,8 @@ import { DaterangeComponent } from './Component/daterange/daterange.component';
 import { RarComponent } from './Component/rar/rar.component';
 import { SubscriptionComponent } from './Component/subscription/subscription.component';
 import { FoodDeetComponent } from './Component/food-deet/food-deet.component';
+import { EventplanComponent } from './Component/eventplan/eventplan.component';
+import { WalletComponent } from './Component/wallet/wallet.component';
 
 @NgModule({
   declarations: [
@@ -66,6 +68,8 @@ import { FoodDeetComponent } from './Component/food-deet/food-deet.component';
     RarComponent,
     SubscriptionComponent,
     FoodDeetComponent,
+    EventplanComponent,
+    WalletComponent,
 
 
   ],
