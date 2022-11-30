@@ -11,7 +11,7 @@
 }
 
 .wallet__left {
-  width: 40%;
+  width: 55%;
   position: relative;
 }
 
@@ -24,11 +24,11 @@
 }
 
 .wallet__right {
-  width: 60%;
+  width: 45%;
 }
 
 .wallet__right img {
-  width: 75%;
+  width: 100%;
   float: right;
 }
 
@@ -56,6 +56,7 @@
   font-size: 14px;
   background: #1C2B66;
   color: #fff;
+  border: none;
   border-radius: 10px;
 }
 
@@ -70,6 +71,10 @@
   }
 
   .wallet__right {
+    width: 100%;
+  }
+
+  .wallet__right img {
     width: 100%;
   }
 }

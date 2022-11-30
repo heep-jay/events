@@ -24,6 +24,9 @@ import { EventplanComponent } from './Component/eventplan/eventplan.component';
 import { WalletComponent } from './Component/wallet/wallet.component';
 import { PasscodeComponent } from './Component/passcode/passcode.component';
 import { TrpasscodeComponent } from './Component/trpasscode/trpasscode.component';
+import { WpasscodeComponent } from './Component/wpasscode/wpasscode.component';
+import { UpdatePinComponent } from './Component/update-pin/update-pin.component';
+
 
 
 
@@ -65,12 +68,20 @@ const routes: Routes = [
     path: 'wallet'
   },
   {
+    component: WpasscodeComponent,
+    path: 'welcome'
+  },
+  {
     component: TrpasscodeComponent,
     path: 'transpin'
   },
   {
     component: PasscodeComponent,
     path: 'passcode'
+  },
+  {
+    component: UpdatePinComponent,
+    path: 'update'
   },
   {
     component: RequestComponent,

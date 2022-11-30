@@ -44,6 +44,12 @@ import { PasscodeComponent } from './Component/passcode/passcode.component';
 import { WarningComponent } from './Component/warning/warning.component';
 import { InfoComponent } from './Component/info/info.component';
 import { TrpasscodeComponent } from './Component/trpasscode/trpasscode.component';
+import { WpasscodeComponent } from './Component/wpasscode/wpasscode.component';
+import { UpdatePinComponent } from './Component/update-pin/update-pin.component';
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -78,6 +84,8 @@ import { TrpasscodeComponent } from './Component/trpasscode/trpasscode.component
     WarningComponent,
     InfoComponent,
     TrpasscodeComponent,
+    WpasscodeComponent,
+    UpdatePinComponent,
 
 
   ],
