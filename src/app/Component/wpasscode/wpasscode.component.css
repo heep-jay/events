@@ -12,7 +12,7 @@
 }
 
 .wallet__left {
-  width: 50%;
+  width: 40%;
   position: relative;
   padding: 1rem;
   text-align: center;
@@ -27,11 +27,11 @@
 }
 
 .wallet__right {
-  width: 50%;
+  width: 60%;
 }
 
 .wallet__right img {
-  width: 75%;
+  width: 90%;
   float: right;
 }
 
@@ -93,8 +93,8 @@
 
 .pin__inputs input {
   max-width: 15%;
-  /* max-height: 110px; */
-  /* outline: none; */
+  max-height: 80px;
+
   border: none;
   padding: 2.5rem 1rem;
 

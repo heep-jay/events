@@ -11,8 +11,9 @@
 }
 
 .wallet__left {
-  width: 55%;
+  width: 35%;
   position: relative;
+  padding: 1rem;
 }
 
 .wallet-flower {
@@ -24,12 +25,15 @@
 }
 
 .wallet__right {
-  width: 45%;
+  width: 65%;
+
+
 }
 
 .wallet__right img {
-  width: 100%;
+  width: 85%;
   float: right;
+
 }
 
 .wallet__text {
@@ -60,7 +64,7 @@
   border-radius: 10px;
 }
 
-@media screen and (max-width:550px) {
+@media screen and (max-width:750px) {
   .wallet {
     flex-direction: column;
     padding: 1rem;
