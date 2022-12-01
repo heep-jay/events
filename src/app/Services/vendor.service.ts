@@ -14,10 +14,14 @@ const httpOptions = {
 })
 export class VendorService {
   private apiUrl = 'http://localhost:3000/vendors';
+  private apiMusicUrl = 'http://localhost:3000/musicVendors';
   constructor(private http: HttpClient) { }
 
   getVendors(): Observable<Vendor[]> {
     return this.http.get<Vendor[]>(this.apiUrl);
+  }
+  getMusicVendors(): Observable<Vendor[]> {
+    return this.http.get<Vendor[]>(this.apiMusicUrl);
   }
   getVendor(id: string | null): Observable<Vendor> {
     const url = `${this.apiUrl}/${id}`

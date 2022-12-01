@@ -46,6 +46,7 @@ import { InfoComponent } from './Component/info/info.component';
 import { TrpasscodeComponent } from './Component/trpasscode/trpasscode.component';
 import { WpasscodeComponent } from './Component/wpasscode/wpasscode.component';
 import { UpdatePinComponent } from './Component/update-pin/update-pin.component';
+import { MusicvendorComponent } from './Component/musicvendor/musicvendor.component';
 
 
 
@@ -86,6 +87,7 @@ import { UpdatePinComponent } from './Component/update-pin/update-pin.component'
     TrpasscodeComponent,
     WpasscodeComponent,
     UpdatePinComponent,
+    MusicvendorComponent,
 
 
   ],

@@ -17,6 +17,10 @@
   gap: 2rem;
 }
 
+/* .mat-button-toggle-appearance-standard {
+  background: #000;
+} */
+
 .subscription__top-text h2 {
   font-size: clamp(1.5rem, 0.875rem + 2vw, 2rem);
   font-weight: 700;
@@ -60,6 +64,20 @@
   gap: 1rem;
   border: 0.5px solid #1C2B66;
   border-radius: 5px;
+}
+
+.subscription__card:hover {
+  background: #1C2B66;
+  color: #fff;
+  transition: all ease-in-out 0.5s;
+
+}
+
+.subscription__card:hover>button {
+  background: #fff;
+  color: #1C2B66;
+  transition: all ease-in-out 0.5s;
+
 }
 
 .subscription__card-active {

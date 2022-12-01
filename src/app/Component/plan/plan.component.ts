@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlanComponent implements OnInit {
   toggle: boolean = false;
+  card!: string;
   constructor() { }
 
   ngOnInit(): void {
+  }
+  showFood() {
+    this.card = 'food';
+    document.getElementById("food")?.scrollIntoView({ behavior: "smooth" })
+  }
+  showMusic() {
+    this.card = 'music';
+  }
+  close(e: any) {
+    e.stopPropagation();
+    this.card = '';
   }
 
   foodToggle() {

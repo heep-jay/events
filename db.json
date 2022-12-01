@@ -184,5 +184,99 @@
         }
       ]
     }
+  ],
+  "musicVendors": [
+    {
+      "id": 1,
+      "image": "https://images.squarespace-cdn.com/content/v1/589bee57b8a79b54360ef39d/1584050745148-Z8I90QXI1XG0LKWZCPJM/DSCF1587.JPG?format=2500w",
+      "name": "SunnySide Fest",
+      "b_range": 25000,
+      "desc": "Velit officia mollit in minim. Non voluptate amet exercitation velit ex fugiat enim reprehenderit culpa excepteur qui. Irure",
+      "rating": "⭐⭐⭐⭐",
+      "reviews": 45,
+      "services": [
+        {
+          "image": "https://img.freepik.com/premium-photo/concept-indian-cuisine-baked-chicken-wings-legs-honey-mustard-sauce-serving-dishes-restaurant-black-plate-indian-spices-wooden-table-background-image_127425-18.jpg?w=2000",
+          "name": "Cheese Burgers",
+          "price": 9.99,
+          "type": "special dish"
+        },
+        {
+          "image": "https://img.freepik.com/premium-photo/concept-indian-cuisine-baked-chicken-wings-legs-honey-mustard-sauce-serving-dishes-restaurant-black-plate-indian-spices-wooden-table-background-image_127425-18.jpg?w=2000",
+          "name": "sea food platter",
+          "price": 16,
+          "type": "special dish"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "image": "https://images.zola.com/4ab74e05-fb72-4b9b-94cb-8ecc1f746f7b?w=1000&h=500&fit=crop&q=60",
+      "name": "Sweet Chops",
+      "b_range": 25000,
+      "desc": "Velit officia mollit in minim. Non voluptate amet exercitation velit ex fugiat enim reprehenderit culpa excepteur qui. Irure",
+      "rating": "⭐⭐⭐⭐",
+      "reviews": 45,
+      "services": [
+        {
+          "image": "https://img.freepik.com/premium-photo/concept-indian-cuisine-baked-chicken-wings-legs-honey-mustard-sauce-serving-dishes-restaurant-black-plate-indian-spices-wooden-table-background-image_127425-18.jpg?w=2000",
+          "name": "Cheese Burgers",
+          "price": 9.99,
+          "type": "special dish"
+        },
+        {
+          "image": "https://img.freepik.com/premium-photo/concept-indian-cuisine-baked-chicken-wings-legs-honey-mustard-sauce-serving-dishes-restaurant-black-plate-indian-spices-wooden-table-background-image_127425-18.jpg?w=2000",
+          "name": "sea food platter",
+          "price": 16,
+          "type": "special dish"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "image": "https://i0.wp.com/moabsunnews.com/wp-content/uploads/2022/08/Helper-Arts-1.jpg?fit=1200%2C800&ssl=1",
+      "name": "Sweet Chops",
+      "b_range": 25000,
+      "desc": "Velit officia mollit in minim. Non voluptate amet exercitation velit ex fugiat enim reprehenderit culpa excepteur qui. Irure",
+      "rating": "⭐⭐⭐⭐",
+      "reviews": 45,
+      "services": [
+        {
+          "image": "https://img.freepik.com/premium-photo/concept-indian-cuisine-baked-chicken-wings-legs-honey-mustard-sauce-serving-dishes-restaurant-black-plate-indian-spices-wooden-table-background-image_127425-18.jpg?w=2000",
+          "name": "Cheese Burgers",
+          "price": 9.99,
+          "type": "special dish"
+        },
+        {
+          "image": "https://img.freepik.com/premium-photo/concept-indian-cuisine-baked-chicken-wings-legs-honey-mustard-sauce-serving-dishes-restaurant-black-plate-indian-spices-wooden-table-background-image_127425-18.jpg?w=2000",
+          "name": "sea food platter",
+          "price": 16,
+          "type": "special dish"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "image": "https://images.squarespace-cdn.com/content/v1/5867bb27b8a79bf46ada13d4/1486225488958-MBODU4RB3IYZITKWP9GT/Lower2016_+%287+of+200%29.jpg?format=1000w",
+      "name": "Sweet Chops",
+      "b_range": 25000,
+      "desc": "Velit officia mollit in minim. Non voluptate amet exercitation velit ex fugiat enim reprehenderit culpa excepteur qui. Irure",
+      "rating": "⭐⭐⭐⭐",
+      "reviews": 45,
+      "services": [
+        {
+          "image": "https://img.freepik.com/premium-photo/concept-indian-cuisine-baked-chicken-wings-legs-honey-mustard-sauce-serving-dishes-restaurant-black-plate-indian-spices-wooden-table-background-image_127425-18.jpg?w=2000",
+          "name": "Cheese Burgers",
+          "price": 9.99,
+          "type": "special dish"
+        },
+        {
+          "image": "https://img.freepik.com/premium-photo/concept-indian-cuisine-baked-chicken-wings-legs-honey-mustard-sauce-serving-dishes-restaurant-black-plate-indian-spices-wooden-table-background-image_127425-18.jpg?w=2000",
+          "name": "sea food platter",
+          "price": 16,
+          "type": "special dish"
+        }
+      ]
+    }
   ]
 }

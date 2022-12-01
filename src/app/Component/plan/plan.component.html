@@ -55,21 +55,21 @@
           <img src="/assets/add.png" alt="" />
         </div>
         <div class="plan__cards">
-          <div class="plan__cat-item cat" (click)="foodToggle()">
+          <div class="plan__cat-item cat" (click)="showFood()">
             <img class="plan__cat-img" src="/assets/food.png" alt="" />
             <div class="plan__cat-text">
               <h3>Food</h3>
               <p>135 vendors registered under this category</p>
             </div>
-            <p class="plan__cancel">❌</p>
+            <p class="plan__cancel" (click)="close($event)">❌</p>
           </div>
-          <div class="plan__cat-item cat">
+          <div class="plan__cat-item cat" (click)="showMusic()">
             <img class="plan__cat-img" src="/assets/music.png" alt="" />
             <div class="plan__cat-text">
               <h3>Music</h3>
               <p>135 vendors registered under this category</p>
             </div>
-            <p class="plan__cancel">❌</p>
+            <p class="plan__cancel" (click)="close($event)">❌</p>
           </div>
           <div class="plan__cat-item cat">
             <img class="plan__cat-img" src="/assets/print.png" alt="" />
@@ -96,9 +96,16 @@
         src="https://cdn-az.allevents.in/events6/banners/6a99707868dd21455d51a4c21edcbcc1bbe31df71b995190bf1c3f13f17e7ee2-rimg-w960-h365-gmir.jpg?v=1655994414"
         alt="" />
     </div>
-    <ng-container *ngIf="toggle">
-      <app-foodvendor> </app-foodvendor>
+    <ng-container>
 
+      <ng-template id="food" [ngIf]="card == 'food'">
+        <app-foodvendor> </app-foodvendor>
+      </ng-template>
+      <ng-template [ngIf]="card == 'music'">
+        <app-musicvendor> </app-musicvendor>
+      </ng-template>
     </ng-container>
+
+
   </div>
 </div>
