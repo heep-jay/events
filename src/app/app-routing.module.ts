@@ -26,6 +26,7 @@ import { PasscodeComponent } from './Component/passcode/passcode.component';
 import { TrpasscodeComponent } from './Component/trpasscode/trpasscode.component';
 import { WpasscodeComponent } from './Component/wpasscode/wpasscode.component';
 import { UpdatePinComponent } from './Component/update-pin/update-pin.component';
+import { InvoiceComponent } from './Component/invoice/invoice.component';
 
 
 
@@ -112,6 +113,10 @@ const routes: Routes = [
     path: 'plan'
   },
   {
+    component: InvoiceComponent,
+    path: 'invoice'
+  },
+  {
     component: DashboardComponent,
     path: 'dashboard'
   }, {
@@ -135,7 +140,9 @@ const routes: Routes = [
   }];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    anchorScrolling: 'enabled'
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

@@ -1,4 +1,4 @@
-<div class="foodVendor">
+<div class="foodVendor" id="foodVendor">
   <!-- left -->
   <div class="foodVendor__left">
     <div class="foodVendor__filter">
@@ -7,18 +7,10 @@
         <button>Reset</button>
       </div>
       <div class="foodVendor__filter-search">
-        <input
-          type="text"
-          #searchtext
-          (keyup.enter)="searchVendor(searchtext.value)"
-        />
+        <input type="text" #searchtext (keyup.enter)="searchVendor(searchtext.value)" />
         <!-- {{ searchtext.value }} -->
         <div class="foodVendor__filter-btn">
-          <img
-            src="/assets/search.png"
-            alt=""
-            (click)="searchVendor(searchtext.value)"
-          />
+          <img src="/assets/search.png" alt="" (click)="searchVendor(searchtext.value)" />
         </div>
       </div>
       <hr class="foodVendor__hr" />

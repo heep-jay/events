@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,13 +9,14 @@ import { Component, OnInit } from '@angular/core';
 export class PlanComponent implements OnInit {
   toggle: boolean = false;
   card!: string;
-  constructor() { }
+  constructor(private viewportScroller: ViewportScroller) { }
 
   ngOnInit(): void {
   }
-  showFood() {
+  showFood(elementId: string): void {
+
+    this.viewportScroller.scrollToAnchor(elementId);
     this.card = 'food';
-    document.getElementById("food")?.scrollIntoView({ behavior: "smooth" })
   }
   showMusic() {
     this.card = 'music';

@@ -7,31 +7,37 @@
   max-width: 1900px;
   margin: 0 auto;
 }
+
 .foodVendor__left {
   flex: 0.2;
-
 }
+
 .vendor__right {
   flex: 0.7;
 
 }
+
 .foodVendor__filter {
-  width: 300px;
+  max-width: 300px;
   height: fit-content;
   border: 0.5px solid rgba(28, 43, 102, 0.25);
   border-radius: 10px;
   padding: 1rem;
+  margin: 0 auto;
 }
+
 .foodVendor__filter-header {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
+
 .foodVendor__filter-header h2,
 .foodVendor__filter-location h4,
 .foodVendor__filter-budget h4 {
   font-size: clamp(1rem, 0.7768rem + 0.7143vw, 1.3125rem);
 }
+
 .foodVendor__filter-header button {
   background: #fff;
   border: none;
@@ -39,6 +45,7 @@
   font-weight: 600;
   cursor: pointer;
 }
+
 .foodVendor__filter-search {
   margin: 1.5rem 0;
   display: flex;
@@ -49,44 +56,53 @@
   box-shadow: 0px 0.5px 25px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
 }
+
 .foodVendor__filter-btn {
   background: #1c2b66;
   padding: 7px;
   border-radius: 10px;
   cursor: pointer;
 }
+
 .foodVendor__filter-search input {
   width: 85%;
   height: 2.5rem;
   border: none;
   background-color: #f6f7fc;
 }
+
 .foodVendor__filter-search img {
   filter: invert(1);
   height: 20px;
 }
+
 .foodVendor__right-headerTitle {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .foodVendor__right-headerRight {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
+
 .foodVendor__right-headerRight p {
   margin-bottom: 0;
 }
+
 .foodVendor__right-headerRight select {
   border: none;
   outline: none;
   color: #1c2b66;
   font-weight: 600;
 }
+
 .foodVendor__filter-location {
   margin: 1rem 0;
 }
+
 .foodVendor__filter-location select {
   /* height: 2rem; */
   width: 100%;
@@ -94,21 +110,26 @@
   margin-top: 0.5rem;
   padding: 0.6rem;
 }
+
 .foodVendor__filter-budget {
   margin-top: 1rem;
 }
+
 .foodVendor__filter-range {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .foodVendor__filter-range p {
   margin: 0;
 }
+
 progress {
   width: 100%;
   color: #1c2b66;
 }
+
 .foodVendor__filter-progressBtn {
   display: flex;
   width: 100%;
@@ -116,6 +137,7 @@ progress {
   align-items: center;
   margin-top: 1rem;
 }
+
 .foodVendor__filter-progressBtn button {
   padding: 0.5rem 3rem;
   border: 1px solid #1c2b66;
@@ -123,12 +145,15 @@ progress {
   border-radius: 10px;
   cursor: pointer;
 }
+
 .foodVendor__hr {
   margin: 1rem 0;
 }
+
 .foodVendor__filter-budgetSubmit {
   text-align: center;
 }
+
 .foodVendor__filter-budgetSubmit button {
   padding: 0.7rem 2rem;
   width: 100%;
@@ -139,15 +164,18 @@ progress {
   border: none;
   cursor: pointer;
 }
+
 .foodVendor__vendors {
-  margin-top: 3rem;
+  margin: 3rem auto 0 auto;
 
   display: flex;
-  gap: 1rem;
+  justify-content: space-around;
+  /* gap: 1rem; */
+  row-gap: 1.5rem;
   flex-wrap: wrap;
 }
 
-.foodVendor__vendors > * {
+.foodVendor__vendors>* {
   flex: 0 1 22em;
 }
 
@@ -155,6 +183,7 @@ progress {
   text-align: center;
   margin-top: 1rem;
 }
+
 .foodVendor__bottom-btn button {
   padding: 0.7rem 8rem;
   font-size: 1.2rem;
@@ -175,12 +204,14 @@ progress {
   .foodVendor__right-headerTitle h2 {
     font-size: 1.3rem;
   }
+
   .foodVendor__right-headerRight p,
   .foodVendor__found,
   select {
     font-size: 0.85rem;
   }
 }
+
 @media screen and (max-width: 710px) {
   .foodVendor {
     display: flex;
@@ -188,12 +219,15 @@ progress {
     width: 85%;
     margin: 0 auto;
   }
+
   .foodVendor__left {
     width: 100%;
   }
+
   .header-title h2 {
     font-size: 1rem;
   }
+
   .foodVendor__right-headerRight p,
   .foodVendor__found,
   select {

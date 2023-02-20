@@ -55,7 +55,7 @@
           <img src="/assets/add.png" alt="" />
         </div>
         <div class="plan__cards">
-          <div class="plan__cat-item cat" (click)="showFood()">
+          <div class="plan__cat-item cat" (click)="showFood('foodVendor')">
             <img class="plan__cat-img" src="/assets/food.png" alt="" />
             <div class="plan__cat-text">
               <h3>Food</h3>
@@ -98,7 +98,7 @@
     </div>
     <ng-container>
 
-      <ng-template id="food" [ngIf]="card == 'food'">
+      <ng-template [ngIf]="card == 'food'">
         <app-foodvendor> </app-foodvendor>
       </ng-template>
       <ng-template [ngIf]="card == 'music'">

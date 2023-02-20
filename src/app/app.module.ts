@@ -12,7 +12,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -23,7 +23,6 @@ import { PlanComponent } from './Component/plan/plan.component';
 import { PublishedComponent } from './Component/published/published.component';
 import { FoodvendorComponent } from './Component/foodvendor/foodvendor.component';
 import { FoodDetailsComponent } from './Component/food-details/food-details.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { VendorComponent } from './Component/vendor/vendor.component';
 import { TestComponent } from './Component/test/test.component';
 import { SolutionsComponent } from './Component/solutions/solutions.component';
@@ -47,6 +46,7 @@ import { TrpasscodeComponent } from './Component/trpasscode/trpasscode.component
 import { WpasscodeComponent } from './Component/wpasscode/wpasscode.component';
 import { UpdatePinComponent } from './Component/update-pin/update-pin.component';
 import { MusicvendorComponent } from './Component/musicvendor/musicvendor.component';
+import { InvoiceComponent } from './Component/invoice/invoice.component';
 
 
 
@@ -88,6 +88,7 @@ import { MusicvendorComponent } from './Component/musicvendor/musicvendor.compon
     WpasscodeComponent,
     UpdatePinComponent,
     MusicvendorComponent,
+    InvoiceComponent,
 
 
   ],
