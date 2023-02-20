@@ -47,6 +47,7 @@ import { WpasscodeComponent } from './Component/wpasscode/wpasscode.component';
 import { UpdatePinComponent } from './Component/update-pin/update-pin.component';
 import { MusicvendorComponent } from './Component/musicvendor/musicvendor.component';
 import { InvoiceComponent } from './Component/invoice/invoice.component';
+import { PlaneventComponent } from './Component/planevent/planevent.component';
 
 
 
@@ -89,6 +90,7 @@ import { InvoiceComponent } from './Component/invoice/invoice.component';
     UpdatePinComponent,
     MusicvendorComponent,
     InvoiceComponent,
+    PlaneventComponent,
 
 
   ],

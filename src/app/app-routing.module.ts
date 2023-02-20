@@ -27,6 +27,7 @@ import { TrpasscodeComponent } from './Component/trpasscode/trpasscode.component
 import { WpasscodeComponent } from './Component/wpasscode/wpasscode.component';
 import { UpdatePinComponent } from './Component/update-pin/update-pin.component';
 import { InvoiceComponent } from './Component/invoice/invoice.component';
+import { PlaneventComponent } from './Component/planevent/planevent.component';
 
 
 
@@ -59,6 +60,10 @@ const routes: Routes = [
   {
     component: SecurityComponent,
     path: 'security'
+  },
+  {
+    component: PlaneventComponent,
+    path: 'plan-event'
   },
   {
     component: FoodDeetComponent,
