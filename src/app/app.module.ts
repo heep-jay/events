@@ -48,6 +48,7 @@ import { UpdatePinComponent } from './Component/update-pin/update-pin.component'
 import { MusicvendorComponent } from './Component/musicvendor/musicvendor.component';
 import { InvoiceComponent } from './Component/invoice/invoice.component';
 import { PlaneventComponent } from './Component/planevent/planevent.component';
+import { PlanbudgetComponent } from './Component/planbudget/planbudget.component';
 
 
 
@@ -91,6 +92,7 @@ import { PlaneventComponent } from './Component/planevent/planevent.component';
     MusicvendorComponent,
     InvoiceComponent,
     PlaneventComponent,
+    PlanbudgetComponent,
 
 
   ],

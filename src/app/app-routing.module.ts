@@ -28,6 +28,7 @@ import { WpasscodeComponent } from './Component/wpasscode/wpasscode.component';
 import { UpdatePinComponent } from './Component/update-pin/update-pin.component';
 import { InvoiceComponent } from './Component/invoice/invoice.component';
 import { PlaneventComponent } from './Component/planevent/planevent.component';
+import { PlanbudgetComponent } from './Component/planbudget/planbudget.component';
 
 
 
@@ -135,6 +136,10 @@ const routes: Routes = [
   {
     component: ReviewComponent,
     path: 'review'
+  },
+  {
+    component: PlanbudgetComponent,
+    path: 'plan-budget'
   },
   {
     component: AddTicketsComponent,
