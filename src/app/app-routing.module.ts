@@ -29,8 +29,9 @@ import { UpdatePinComponent } from './Component/update-pin/update-pin.component'
 import { InvoiceComponent } from './Component/invoice/invoice.component';
 import { PlaneventComponent } from './Component/planevent/planevent.component';
 import { PlanbudgetComponent } from './Component/planbudget/planbudget.component';
-
-
+import { AddNewTicketsComponent } from './Component/add-new-tickets/add-new-tickets.component';
+import { CreatenewticketsComponent } from './Component/createnewtickets/createnewtickets.component';
+import { ReviewnewComponent } from './Component/reviewnew/reviewnew.component';
 
 
 
@@ -144,6 +145,16 @@ const routes: Routes = [
   {
     component: AddTicketsComponent,
     path: 'add'
+  },
+  {
+    component: AddNewTicketsComponent,
+    path: 'add-new'
+  }, {
+    component: CreatenewticketsComponent,
+    path: 'create-new'
+  }, {
+    component: ReviewnewComponent,
+    path: 'review-new'
   }, {
     component: CreateEventComponent,
     path: ""

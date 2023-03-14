@@ -13,8 +13,8 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
-
+import { NgbDatepickerModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
 
 
 import { ReviewComponent } from './Component/review/review.component';
@@ -49,6 +49,10 @@ import { MusicvendorComponent } from './Component/musicvendor/musicvendor.compon
 import { InvoiceComponent } from './Component/invoice/invoice.component';
 import { PlaneventComponent } from './Component/planevent/planevent.component';
 import { PlanbudgetComponent } from './Component/planbudget/planbudget.component';
+import { AddNewTicketsComponent } from './Component/add-new-tickets/add-new-tickets.component';
+import { DatepickersComponent } from './Component/datepickers/datepickers.component';
+import { CreatenewticketsComponent } from './Component/createnewtickets/createnewtickets.component';
+import { ReviewnewComponent } from './Component/reviewnew/reviewnew.component';
 
 
 
@@ -93,7 +97,10 @@ import { PlanbudgetComponent } from './Component/planbudget/planbudget.component
     InvoiceComponent,
     PlaneventComponent,
     PlanbudgetComponent,
-
+    AddNewTicketsComponent,
+    DatepickersComponent,
+    CreatenewticketsComponent,
+    ReviewnewComponent,
 
   ],
   imports: [
@@ -105,7 +112,9 @@ import { PlanbudgetComponent } from './Component/planbudget/planbudget.component
     HttpClientModule,
     MatIconModule,
     MatButtonToggleModule,
-    NgbModule
+    NgbModule,
+    NgbDatepickerModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

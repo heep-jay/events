@@ -9,10 +9,11 @@
   flex-direction: column;
   gap: 5rem;
   width: 90%;
+
   justify-content: space-between;
   background: #F5F5F5;
   margin: 0 auto;
-  padding: 4rem 0;
+  /* padding: 4rem 0; */
 }
 
 .plan-budgetHeader {
@@ -23,7 +24,7 @@
 
 .plan-budgetText {
   /* padding: 2rem 4rem; */
-  width: 48%;
+  width: 45%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -74,19 +75,21 @@
 }
 
 .budgetOverviewContent {
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   row-gap: 2rem;
+
   justify-content: space-between;
-  margin-top: 2rem;
+  margin: 2rem auto;
   background: #F5F5F5;
 }
 
 .content-item {
   height: 280px;
   /* width: 530px; */
-  width: auto;
-  max-width: 550px;
+  width: 32%;
+  min-width: 350px;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   background: #fff;
@@ -187,5 +190,28 @@
     width: 100%;
   }
 
+  .budgetOverviewContent {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
 
+  .content-item {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width:500px) {
+
+  .budgetOverviewContent {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .content-item {
+
+    width: 100%;
+  }
 }

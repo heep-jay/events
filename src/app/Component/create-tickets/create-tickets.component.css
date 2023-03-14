@@ -1,5 +1,5 @@
 .create-ticket {
-  max-width: 1600px;
+  /* max-width: 1600px; */
   margin: 3rem auto;
   padding: 1rem;
   display: flex;
@@ -8,13 +8,15 @@
   flex-direction: column;
   gap: 2rem;
 }
+
 .create-ticket__banner {
   min-height: fit-content;
-  height: 65vh;
+  height: 500px;
   width: 100%;
   background: #55608d;
   border-radius: 25px;
 }
+
 .create-ticket__img {
   width: 195px;
   height: 195px;
@@ -40,17 +42,21 @@
   margin: auto 0;
   color: #fff;
 }
+
 .create-banner__text h2 {
   font-size: clamp(1.5rem, 0.25rem + 4vw, 2.5rem);
   font-weight: 600;
 }
+
 .create-banner__text p {
   font-size: clamp(0.75rem, 0.4375rem + 1vw, 1rem);
 }
+
 .create-banner__btn button:hover {
   background: #0b153a;
   transition: all ease-in-out 0.5s;
 }
+
 .create-banner__btn button {
   padding: 0.8em 2em;
   border: 1px solid #1c2b66;
@@ -58,6 +64,7 @@
   font-size: clamp(0.75rem, 0.4375rem + 1vw, 1rem);
   cursor: pointer;
 }
+
 .create-banner__btn button:hover {
   background: #1c2b66;
   transition: all ease-in-out 0.5s;
