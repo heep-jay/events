@@ -32,7 +32,7 @@ import { PlanbudgetComponent } from './Component/planbudget/planbudget.component
 import { AddNewTicketsComponent } from './Component/add-new-tickets/add-new-tickets.component';
 import { CreatenewticketsComponent } from './Component/createnewtickets/createnewtickets.component';
 import { ReviewnewComponent } from './Component/reviewnew/reviewnew.component';
-
+import { InvitesComponent } from './Component/invites/invites.component';
 
 
 const routes: Routes = [
@@ -155,6 +155,10 @@ const routes: Routes = [
   }, {
     component: ReviewnewComponent,
     path: 'review-new'
+  },
+  {
+    component: InvitesComponent,
+    path: 'invites'
   }, {
     component: CreateEventComponent,
     path: ""

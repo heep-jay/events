@@ -53,6 +53,7 @@ import { AddNewTicketsComponent } from './Component/add-new-tickets/add-new-tick
 import { DatepickersComponent } from './Component/datepickers/datepickers.component';
 import { CreatenewticketsComponent } from './Component/createnewtickets/createnewtickets.component';
 import { ReviewnewComponent } from './Component/reviewnew/reviewnew.component';
+import { InvitesComponent } from './Component/invites/invites.component';
 
 
 
@@ -101,6 +102,7 @@ import { ReviewnewComponent } from './Component/reviewnew/reviewnew.component';
     DatepickersComponent,
     CreatenewticketsComponent,
     ReviewnewComponent,
+    InvitesComponent,
 
   ],
   imports: [
