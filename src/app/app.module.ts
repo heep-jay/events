@@ -54,6 +54,7 @@ import { DatepickersComponent } from './Component/datepickers/datepickers.compon
 import { CreatenewticketsComponent } from './Component/createnewtickets/createnewtickets.component';
 import { ReviewnewComponent } from './Component/reviewnew/reviewnew.component';
 import { InvitesComponent } from './Component/invites/invites.component';
+import { PreviewInvitesComponent } from './Component/preview-invites/preview-invites.component';
 
 
 
@@ -103,6 +104,7 @@ import { InvitesComponent } from './Component/invites/invites.component';
     CreatenewticketsComponent,
     ReviewnewComponent,
     InvitesComponent,
+    PreviewInvitesComponent,
 
   ],
   imports: [

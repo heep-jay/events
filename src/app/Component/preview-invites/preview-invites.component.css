@@ -1,0 +1,205 @@
+.preview-invite {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.invite-pageTop {
+  width: 90%;
+  padding: 1rem;
+  margin: 2rem auto;
+}
+
+.pageTopTabs {
+  display: flex;
+  justify-content: space-between;
+  gap: 4.5rem;
+  align-items: center;
+}
+
+.topTabsNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  height: 60px;
+  border-radius: 35px;
+  background: #F6F7FC;
+}
+
+.tabsNavBtn {
+  flex: 1;
+  height: 100%;
+  border-radius: 35px;
+  border: none;
+  background: none;
+  white-space: nowrap;
+  font-size: clamp(0.875rem, 0.7411rem + 0.4286vw, 1.15rem);
+}
+
+.tabsNavBtn-active {
+  background: #1c2b66;
+  color: white;
+}
+
+.topTabsBtn button {
+  height: 60px;
+  border-radius: 35px;
+  background: #1c2b66;
+  padding: 1rem 2rem;
+  color: #fff;
+  white-space: nowrap;
+  font-size: clamp(0.875rem, 0.7411rem + 0.4286vw, 1.15rem);
+}
+
+.pageTopBottomTabs {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 0.7px solid #1c2b66;
+}
+
+.bottomTabsLeft {
+  flex: 1;
+}
+
+.bottomTabsLeft p {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #1c2b66;
+  line-height: 15px;
+  font-weight: 600;
+  font-size: clamp(0.85rem, 0.7964rem + 0.1714vw, 1rem);
+
+}
+
+.bottomTabsRight button {
+  padding: 1rem 2rem;
+  background: none;
+  border: none;
+  color: #1c2b66;
+  border-radius: 35px;
+  font-size: clamp(0.875rem, 0.7411rem + 0.4286vw, 1.15rem);
+}
+
+.preview-content {
+  width: 100%;
+  height: max-content;
+  background: #F6F7FC;
+  min-height: 85vh;
+}
+
+.preview-contentBody {
+  width: 45%;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.preview-contentBody h4 {
+  text-align: center;
+  font-size: clamp(1rem, 0.8929rem + 0.3429vw, 1.3rem);
+}
+
+.preview-contentBody img {
+  width: 80%;
+}
+
+.previewBtns {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+
+}
+
+.previewBtn {
+  padding: 0.7rem 1.8rem;
+  min-width: 170px;
+  border: none;
+  border: 0.5px solid #1C2B66;
+  border-radius: 4px;
+  background: #fff;
+  font-size: clamp(0.75rem, 0.7964rem + 0.1714vw, 1rem);
+}
+
+.previewBtn-active {
+  background: #1c2b66;
+  color: #fff;
+}
+
+@media screen and (max-width:990px) {
+  .preview-contentBody {
+    width: 80%;
+  }
+
+}
+
+@media screen and (max-width:500px) {
+  .invite-pageTop {
+    width: 100%;
+
+  }
+
+  .topTabsBtn button {
+    height: unset;
+    padding: 0.5rem 1rem;
+
+  }
+
+  .topTabsNav {
+    /* flex: 0.9; */
+    gap: 0.5rem;
+
+    border-radius: 25px;
+  }
+
+  .tabsNavBtn {
+    flex: unset;
+    padding: 0.25rem 0.5rem;
+    height: 35px;
+  }
+
+  .pageTopTabs {
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  .pageTopBottomTabs {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-bottom: none;
+  }
+
+  .bottomTabsRight button {
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+  }
+
+  .preview-contentBody {
+    width: 90%;
+  }
+
+  .previewBtns {
+    /* width: 60%; */
+    /* width: 95%; */
+    gap: 1rem;
+
+  }
+
+  .previewBtn {
+    padding: 0.5rem 0.5rem;
+    min-width: unset;
+    width: 100px;
+
+    font-size: 11px;
+  }
+}

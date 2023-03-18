@@ -33,6 +33,9 @@ import { AddNewTicketsComponent } from './Component/add-new-tickets/add-new-tick
 import { CreatenewticketsComponent } from './Component/createnewtickets/createnewtickets.component';
 import { ReviewnewComponent } from './Component/reviewnew/reviewnew.component';
 import { InvitesComponent } from './Component/invites/invites.component';
+import { PreviewInvitesComponent } from './Component/preview-invites/preview-invites.component';
+
+
 
 
 const routes: Routes = [
@@ -159,6 +162,9 @@ const routes: Routes = [
   {
     component: InvitesComponent,
     path: 'invites'
+  }, {
+    component: PreviewInvitesComponent,
+    path: 'invites/preview'
   }, {
     component: CreateEventComponent,
     path: ""
