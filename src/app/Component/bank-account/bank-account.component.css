@@ -1,0 +1,150 @@
+.bank-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.bank-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 3rem 1rem;
+  border-bottom: 0.5px solid #1C2B66;
+}
+
+.bank-btn {
+  display: flex;
+  align-items: flex-start;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.bank-header h3,
+.bankContainer-top h3 {
+  font-size: clamp(1.1875rem, 1.0759rem + 0.3571vw, 1.5rem);
+  line-height: 36px;
+}
+
+.bank-header h3 {
+  font-weight: 500;
+}
+
+.bankContainer-top h3 {
+  font-weight: 600;
+  text-align: center;
+}
+
+.bank-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.bankContainer-top {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.bank-info {
+  padding: 1.5rem;
+  color: #1c2b66;
+  background: rgba(124, 139, 200, 0.25);
+  border-radius: 10px;
+  width: 50%;
+  text-align: center;
+  min-width: 340px;
+  margin: 0 auto;
+}
+
+.bank-info p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 14px;
+  color: #1c2b66;
+}
+
+.bank-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  width: 45%;
+  margin: 1rem auto;
+}
+
+label {
+  font-size: clamp(0.84375rem, 0.8103rem + 0.1071vw, 0.9375rem);
+  font-weight: 600;
+}
+
+.form_input,
+.form_select {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 70%;
+  margin: 0 auto;
+
+}
+
+.selectDiv {
+  border: 1px solid #1c2b66;
+  padding: 0.7rem;
+}
+
+.selectDiv select {
+  width: 100%;
+  /* height: 40px; */
+  border: none;
+  outline: none;
+}
+
+.form_input input {
+  height: 40px;
+  width: 100%;
+  background: #F1F4FA;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 0.8rem;
+}
+
+.form-btn {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.add-bank-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background: #1c2b66;
+  color: #fff;
+  border-radius: 10px;
+}
+
+@media screen and (max-width:850px) {
+  .bank-info {
+    width: 80%;
+  }
+
+  .bank-form {
+    width: 90%;
+  }
+
+  .form_input,
+  .form_select {
+    width: 90%;
+  }
+
+  .form-btn {
+    width: 90%;
+  }
+
+  .bank-info p {
+    text-align: justify;
+  }
+}

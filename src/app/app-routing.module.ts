@@ -34,7 +34,7 @@ import { CreatenewticketsComponent } from './Component/createnewtickets/createne
 import { ReviewnewComponent } from './Component/reviewnew/reviewnew.component';
 import { InvitesComponent } from './Component/invites/invites.component';
 import { PreviewInvitesComponent } from './Component/preview-invites/preview-invites.component';
-
+import { BankAccountComponent } from './Component/bank-account/bank-account.component';
 
 
 
@@ -165,6 +165,10 @@ const routes: Routes = [
   }, {
     component: PreviewInvitesComponent,
     path: 'invites/preview'
+  },
+  {
+    component: BankAccountComponent,
+    path: 'add-bank'
   }, {
     component: CreateEventComponent,
     path: ""
