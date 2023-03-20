@@ -29,9 +29,15 @@
   font-size: clamp(0.9375rem, 0.8259rem + 0.3571vw, 1.25rem);
 }
 
+
+.add-tickets-container {
+  width: 100%;
+}
+
+/*
 table {
   width: 90%;
-  /* border: 1px solid #1c2b66; */
+  border: 1px solid #1c2b66;
   margin-left: 4rem;
   border-radius: 10px;
 }
@@ -40,7 +46,7 @@ tr.mat-header-row {
   height: 4rem;
   background: #f9fafd;
   color: #1c2b66;
-}
+} */
 
 .cdk-header-cell {
   font-size: 1.1rem !important;

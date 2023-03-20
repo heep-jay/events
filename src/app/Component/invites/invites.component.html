@@ -13,7 +13,7 @@
     </div>
     <div class="pageTopBottomTabs">
       <div class="bottomTabsLeft">
-        <mat-tab-group mat-align-tabs="start">
+        <mat-tab-group (selectedTabChange)="onEditClick($event)" mat-align-tabs="start">
           <mat-tab label="Select Template"></mat-tab>
           <mat-tab label="Edit Invites"></mat-tab>
         </mat-tab-group>
@@ -29,12 +29,12 @@
         <button><mat-icon>restart_alt</mat-icon> reset</button>
         <button><mat-icon>undo</mat-icon> undo</button>
         <button><mat-icon>redo</mat-icon> Re-do</button>
-        <button><mat-icon>title</mat-icon> Add Text</button>
-        <button><mat-icon>add_photo_alternate</mat-icon> Add Image</button>
-        <button><mat-icon>link</mat-icon>Add link</button>
+        <button *ngIf="edit"><mat-icon>title</mat-icon> Add Text</button>
+        <button *ngIf="edit"><mat-icon>add_photo_alternate</mat-icon> Add Image</button>
+        <button *ngIf="edit"><mat-icon>link</mat-icon>Add link</button>
       </div>
-      <hr>
-      <div class="canvasToolbar">
+      <hr *ngIf="edit">
+      <div class="canvasToolbar" *ngIf="edit">
         <div class="fontTypeSection">
           <div class="fontTypeSectionSelect">
             <select name="" id="">

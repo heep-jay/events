@@ -18,10 +18,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr
-        class="event__table-row"
-        *ngFor="let country of countries; index as i"
-      >
+      <tr class="event__table-row" *ngFor="let country of countries; index as i">
         <td>{{ country.index }}</td>
         <td>
           {{ country.ticket_Name }}
@@ -32,11 +29,7 @@
         <td>🟢{{ country.status }}</td>
         <td>{{ country.salesEnd }}</td>
         <td>
-          <mat-icon
-            aria-hidden="false"
-            aria-label="Example home icon"
-            fontIcon="more_vert"
-          ></mat-icon>
+          <mat-icon>more_vert</mat-icon>
         </td>
       </tr>
     </tbody>

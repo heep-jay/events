@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./invites.component.css']
 })
 export class InvitesComponent implements OnInit {
+  edit: boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  onEditClick(e: any) {
+    this.edit = !this.edit;
+    console.log('working')
+  }
+  onDesignClick(e: any) {
+    this.edit = false;
+  }
 }
