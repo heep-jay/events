@@ -126,6 +126,33 @@ label {
   border-radius: 10px;
 }
 
+/* modal styling */
+
+.bank-popup {
+  width: 95%;
+  margin: 0 auto;
+  padding: 1.5rem 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+}
+
+.bank-popup p {
+  font-size: 13.5px;
+}
+
+.bank-popup button {
+  padding: 0.6rem 2rem;
+  border: 0.5px solid #1C2B66;
+  border-radius: 10px;
+  background: #fff;
+}
+
+/* modal styling */
+
 @media screen and (max-width:850px) {
   .bank-info {
     width: 80%;

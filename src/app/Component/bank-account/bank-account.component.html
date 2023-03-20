@@ -36,8 +36,25 @@
         <input type="number" name="bvn">
       </div>
       <div class="form-btn">
-        <button class="add-bank-btn">Add Bank Account</button>
+        <button class="add-bank-btn" (click)="open(risk)">Add Bank Account</button>
       </div>
     </form>
+
+    <ng-template #risk let-modal class="moddd">
+      <!-- <div class="modal-header">
+        <div class="m-title">
+          <h4 class="modal-title" id="modal-basic-title">Bank Account Details
+            Submitted</h4>
+        </div>
+
+      </div> -->
+      <div class="bank-popup">
+        <h4>Bank Account Details Submitted</h4>
+        <img src="/assets/success.png" alt="">
+
+        <p>Your Bank Account Details Have Been submitted Successfully and is awaiting validation!</p>
+        <button (click)="modal.dismiss()">Close</button>
+      </div>
+    </ng-template>
   </div>
 </div>
