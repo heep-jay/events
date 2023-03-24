@@ -23,7 +23,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex: 1;
+  /* flex: 1; */
+  width: 40%;
+  margin: 0 auto;
   height: 60px;
   border-radius: 35px;
   background: #F6F7FC;
@@ -44,15 +46,6 @@
   color: white;
 }
 
-.topTabsBtn button {
-  height: 60px;
-  border-radius: 35px;
-  background: #1c2b66;
-  padding: 1rem 2rem;
-  color: #fff;
-  white-space: nowrap;
-  font-size: clamp(0.875rem, 0.7411rem + 0.4286vw, 1.15rem);
-}
 
 .pageTopBottomTabs {
   margin-top: 1rem;
@@ -66,14 +59,6 @@
   flex: 1;
 }
 
-.bottomTabsRight button {
-  padding: 1rem 2rem;
-  background: none;
-  border: none;
-  color: #1c2b66;
-  border-radius: 35px;
-  font-size: clamp(0.875rem, 0.7411rem + 0.4286vw, 1.15rem);
-}
 
 .invite-pageCanvas {
   width: 100%;
@@ -315,23 +300,19 @@
 
   }
 
-  .topTabsBtn button {
-    height: unset;
-    padding: 0.5rem 1rem;
-
-  }
 
   .topTabsNav {
     /* flex: 0.9; */
+    height: 40px;
     gap: 0.5rem;
-
+    width: 70%;
     border-radius: 25px;
   }
 
   .tabsNavBtn {
-    flex: unset;
+    /* flex: unset; */
     padding: 0.25rem 0.5rem;
-    height: 35px;
+    height: 100%;
   }
 
   .pageTopTabs {
@@ -346,8 +327,5 @@
     border-bottom: none;
   }
 
-  .bottomTabsRight button {
-    padding: 0.5rem 1rem;
-    margin-top: 1rem;
-  }
+
 }

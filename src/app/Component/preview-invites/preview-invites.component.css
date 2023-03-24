@@ -22,11 +22,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex: 1;
+  /* flex: 1; */
+  width: 40%;
+  margin: 0 auto;
   height: 60px;
   border-radius: 35px;
   background: #F6F7FC;
 }
+
 
 .tabsNavBtn {
   flex: 1;
@@ -73,15 +76,6 @@
   font-weight: 600;
   font-size: clamp(0.85rem, 0.7964rem + 0.1714vw, 1rem);
 
-}
-
-.bottomTabsRight button {
-  padding: 1rem 2rem;
-  background: none;
-  border: none;
-  color: #1c2b66;
-  border-radius: 35px;
-  font-size: clamp(0.875rem, 0.7411rem + 0.4286vw, 1.15rem);
 }
 
 .preview-content {
@@ -156,15 +150,16 @@
 
   .topTabsNav {
     /* flex: 0.9; */
+    height: 40px;
     gap: 0.5rem;
-
+    width: 70%;
     border-radius: 25px;
   }
 
   .tabsNavBtn {
-    flex: unset;
+    /* flex: unset; */
     padding: 0.25rem 0.5rem;
-    height: 35px;
+    height: 100%;
   }
 
   .pageTopTabs {
@@ -177,11 +172,6 @@
     align-items: center;
     width: 100%;
     border-bottom: none;
-  }
-
-  .bottomTabsRight button {
-    padding: 0.5rem 1rem;
-    margin-top: 1rem;
   }
 
   .preview-contentBody {

@@ -56,6 +56,9 @@ import { ReviewnewComponent } from './Component/reviewnew/reviewnew.component';
 import { InvitesComponent } from './Component/invites/invites.component';
 import { PreviewInvitesComponent } from './Component/preview-invites/preview-invites.component';
 import { BankAccountComponent } from './Component/bank-account/bank-account.component';
+import { InviteeComponent } from './Component/invitee/invitee.component';
+import { AddInviteeComponent } from './Component/add-invitee/add-invitee.component';
+import { ImportInviteeComponent } from './Component/import-invitee/import-invitee.component';
 
 
 
@@ -108,6 +111,9 @@ import { BankAccountComponent } from './Component/bank-account/bank-account.comp
     InvitesComponent,
     PreviewInvitesComponent,
     BankAccountComponent,
+    InviteeComponent,
+    AddInviteeComponent,
+    ImportInviteeComponent,
 
   ],
   imports: [
