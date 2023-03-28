@@ -59,6 +59,7 @@ import { BankAccountComponent } from './Component/bank-account/bank-account.comp
 import { InviteeComponent } from './Component/invitee/invitee.component';
 import { AddInviteeComponent } from './Component/add-invitee/add-invitee.component';
 import { ImportInviteeComponent } from './Component/import-invitee/import-invitee.component';
+import { LandingComponent } from './Component/landing/landing.component';
 
 
 
@@ -114,6 +115,7 @@ import { ImportInviteeComponent } from './Component/import-invitee/import-invite
     InviteeComponent,
     AddInviteeComponent,
     ImportInviteeComponent,
+    LandingComponent,
 
   ],
   imports: [
