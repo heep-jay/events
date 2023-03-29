@@ -10,7 +10,7 @@
 }
 
 .partner-pageContainer {
-  width: 95%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   margin: 2rem auto;
@@ -19,6 +19,11 @@
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+.mat-drawer {
+  background: #1c2b66 !important;
+  border: none;
 }
 
 .example-is-mobile .example-toolbar {
@@ -53,6 +58,12 @@ h1.example-app-name {
 
 .mat-list-item {
   color: #fff;
+  font-size: 13px;
+
+}
+
+.list-icon {
+  font-size: 18px;
 }
 
 .mat-list-base .mat-list-item .mat-list-item-content {
@@ -61,6 +72,9 @@ h1.example-app-name {
 
 }
 
+.mat-nav-list {
+  margin-top: 2rem;
+}
 
 
 .mat-drawer-inner-container {
@@ -86,121 +100,31 @@ h1.example-app-name {
   position: relative;
   display: flex;
   align-items: flex-start;
+  gap: 1rem;
 
 }
 
 .toggle-container {
-  border: 10px solid #1c2b66;
+  border: 7px solid #1c2b66;
   min-height: 100%;
 }
 
 .profile-main {
   /* padding: 1rem; */
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  width: 100%;
+  flex: 1;
 }
 
-.profile-top {
-  padding: 2rem 0;
-  border-bottom: 0.5px solid rgba(28, 43, 102, 0.2);
-}
-
-.profile-header {
-  text-align: center;
-  font-size: clamp(1.125rem, 0.8125rem + 1vw, 2rem);
-  font-weight: 600;
-  color: #1c2b66;
-}
-
-.profile-bottom {
-  display: flex;
-  flex-direction: column;
-  width: 95%;
-  gap: 3rem;
-  margin: 0 auto;
-}
-
-.profile-photo {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-
-.profileimg {
-  position: relative;
-}
-
-.profileimg img {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.img-edit {
-  position: absolute;
-  top: 55%;
-  right: -10px;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  background: #1c2b66;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.pfp-text h5 {
-  font-size: clamp(0.875rem, 0.7857rem + 0.2857vw, 1.125rem);
-  font-weight: 600;
-}
-
-.pfp-text p {
-  font-size: clamp(0.8125rem, 0.7679rem + 0.1429vw, 0.9375rem);
-  color: #727272;
-}
-
-.profile-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.form-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.form_input {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-  flex: 1
-}
-
-.form_input input {
-  background: #F1F4FA;
-  border-radius: 10px;
-  height: 45px;
-  border: none;
-  outline: none;
-  padding: 1rem;
+@media screen and (max-width:750px) {
+  .partner-pageContainer {
+    width: 95%;
+  }
 }
 
 @media screen and (max-width:500px) {
-  .form-container {
-    width: 100%;
-  }
 
   .partner-pageContainer {
     width: 100%;
+    margin: 0 auto;
   }
 
   .toggle-container {

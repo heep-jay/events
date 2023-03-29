@@ -18,6 +18,8 @@ import { FormsModule } from '@angular/forms';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+
 
 
 
@@ -65,6 +67,10 @@ import { AddInviteeComponent } from './Component/add-invitee/add-invitee.compone
 import { ImportInviteeComponent } from './Component/import-invitee/import-invitee.component';
 import { LandingComponent } from './Component/landing/landing.component';
 import { PartnerProfileComponent } from './Component/partner-profile/partner-profile.component';
+import { BasicInfoComponent } from './Component/basic-info/basic-info.component';
+import { NotificationsComponent } from './Component/notifications/notifications.component';
+import { PasswordComponent } from './Component/password/password.component';
+import { DeleteComponent } from './Component/delete/delete.component';
 
 
 
@@ -122,6 +128,10 @@ import { PartnerProfileComponent } from './Component/partner-profile/partner-pro
     ImportInviteeComponent,
     LandingComponent,
     PartnerProfileComponent,
+    BasicInfoComponent,
+    NotificationsComponent,
+    PasswordComponent,
+    DeleteComponent,
 
   ],
   imports: [
@@ -138,7 +148,8 @@ import { PartnerProfileComponent } from './Component/partner-profile/partner-pro
     FormsModule,
     MatSidenavModule,
     MatToolbarModule,
-    MatListModule
+    MatListModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

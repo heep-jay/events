@@ -1,0 +1,89 @@
+.notifications {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+  padding-bottom: 2rem;
+  height: 100%;
+}
+
+.profile-top {
+  padding: 2rem 0;
+  border-bottom: 0.5px solid rgba(28, 43, 102, 0.2);
+}
+
+.profile-header {
+  text-align: center;
+  font-size: clamp(1.125rem, 0.8125rem + 1vw, 2rem);
+  font-weight: 600;
+  color: #1c2b66;
+}
+
+.profile-bottom {
+  display: flex;
+  /* flex-direction: column; */
+  width: 95%;
+  gap: 4rem;
+  margin: 0 auto;
+}
+
+.email-notifications,
+.push-notifications {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.push-header,
+.email-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.email-header h4,
+.push-header h4 {
+  font-size: clamp(1.0625rem, 0.9063rem + 0.5vw, 1.5rem);
+  color: #1c2b66;
+  font-weight: 600;
+}
+
+.email-header p,
+.push-header p {
+  font-size: clamp(0.875rem, 0.8304rem + 0.1429vw, 1rem);
+  color: #727272;
+}
+
+.notfication-util {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.ttg {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.4rem;
+}
+
+.ntf-title {
+  font-size: clamp(0.90625rem, 0.8281rem + 0.25vw, 1.125rem);
+  font-weight: 600;
+  color: #1c2b66;
+}
+
+.ntf-subtitle {
+  font-size: clamp(0.75rem, 0.7277rem + 0.0714vw, 0.8125rem);
+  color: #727272;
+}
+
+@media screen and (max-width:680px) {
+  .profile-bottom {
+    flex-direction: column;
+  }
+
+  .vr {
+    display: none;
+  }
+}
