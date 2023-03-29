@@ -39,6 +39,7 @@ import { InviteeComponent } from './Component/invitee/invitee.component';
 import { AddInviteeComponent } from './Component/add-invitee/add-invitee.component';
 import { ImportInviteeComponent } from './Component/import-invitee/import-invitee.component';
 import { LandingComponent } from './Component/landing/landing.component';
+import { PartnerProfileComponent } from './Component/partner-profile/partner-profile.component';
 
 
 
@@ -190,6 +191,9 @@ const routes: Routes = [
   {
     component: LandingComponent,
     path: 'landing'
+  }, {
+    component: PartnerProfileComponent,
+    path: 'partner'
   }, {
     component: CreateEventComponent,
     path: ""

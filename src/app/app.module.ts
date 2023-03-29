@@ -15,6 +15,10 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbDatepickerModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatListModule } from '@angular/material/list';
+
 
 
 import { ReviewComponent } from './Component/review/review.component';
@@ -60,6 +64,7 @@ import { InviteeComponent } from './Component/invitee/invitee.component';
 import { AddInviteeComponent } from './Component/add-invitee/add-invitee.component';
 import { ImportInviteeComponent } from './Component/import-invitee/import-invitee.component';
 import { LandingComponent } from './Component/landing/landing.component';
+import { PartnerProfileComponent } from './Component/partner-profile/partner-profile.component';
 
 
 
@@ -116,6 +121,7 @@ import { LandingComponent } from './Component/landing/landing.component';
     AddInviteeComponent,
     ImportInviteeComponent,
     LandingComponent,
+    PartnerProfileComponent,
 
   ],
   imports: [
@@ -129,7 +135,10 @@ import { LandingComponent } from './Component/landing/landing.component';
     MatButtonToggleModule,
     NgbModule,
     NgbDatepickerModule,
-    FormsModule
+    FormsModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
