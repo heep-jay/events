@@ -7,6 +7,63 @@
   gap: 2rem;
 }
 
+.invite-drawer {
+  position: relative;
+  min-width: 220px;
+  background-color: #1c2b66;
+  min-height: 75vh;
+}
+
+.invite-drawer-mini {
+  position: relative;
+  min-width: 10px;
+  background-color: #1c2b66;
+  min-height: 80vh;
+}
+
+.drawer-btn-mini {
+  position: absolute;
+  right: -40px;
+  padding: 0.1rem 0.5rem;
+  background: #1c2b66;
+  border: none;
+  color: #fff;
+}
+
+.drawer-container {
+  padding: 1rem;
+  width: 90%;
+  margin: 1rem auto;
+}
+
+
+.drawer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  list-style: none;
+  color: #fff;
+}
+
+.drawer-list li {
+  display: flex;
+  gap: 1.3rem;
+  align-items: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.drawer-btn {
+  padding: 0.3rem 1.5rem;
+  position: absolute;
+  top: 0;
+  right: -30px;
+  border: none;
+  outline: none;
+  background: #1c2b66;
+  color: #fff;
+}
+
 .invitee-header {
   background: #fff;
   width: 100%;
@@ -37,7 +94,14 @@
 }
 
 .invitee-container {
-  width: 95%;
+  display: flex;
+  align-items: flex-start;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.invitee-content {
+  /* width: 95%; */
   padding: 3.5rem 1rem;
   display: flex;
   flex-direction: column;
@@ -45,6 +109,7 @@
   margin: 0 auto;
   background: #fff;
   border-radius: 10px;
+  flex: 1;
 }
 
 .invitee-containerHeader {
@@ -209,4 +274,10 @@
 .save-btn {
   color: #fff;
   background: #1C2B66;
+}
+
+@media screen and (max-width:500px) {
+  .invitee-container {
+    width: 100%;
+  }
 }

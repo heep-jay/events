@@ -1,15 +1,85 @@
 .invite-page {
   width: 100%;
+  background: #F6F7FC;
+  /* margin: 1rem auto; */
   display: flex;
 
+}
+
+.invite-page-innerContainer {
+  width: 95%;
+  /* background: #F6F7FC; */
+  margin: 1rem auto;
+  display: flex;
+  /* gap: 2rem; */
+}
+
+.invite-drawer {
+  position: relative;
+  min-width: 220px;
+  background-color: #1c2b66;
+  min-height: 100vh;
+}
+
+.invite-drawer-mini {
+  position: relative;
+  min-width: 10px;
+  background-color: #1c2b66;
+  min-height: 100vh;
+}
+
+.drawer-btn-mini {
+  position: absolute;
+  right: -40px;
+  padding: 0.1rem 0.5rem;
+  background: #1c2b66;
+  border: none;
+  color: #fff;
+}
+
+.drawer-container {
+  padding: 1rem;
+  width: 90%;
+  margin: 1rem auto;
+}
+
+
+.drawer-list {
+  display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
+  list-style: none;
+  color: #fff;
+}
+
+.drawer-list li {
+  display: flex;
+  gap: 1.3rem;
+  align-items: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.drawer-btn {
+  padding: 0.3rem 1.5rem;
+  position: absolute;
+  top: 0;
+  right: -30px;
+  border: none;
+  outline: none;
+  background: #1c2b66;
+  color: #fff;
+}
+
+.invite-content {
+  flex: 1;
 }
 
 .invite-pageTop {
   width: 90%;
-  padding: 1rem;
-  margin: 2rem auto;
+  /* padding: 1rem; */
+  margin: 0rem auto;
+  background: #F6F7FC;
 }
 
 .pageTopTabs {
@@ -28,7 +98,7 @@
   margin: 0 auto;
   height: 60px;
   border-radius: 35px;
-  background: #F6F7FC;
+  background: #fff;
 }
 
 .tabsNavBtn {
@@ -48,11 +118,11 @@
 
 
 .pageTopBottomTabs {
-  margin-top: 1rem;
+  margin-top: 0;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  border-bottom: 0.7px solid #1c2b66;
+  /* border-bottom: 0.7px solid #1c2b66; */
 }
 
 .bottomTabsLeft {
@@ -62,7 +132,7 @@
 
 .invite-pageCanvas {
   width: 100%;
-  background: #f2f2f2;
+  background: #F6F7FC;
   min-height: 75vh;
   display: flex;
   flex-direction: column;
@@ -71,7 +141,7 @@
 
 .pageCanvasTop {
   width: 90%;
-  margin: 1rem auto;
+  margin: 0rem auto;
   padding: 1rem;
   background: #fff;
   display: flex;
@@ -251,7 +321,8 @@
 } */
 
 .canvasDiv {
-  width: 588px;
+  width: 100%;
+  max-width: 678px;
 
   height: 728px;
   margin: 0 auto;
@@ -274,6 +345,14 @@
     gap: 1rem;
   }
 
+  .topTabsNav {
+    /* flex: 0.9; */
+    height: 40px;
+    gap: 0.5rem;
+    width: 70%;
+    border-radius: 25px;
+  }
+
   .canvasContentMain {
     flex: unset;
     width: 100%;
@@ -282,13 +361,13 @@
   }
 
   .canvasContentTemplates {
-    width: 100%;
+    width: 99%;
     flex: unset;
   }
 
   .canvasTemplatesGrid {
 
-    grid-template-columns: repeat(auto-fit, 120px);
+    grid-template-columns: repeat(auto-fit, 100px);
     justify-content: center;
 
   }
@@ -303,7 +382,7 @@
 
   .topTabsNav {
     /* flex: 0.9; */
-    height: 40px;
+    height: 30px;
     gap: 0.5rem;
     width: 70%;
     border-radius: 25px;

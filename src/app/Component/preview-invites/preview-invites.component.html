@@ -1,25 +1,47 @@
 <div class="preview-invite">
-  <div class="invite-pageTop">
-    <div class="pageTopTabs">
-      <div class="topTabsNav">
-        <button class="tabsNavBtn" routerLink="/invites">Design</button>
-        <button class="tabsNavBtn tabsNavBtn-active" routerLink="/invites/preview">Preview</button>
+  <div class="invite-page-innerContainer">
+    <ng-container *ngIf="drawer">
+      <div class="invite-drawer">
+        <div class="drawer-container">
+          <ul class="drawer-list">
+            <li><mat-icon>rsvp</mat-icon>Invitation</li>
+            <li><mat-icon>receipt_long</mat-icon>Invitation List</li>
+            <li><mat-icon>chair</mat-icon>Seating</li>
+            <li><mat-icon>assignment_turned_in</mat-icon>Check in</li>
+          </ul>
+        </div>
+        <button (click)="onDrawerClick()" class="drawer-btn"><mat-icon>chevron_left</mat-icon></button>
       </div>
-    </div>
-    <div class="pageTopBottomTabs">
-      <div class="bottomTabsLeft">
-        <p>Here is a preview of how your invite will appear in your recipient's inbox.</p>
+    </ng-container>
+    <ng-container *ngIf="drawer_min">
+      <div class="invite-drawer-mini">
+        <button (click)="onDrawerClick()" class="drawer-btn-mini"><mat-icon>chevron_right</mat-icon></button>
       </div>
+    </ng-container>
+    <div class="invite-content">
+      <div class="invite-pageTop">
+        <div class="pageTopTabs">
+          <div class="topTabsNav">
+            <button class="tabsNavBtn" routerLink="/invites">Design</button>
+            <button class="tabsNavBtn tabsNavBtn-active" routerLink="/invites/preview">Preview</button>
+          </div>
+        </div>
+        <div class="pageTopBottomTabs">
+          <div class="bottomTabsLeft">
+            <p>Here is a preview of how your invite will appear in your recipient's inbox.</p>
+          </div>
 
-    </div>
-  </div>
-  <div class="preview-content">
-    <div class="preview-contentBody">
-      <h4>Peter Ndukwe sent you an invitation for</h4>
-      <img src="/assets/babe.png" alt="">
-      <div class="previewBtns">
-        <button class="previewBtn previewBtn-active">Will Attend</button>
-        <button class="previewBtn">Will Not Attend</button>
+        </div>
+      </div>
+      <div class="preview-content">
+        <div class="preview-contentBody">
+          <h4>Peter Ndukwe sent you an invitation for</h4>
+          <img src="/assets/babe.png" alt="">
+          <div class="previewBtns">
+            <button class="previewBtn previewBtn-active">Will Attend</button>
+            <button class="previewBtn">Will Not Attend</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>

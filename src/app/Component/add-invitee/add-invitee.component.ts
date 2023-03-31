@@ -8,7 +8,8 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./add-invitee.component.css']
 })
 export class AddInviteeComponent implements OnInit {
-
+  drawer: boolean = false;
+  drawer_min: boolean = true;
   closeResult: string = "";
   constructor(private modalService: NgbModal) { }
   open(content: any) {
@@ -20,6 +21,11 @@ export class AddInviteeComponent implements OnInit {
     );
   }
   ngOnInit(): void {
+  }
+
+  onDrawerClick() {
+    this.drawer = !this.drawer
+    this.drawer_min = !this.drawer_min
   }
 
 }
