@@ -71,6 +71,8 @@ const INVITES: Invites[] = [
 export class InviteeComponent implements OnInit {
   invites = INVITES;
   closeResult: string = "";
+  drawer: boolean = false;
+  drawer_min: boolean = true;
 
   constructor(private modalService: NgbModal) { }
   open(content: any) {
@@ -82,6 +84,11 @@ export class InviteeComponent implements OnInit {
     );
   }
   ngOnInit(): void {
+  }
+
+  onDrawerClick() {
+    this.drawer = !this.drawer
+    this.drawer_min = !this.drawer_min
   }
 
 }

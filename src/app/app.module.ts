@@ -19,6 +19,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatSliderModule } from '@angular/material/slider';
+
+
 
 
 
@@ -71,6 +74,7 @@ import { BasicInfoComponent } from './Component/basic-info/basic-info.component'
 import { NotificationsComponent } from './Component/notifications/notifications.component';
 import { PasswordComponent } from './Component/password/password.component';
 import { DeleteComponent } from './Component/delete/delete.component';
+import { SeatingComponent } from './Component/seating/seating.component';
 
 
 
@@ -132,6 +136,7 @@ import { DeleteComponent } from './Component/delete/delete.component';
     NotificationsComponent,
     PasswordComponent,
     DeleteComponent,
+    SeatingComponent,
 
   ],
   imports: [
@@ -149,7 +154,9 @@ import { DeleteComponent } from './Component/delete/delete.component';
     MatSidenavModule,
     MatToolbarModule,
     MatListModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatSliderModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
