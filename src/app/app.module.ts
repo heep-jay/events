@@ -75,6 +75,7 @@ import { NotificationsComponent } from './Component/notifications/notifications.
 import { PasswordComponent } from './Component/password/password.component';
 import { DeleteComponent } from './Component/delete/delete.component';
 import { SeatingComponent } from './Component/seating/seating.component';
+import { ShuffletableComponent } from './Component/shuffletable/shuffletable.component';
 
 
 
@@ -137,6 +138,7 @@ import { SeatingComponent } from './Component/seating/seating.component';
     PasswordComponent,
     DeleteComponent,
     SeatingComponent,
+    ShuffletableComponent,
 
   ],
   imports: [

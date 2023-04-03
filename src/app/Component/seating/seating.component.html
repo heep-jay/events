@@ -2,7 +2,7 @@
   <div class="seating-pageContainer">
     <div class="invitee-header">
       <div class="invitee-headerText">
-        <h2 class="invitee-headerTitle"> Invitee/RSVP</h2>
+        <h2 class="invitee-headerTitle">Invitee/RSVP</h2>
         <p><mat-icon>chevron_left</mat-icon> Back</p>
       </div>
     </div>
@@ -18,41 +18,147 @@
               <li><mat-icon>assignment_turned_in</mat-icon>Check in</li>
             </ul>
           </div>
-          <button (click)="onDrawerClick()" class="drawer-btn"><mat-icon>chevron_left</mat-icon></button>
+          <button (click)="onDrawerClick()" class="drawer-btn">
+            <mat-icon>chevron_left</mat-icon>
+          </button>
         </div>
       </ng-container>
       <ng-container *ngIf="drawer_min">
         <div class="invite-drawer-mini">
-          <button (click)="onDrawerClick()" class="drawer-btn-mini"><mat-icon>chevron_right</mat-icon></button>
+          <button (click)="onDrawerClick()" class="drawer-btn-mini">
+            <mat-icon>chevron_right</mat-icon>
+          </button>
         </div>
       </ng-container>
       <div class="seating-main">
         <div class="seating-mainHeader">
           <div class="mainHeader-left">
-            <mat-tab-group (selectedTabChange)="onEditClick($event)" mat-align-tabs="start">
+            <mat-tab-group
+              (selectedTabChange)="onEditClick($event)"
+              mat-align-tabs="start"
+            >
               <mat-tab label="Table Template"></mat-tab>
               <mat-tab label="Assign Invitees"></mat-tab>
             </mat-tab-group>
+            <div class="seating-template">
+              <ng-container *ngIf="seatingTemplate">
+                <div class="seating-grid">
+                  <img
+                    (click)="open(tables)"
+                    src="/assets/circ.png"
+                    alt=""
+                    class="seatsImgTemplates"
+                  />
+                  <img
+                    (click)="open(tables)"
+                    src="/assets/rec.png"
+                    alt=""
+                    class="seatsImgTemplates"
+                  />
+                  <img
+                    (click)="open(tables)"
+                    src="/assets/rec2.png"
+                    alt=""
+                    class="seatsImgTemplates"
+                  />
+                  <img
+                    (click)="open(tables)"
+                    src="/assets/square.png"
+                    alt=""
+                    class="seatsImgTemplates"
+                  />
+                  <img
+                    (click)="open(tables)"
+                    src="/assets/circ.png"
+                    alt=""
+                    class="seatsImgTemplates"
+                  />
+                  <img src="/assets/rec.png" alt="" class="seatsImgTemplates" />
+                  <img
+                    src="/assets/rec2.png"
+                    alt=""
+                    class="seatsImgTemplates"
+                  />
+                  <img
+                    src="/assets/square.png"
+                    alt=""
+                    class="seatsImgTemplates"
+                  />
+                  <img
+                    src="/assets/circ.png"
+                    alt=""
+                    class="seatsImgTemplates"
+                  />
+                  <img src="/assets/rec.png" alt="" class="seatsImgTemplates" />
+                </div>
+              </ng-container>
+              <ng-container *ngIf="seatingTables">
+                <div class="seating-invitees">
+                  <div class="seating-inviteeHeader">
+                    <h6>Invitees</h6>
+                    <button (click)="open(invite)">
+                      <mat-icon>person_add</mat-icon>
+                    </button>
+                  </div>
+                  <div class="">
+                    <p class="seating-inviteeText">
+                      Click and drag your Invitees to an open table.
+                    </p>
+                    <p class="seating-inviteeText">
+                      You can re-assign attendees by dragging to a new table.
+                    </p>
+                  </div>
+                  <div class="seating-search">
+                    <input type="text" placeholder="search name or email" />
+                    <button><mat-icon>search</mat-icon></button>
+                  </div>
+                  <div class="seating-tableHeader">
+                    <h6>INVITEE INFO</h6>
+                    <div class="tableheaderLeft">
+                      <h6>TABLE</h6>
+                      <mat-icon>filter_list</mat-icon>
+                    </div>
+                  </div>
+                  <div class="seating-illus">
+                    <div class="illus-Header">
+                      <h6>No Invitees, just yet</h6>
+                      <p>
+                        Let us create your invite list so you can send your
+                        invitation to your exclusive guest list
+                      </p>
+                    </div>
+                    <div class="illus-img">
+                      <img src="/assets/add-tasks.png" alt="" />
+                    </div>
+                    <div class="illus-btn">
+                      <button (click)="open(invite)">Add Invitee</button>
+                    </div>
+                  </div>
+                </div>
+              </ng-container>
+            </div>
           </div>
           <div class="mainHeader-Right">
-            <div class="header-title">
-              <p>Untitled</p>
-              <mat-icon>border_color</mat-icon>
-            </div>
-            <div class="header-utils">
-              <section class="zoom-util">
-                <label class="zoom-slider">Zoom</label>
-                <mat-slider class="zoom-slider">
-                  <input type="range" matSliderThumb>
-                </mat-slider>
-              </section>
-              <div class="download-util">
-                <mat-icon>download</mat-icon>
+            <div class="mHrightHeader">
+              <div class="header-title">
+                <p>Untitled</p>
+                <mat-icon>border_color</mat-icon>
+              </div>
+              <div class="header-utils">
+                <section class="zoom-util">
+                  <label class="zoom-slider">Zoom</label>
+                  <mat-slider class="zoom-slider">
+                    <input type="range" matSliderThumb />
+                  </mat-slider>
+                </section>
+                <div class="download-util">
+                  <mat-icon>download</mat-icon>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="seating-mainContent">
+        <!-- <div class="seating-mainContent">
           <div class="seating-template">
             <ng-container *ngIf="seatingTemplate">
               <div class="seating-grid">
@@ -107,7 +213,7 @@
           <div class="seating-arrangement">
             b
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -115,22 +221,20 @@
     <div class="invitee-popup">
       <div class="popup-header">
         <h4>Add Invitee</h4>
-        <p class="popup-subtitle">
-          Quickly add an Invitee to your Invite list
-        </p>
+        <p class="popup-subtitle">Quickly add an Invitee to your Invite list</p>
       </div>
       <form class="popup-form">
         <div class="form_input">
           <label for="firstname">First Name</label>
-          <input type="text" name="firstname">
+          <input type="text" name="firstname" />
         </div>
         <div class="form_input">
           <label for="lastname">Last Name</label>
-          <input type="text" name="lastname">
+          <input type="text" name="lastname" />
         </div>
         <div class="form_input">
           <label for="email">Email</label>
-          <input type="email" name="email">
+          <input type="email" name="email" />
         </div>
         <div class="form_select">
           <label for="guest">Guest Allowed</label>
@@ -141,8 +245,12 @@
           </div>
         </div>
         <div class="pop-up-btns">
-          <button class="pop-up-btn cancel-btn " (click)="modal.dismiss()">Cancel</button>
-          <button class="pop-up-btn save-btn" (click)="modal.dismiss()">Save & Cancel</button>
+          <button class="pop-up-btn cancel-btn" (click)="modal.dismiss()">
+            Cancel
+          </button>
+          <button class="pop-up-btn save-btn" (click)="modal.dismiss()">
+            Save & Cancel
+          </button>
         </div>
       </form>
     </div>
@@ -153,7 +261,7 @@
         <h4>Add Invitee</h4>
       </div>
       <div class="table-popupImg">
-        <img src="/assets/rec2.png" alt="">
+        <img src="/assets/rec2.png" alt="" />
       </div>
       <div class="tablepopup-container">
         <div class="table_select">
@@ -169,10 +277,9 @@
           </div>
         </div>
         <div class="table-popupBtns">
-          <button class="table-btns popup-cancel">Cancel</button>
-          <button class="table-btns popup-save">Save</button>
+          <button class="table-btns popup-cancel" (click)="modal.dismiss()">Cancel</button>
+          <button class="table-btns popup-save" (click)="modal.dismiss()">Save</button>
         </div>
-
       </div>
     </div>
   </ng-template>
