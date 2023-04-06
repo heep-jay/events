@@ -78,6 +78,7 @@ import { DeleteComponent } from './Component/delete/delete.component';
 import { SeatingComponent } from './Component/seating/seating.component';
 import { ShuffletableComponent } from './Component/shuffletable/shuffletable.component';
 import { SeatingmodalComponent } from './Component/seatingmodal/seatingmodal.component';
+import { InvitetemplateComponent } from './Component/invitetemplate/invitetemplate.component';
 
 
 
@@ -142,6 +143,7 @@ import { SeatingmodalComponent } from './Component/seatingmodal/seatingmodal.com
     SeatingComponent,
     ShuffletableComponent,
     SeatingmodalComponent,
+    InvitetemplateComponent,
 
   ],
   imports: [

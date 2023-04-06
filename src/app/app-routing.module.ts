@@ -41,6 +41,8 @@ import { ImportInviteeComponent } from './Component/import-invitee/import-invite
 import { LandingComponent } from './Component/landing/landing.component';
 import { PartnerProfileComponent } from './Component/partner-profile/partner-profile.component';
 import { SeatingComponent } from './Component/seating/seating.component';
+import { InvitetemplateComponent } from './Component/invitetemplate/invitetemplate.component';
+
 
 
 
@@ -197,7 +199,10 @@ const routes: Routes = [
   }, {
     component: SeatingComponent,
     path: 'seating'
-  }, {
+  },  {
+    component: InvitetemplateComponent,
+    path: 'template'
+  },{
     component: CreateEventComponent,
     path: ""
   }];

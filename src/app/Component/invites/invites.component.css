@@ -1,9 +1,8 @@
 .invite-page {
   width: 100%;
-  background: #F6F7FC;
+  background: #f6f7fc;
   /* margin: 1rem auto; */
   display: flex;
-
 }
 
 .invite-page-innerContainer {
@@ -43,7 +42,6 @@
   margin: 1rem auto;
 }
 
-
 .drawer-list {
   display: flex;
   flex-direction: column;
@@ -79,7 +77,7 @@
   width: 90%;
   /* padding: 1rem; */
   margin: 0rem auto;
-  background: #F6F7FC;
+  background: #f6f7fc;
 }
 
 .pageTopTabs {
@@ -116,7 +114,6 @@
   color: white;
 }
 
-
 .pageTopBottomTabs {
   margin-top: 0;
   display: flex;
@@ -129,10 +126,9 @@
   flex: 1;
 }
 
-
 .invite-pageCanvas {
   width: 100%;
-  background: #F6F7FC;
+  background: #f6f7fc;
   min-height: 75vh;
   display: flex;
   flex-direction: column;
@@ -146,7 +142,6 @@
   background: #fff;
   display: flex;
   flex-direction: column;
-
 }
 
 .canvasToolbar {
@@ -178,7 +173,7 @@
 .fontTypeSectionSelect {
   width: fit-content;
   padding: 1rem;
-  border: 1px solid #DFDFDF;
+  border: 1px solid #dfdfdf;
 }
 
 .fontTypeSectionSelect select {
@@ -191,7 +186,7 @@
   width: 80px;
   padding: 1rem;
   height: 50px;
-  border: 1px solid #DFDFDF;
+  border: 1px solid #dfdfdf;
 }
 
 .colorSectionDiv {
@@ -199,11 +194,10 @@
   width: 40px;
   border-radius: 50%;
   background: #637393;
-
 }
 
 .fontColorSection input {
-  border: 1px solid #DFDFDF;
+  border: 1px solid #dfdfdf;
   height: 40px;
   width: 150px;
   padding: 1rem;
@@ -233,7 +227,7 @@
   width: 70px;
   font-size: 10px;
   background: rgba(223, 223, 223, 0.51);
-  border: 1px solid #DFDFDF;
+  border: 1px solid #dfdfdf;
   border-radius: 4px;
 }
 
@@ -253,13 +247,12 @@
   /* background: orange; */
   flex: 0.1;
   padding: 1rem;
-
 }
 
 .canvasSearch {
   padding: 0.5rem;
   min-height: 35px;
-  background: #F6F7FC;
+  background: #f6f7fc;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -276,7 +269,6 @@
 }
 
 .canvasSearch button {
-
   padding: 0.6rem;
   background: #1c2b66;
   display: flex;
@@ -293,7 +285,6 @@
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fit, 48%);
   justify-content: space-between;
-
 }
 
 .imgTemplates {
@@ -326,14 +317,13 @@
 
   height: 728px;
   margin: 0 auto;
-  background: url('/assets/babe.png');
+  background: url("/assets/babe.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 650px 750px;
 }
 
-@media screen and (max-width:994px) {
-
+@media screen and (max-width: 994px) {
   .pageCanvasContent {
     display: flex;
     flex-direction: column;
@@ -357,7 +347,6 @@
     flex: unset;
     width: 100%;
     padding: 1rem;
-
   }
 
   .canvasContentTemplates {
@@ -366,19 +355,15 @@
   }
 
   .canvasTemplatesGrid {
-
     grid-template-columns: repeat(auto-fit, 100px);
     justify-content: center;
-
   }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width: 500px) {
   .invite-pageTop {
     width: 100%;
-
   }
-
 
   .topTabsNav {
     /* flex: 0.9; */
@@ -405,6 +390,4 @@
     width: 100%;
     border-bottom: none;
   }
-
-
 }

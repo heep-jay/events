@@ -1,0 +1,96 @@
+.template-one {
+  width: 100%;
+  max-width: 678px;
+
+  height: 728px;
+  margin: 2rem auto;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 10px;
+  font-family: "Parisienne", cursive;
+}
+h5 {
+  font-family: "Parisienne", cursive;
+  font-weight: 700;
+}
+.left {
+  position: relative;
+  width: 20%;
+  height: 100%;
+  background: #584f44;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.right {
+  position: relative;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: linear-gradient(
+      0deg,
+      rgba(248, 248, 248, 0.5),
+      rgba(248, 248, 248, 0.5)
+    ),
+    url("/assets/wedd.jpg");
+  width: 80%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.templatetext {
+  position: absolute;
+  bottom: 100px;
+  /* left: 30%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 300px; */
+  /* border: 1px solid black; */
+  max-width: fit-content;
+}
+.inputname {
+  width: 50%;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: clamp(1.25rem, -0.9375rem + 7vw, 3rem);
+  font-family: "Parisienne", cursive;
+  font-weight: 600;
+}
+.ptext {
+  font-size: clamp(0.6875rem, 0.5313rem + 0.5vw, 0.8125rem);
+  width: 30%;
+  text-align: center;
+}
+.inputdate {
+  background: none;
+  outline: none;
+  border: none;
+  width: 40%;
+  font-size: clamp(0.9375rem, 0.2344rem + 2.25vw, 1.5rem);
+  font-family: "Parisienne", cursive;
+  font-weight: 600;
+  margin-top: 3rem;
+}
+.savetext {
+}
+.highlight {
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  position: absolute;
+  bottom: 500px;
+  left: -70px;
+  font-family: "Alegreya SC", serif;
+  color: white;
+  font-size: clamp(1.5625rem, -0.5469rem + 6.75vw, 3.25rem);
+  font-weight: 400;
+}
+.vr {
+  border: 3px solid white;
+  height: 150px;
+  position: absolute;
+  bottom: 200px;
+  background: #fff;
+  left: 70px;
+}

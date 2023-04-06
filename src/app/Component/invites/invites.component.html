@@ -10,30 +10,40 @@
             <li><mat-icon>assignment_turned_in</mat-icon>Check in</li>
           </ul>
         </div>
-        <button (click)="onDrawerClick()" class="drawer-btn"><mat-icon>chevron_left</mat-icon></button>
+        <button (click)="onDrawerClick()" class="drawer-btn">
+          <mat-icon>chevron_left</mat-icon>
+        </button>
       </div>
     </ng-container>
     <ng-container *ngIf="drawer_min">
       <div class="invite-drawer-mini">
-        <button (click)="onDrawerClick()" class="drawer-btn-mini"><mat-icon>chevron_right</mat-icon></button>
+        <button (click)="onDrawerClick()" class="drawer-btn-mini">
+          <mat-icon>chevron_right</mat-icon>
+        </button>
       </div>
     </ng-container>
     <div class="invite-content">
       <div class="invite-pageTop">
         <div class="pageTopTabs">
           <div class="topTabsNav">
-            <button class="tabsNavBtn tabsNavBtn-active" routerLink="/invites">Design</button>
-            <button class="tabsNavBtn" routerLink="/invites/preview">Preview</button>
+            <button class="tabsNavBtn tabsNavBtn-active" routerLink="/invites">
+              Design
+            </button>
+            <button class="tabsNavBtn" routerLink="/invites/preview">
+              Preview
+            </button>
           </div>
         </div>
         <div class="pageTopBottomTabs">
           <div class="bottomTabsLeft">
-            <mat-tab-group (selectedTabChange)="onEditClick($event)" mat-align-tabs="start">
+            <mat-tab-group
+              (selectedTabChange)="onEditClick($event)"
+              mat-align-tabs="start"
+            >
               <mat-tab label="Select Template"></mat-tab>
               <mat-tab label="Edit Invites"></mat-tab>
             </mat-tab-group>
           </div>
-
         </div>
       </div>
       <div class="invite-pageCanvas">
@@ -43,10 +53,12 @@
             <button><mat-icon>undo</mat-icon> undo</button>
             <button><mat-icon>redo</mat-icon> Re-do</button>
             <button *ngIf="edit"><mat-icon>title</mat-icon> Add Text</button>
-            <button *ngIf="edit"><mat-icon>add_photo_alternate</mat-icon> Add Image</button>
+            <button *ngIf="edit">
+              <mat-icon>add_photo_alternate</mat-icon> Add Image
+            </button>
             <button *ngIf="edit"><mat-icon>link</mat-icon>Add link</button>
           </div>
-          <hr *ngIf="edit">
+          <hr *ngIf="edit" />
           <div class="canvasToolbar" *ngIf="edit">
             <div class="fontTypeSection">
               <div class="fontTypeSectionSelect">
@@ -58,13 +70,13 @@
               </div>
               <div class="fontTypeSectionInput">
                 <label for="textSize">Text Size</label>
-                <input type="number" name="textSize" id="">
+                <input type="number" name="textSize" id="" />
               </div>
             </div>
             <div class="fontColorSection">
               <p>Text Color</p>
               <div class="colorSectionDiv"></div>
-              <input type="text" placeholder="#637393">
+              <input type="text" placeholder="#637393" />
             </div>
             <div class="fontStyleSection">
               <p>style</p>
@@ -82,27 +94,27 @@
         <div class="pageCanvasContent">
           <div class="canvasContentTemplates">
             <div class="canvasSearch">
-              <input type="text" placeholder="Search templates">
+              <input type="text" placeholder="Search templates" />
               <button><mat-icon>search</mat-icon></button>
             </div>
             <div class="canvasTemplatesGrid">
-              <img src="/assets/babe.png" class="imgTemplates" alt="">
-              <img src="/assets/babe.png" class="imgTemplates" alt="">
-              <img src="/assets/babe.png" class="imgTemplates" alt="">
-              <img src="/assets/babe.png" class="imgTemplates" alt="">
-              <img src="/assets/babe.png" class="imgTemplates" alt="">
-              <img src="/assets/babe.png" class="imgTemplates" alt="">
-              <img src="/assets/babe.png" class="imgTemplates" alt="">
-              <img src="/assets/babe.png" class="imgTemplates" alt="">
-              <img src="/assets/babe.png" class="imgTemplates" alt="">
-              <img src="/assets/babe.png" class="imgTemplates" alt="">
+              <img src="/assets/babe.png" class="imgTemplates" alt="" />
+              <img src="/assets/babe.png" class="imgTemplates" alt="" />
+              <img src="/assets/babe.png" class="imgTemplates" alt="" />
+              <img src="/assets/babe.png" class="imgTemplates" alt="" />
+              <img src="/assets/babe.png" class="imgTemplates" alt="" />
+              <img src="/assets/babe.png" class="imgTemplates" alt="" />
+              <img src="/assets/babe.png" class="imgTemplates" alt="" />
+              <img src="/assets/babe.png" class="imgTemplates" alt="" />
+              <img src="/assets/babe.png" class="imgTemplates" alt="" />
+              <img src="/assets/babe.png" class="imgTemplates" alt="" />
             </div>
           </div>
           <div class="canvasContentMain">
-            <div class="canvasDiv">
+            <!-- <div class="canvasDiv">
 
-              <!-- <img src="/assets/hero.jpg" class="chosenTemplate" alt=""> -->
-            </div>
+            </div> -->
+            <ng-container> </ng-container>
           </div>
         </div>
       </div>
