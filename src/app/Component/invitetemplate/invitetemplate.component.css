@@ -1,19 +1,19 @@
 .template-one {
   width: 100%;
   max-width: 678px;
-
   height: 728px;
   margin: 2rem auto;
   display: flex;
   align-items: flex-start;
   border-radius: 10px;
   font-family: "Parisienne", cursive;
+  border: 0.5px solid white;
 }
 h5 {
   font-family: "Parisienne", cursive;
   font-weight: 700;
 }
-.left {
+.templateleft {
   position: relative;
   width: 20%;
   height: 100%;
@@ -21,7 +21,7 @@ h5 {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-.right {
+.templateright {
   position: relative;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -86,11 +86,11 @@ h5 {
   font-size: clamp(1.5625rem, -0.5469rem + 6.75vw, 3.25rem);
   font-weight: 400;
 }
-.vr {
+.templatevr {
   border: 3px solid white;
   height: 150px;
   position: absolute;
   bottom: 200px;
   background: #fff;
-  left: 70px;
+  left: 90px;
 }
