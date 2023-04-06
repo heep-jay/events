@@ -65,11 +65,12 @@
 .templatetwo-names {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
 }
 .name-text {
   max-width: fit-content;
-  width: 180px;
+  width: 30%;
   font-size: clamp(1.125rem, -0.2813rem + 4.5vw, 2.25rem);
 }
 .templatetwo-text {
@@ -88,7 +89,8 @@
 }
 .date-text {
   font-size: clamp(1.125rem, -0.2813rem + 4.5vw, 2.25rem);
-  width: 217px;
+  width: 50%;
+  max-width: fit-content;
 }
 .time-text {
   width: 60px;
