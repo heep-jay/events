@@ -98,8 +98,18 @@
               <button><mat-icon>search</mat-icon></button>
             </div>
             <div class="canvasTemplatesGrid">
-              <img src="/assets/tmp1.png" class="imgTemplates" alt="" />
-              <img src="/assets/babe.png" class="imgTemplates" alt="" />
+              <img
+                (click)="setTemplateOne()"
+                src="/assets/tmp1.png"
+                class="imgTemplates"
+                alt=""
+              />
+              <img
+                (click)="setTemplateTwo()"
+                src="/assets/tmp2.png"
+                class="imgTemplates"
+                alt=""
+              />
               <img src="/assets/babe.png" class="imgTemplates" alt="" />
               <img src="/assets/babe.png" class="imgTemplates" alt="" />
               <img src="/assets/babe.png" class="imgTemplates" alt="" />
@@ -111,13 +121,13 @@
             </div>
           </div>
           <div class="canvasContentMain">
-            <!-- <div class="canvasDiv">
-            </div> -->
-            <!-- <ng-container class="templateCanvas">
-              <app-invitetemplate></app-invitetemplate>
-            </ng-container> -->
             <div class="templateCanvas">
-              <app-invitetemplate></app-invitetemplate>
+              <ng-container *ngIf="template_one">
+                <app-invitetemplate></app-invitetemplate>
+              </ng-container>
+              <ng-container *ngIf="template_two">
+                <app-templatetwo></app-templatetwo>
+              </ng-container>
             </div>
           </div>
         </div>

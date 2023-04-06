@@ -79,6 +79,7 @@ import { SeatingComponent } from './Component/seating/seating.component';
 import { ShuffletableComponent } from './Component/shuffletable/shuffletable.component';
 import { SeatingmodalComponent } from './Component/seatingmodal/seatingmodal.component';
 import { InvitetemplateComponent } from './Component/invitetemplate/invitetemplate.component';
+import { TemplatetwoComponent } from './Component/templatetwo/templatetwo.component';
 
 
 
@@ -144,6 +145,7 @@ import { InvitetemplateComponent } from './Component/invitetemplate/invitetempla
     ShuffletableComponent,
     SeatingmodalComponent,
     InvitetemplateComponent,
+    TemplatetwoComponent,
 
   ],
   imports: [
