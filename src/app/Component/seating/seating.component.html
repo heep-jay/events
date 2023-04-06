@@ -100,6 +100,7 @@
                       <mat-icon>person_add</mat-icon>
                     </button>
                   </div>
+
                   <div class="">
                     <p class="seating-inviteeText">
                       Click and drag your Invitees to an open table.
@@ -134,6 +135,7 @@
                       <button (click)="open(invite)">Add Invitee</button>
                     </div>
                   </div>
+                  <!-- <app-shuffletable></app-shuffletable> -->
                 </div>
               </ng-container>
             </div>
@@ -156,64 +158,119 @@
                 </div>
               </div>
             </div>
+            <div class="main-rightCanvas">
+              <div class="main-rightCanvasContainer">
+                <div class="table-grids">
+                  <div class="tableGleft">
+                    <div
+                      class="chairs chair-select"
+                      (click)="open(seating)"
+                    ></div>
+                    <div class="chairs"></div>
+                  </div>
+                  <div class="tableGMid">
+                    <div class="tableGtop">
+                      <div class="chairs"></div>
+                      <div class="chairs"></div>
+                      <div class="chairs"></div>
+                    </div>
+                    <div class="tableCentral">
+                      <h6>Table 1</h6>
+                      <p>0/7</p>
+                    </div>
+                    <div class="tableGbottom">
+                      <div class="chairs"></div>
+                      <div class="chairs"></div>
+                      <div class="chairs"></div>
+                    </div>
+                  </div>
+                  <div class="tableGleft">
+                    <div class="chairs"></div>
+                    <div class="chairs"></div>
+                  </div>
+                </div>
+                <div class="table-grids">
+                  <div class="tableGleft">
+                    <div class="chairs"></div>
+                    <div class="chairs"></div>
+                  </div>
+                  <div class="tableGMid">
+                    <div class="tableGtop">
+                      <div class="chairs"></div>
+                      <div class="chairs"></div>
+                      <div class="chairs"></div>
+                    </div>
+                    <div class="tableCentral">
+                      <h6>Table 2</h6>
+                      <p>0/5</p>
+                    </div>
+                    <div class="tableGbottom">
+                      <!-- <div class="chairs"></div>
+                      <div class="chairs"></div>
+                      <div class="chairs"></div> -->
+                    </div>
+                  </div>
+                  <div class="tableGleft">
+                    <div class="chairs"></div>
+                    <div class="chairs"></div>
+                  </div>
+                </div>
+                <div class="table-grids">
+                  <div class="tableGleft">
+                    <!-- <div class="chairs"></div>
+                    <div class="chairs"></div> -->
+                  </div>
+                  <div class="tableGMid">
+                    <div class="tableGtop">
+                      <div class="chairs"></div>
+                      <div class="chairs"></div>
+                      <div class="chairs"></div>
+                    </div>
+                    <div class="tableCentral">
+                      <h6>Table 3</h6>
+                      <p>0/4</p>
+                    </div>
+                    <div class="tableGbottom">
+                      <div class="chairs"></div>
+                      <div class="chairs"></div>
+                      <div class="chairs"></div>
+                    </div>
+                  </div>
+                  <div class="tableGleft">
+                    <!-- <div class="chairs"></div>
+                    <div class="chairs"></div> -->
+                  </div>
+                </div>
+                <div class="table-grids">
+                  <div class="tableGleft">
+                    <div class="chairs"></div>
+                    <div class="chairs"></div>
+                  </div>
+                  <div class="tableGMid">
+                    <div class="tableGtop">
+                      <div class="chairs"></div>
+                      <div class="chairs"></div>
+                      <div class="chairs"></div>
+                    </div>
+                    <div class="tableCentral">
+                      <h6>Table 4</h6>
+                      <p>0/7</p>
+                    </div>
+                    <div class="tableGbottom">
+                      <div class="chairs"></div>
+                      <div class="chairs"></div>
+                      <div class="chairs"></div>
+                    </div>
+                  </div>
+                  <div class="tableGleft">
+                    <div class="chairs"></div>
+                    <div class="chairs"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- <div class="seating-mainContent">
-          <div class="seating-template">
-            <ng-container *ngIf="seatingTemplate">
-              <div class="seating-grid">
-                <img (click)="open(tables)" src="/assets/circ.png" alt="" class="seatsImgTemplates">
-                <img (click)="open(tables)" src="/assets/rec.png" alt="" class="seatsImgTemplates">
-                <img (click)="open(tables)" src="/assets/rec2.png" alt="" class="seatsImgTemplates">
-                <img (click)="open(tables)" src="/assets/square.png" alt="" class="seatsImgTemplates">
-                <img (click)="open(tables)" src="/assets/circ.png" alt="" class="seatsImgTemplates">
-                <img src="/assets/rec.png" alt="" class="seatsImgTemplates">
-                <img src="/assets/rec2.png" alt="" class="seatsImgTemplates">
-                <img src="/assets/square.png" alt="" class="seatsImgTemplates">
-                <img src="/assets/circ.png" alt="" class="seatsImgTemplates">
-                <img src="/assets/rec.png" alt="" class="seatsImgTemplates">
-              </div>
-            </ng-container>
-            <ng-container *ngIf="seatingTables">
-              <div class="seating-invitees">
-                <div class="seating-inviteeHeader">
-                  <h6>Invitees</h6>
-                  <button (click)="open(invite)"><mat-icon>person_add</mat-icon></button>
-                </div>
-                <div class="">
-                  <p class="seating-inviteeText">Click and drag your Invitees to an open table.</p>
-                  <p class="seating-inviteeText">You can re-assign attendees by dragging to a new table.</p>
-                </div>
-                <div class=" seating-search">
-                  <input type="text" placeholder="search name or email">
-                  <button><mat-icon>search</mat-icon></button>
-                </div>
-                <div class="seating-tableHeader">
-                  <h6>INVITEE INFO</h6>
-                  <div class="tableheaderLeft">
-                    <h6>TABLE</h6>
-                    <mat-icon>filter_list</mat-icon>
-                  </div>
-                </div>
-                <div class="seating-illus">
-                  <div class="illus-Header">
-                    <h6>No Invitees, just yet</h6>
-                    <p>Let us create your invite list so you can send your invitation to your exclusive guest list</p>
-                  </div>
-                  <div class="illus-img">
-                    <img src="/assets/add-tasks.png" alt="">
-                  </div>
-                  <div class="illus-btn">
-                    <button (click)="open(invite)">Add Invitee</button>
-                  </div>
-                </div>
-              </div>
-            </ng-container>
-          </div>
-          <div class="seating-arrangement">
-            b
-          </div>
-        </div> -->
       </div>
     </div>
   </div>
@@ -277,10 +334,27 @@
           </div>
         </div>
         <div class="table-popupBtns">
-          <button class="table-btns popup-cancel" (click)="modal.dismiss()">Cancel</button>
-          <button class="table-btns popup-save" (click)="modal.dismiss()">Save</button>
+          <button class="table-btns popup-cancel" (click)="modal.dismiss()">
+            Cancel
+          </button>
+          <button class="table-btns popup-save" (click)="modal.dismiss()">
+            Save
+          </button>
         </div>
       </div>
+    </div>
+  </ng-template>
+  <ng-template #seating let-modal>
+    <div class="modal-header">
+      <button
+        type="button"
+        class="btn-close"
+        aria-label="Close"
+        (click)="modal.dismiss('Cross click')"
+      ></button>
+    </div>
+    <div class="modal-body">
+      <app-seatingmodal></app-seatingmodal>
     </div>
   </ng-template>
 </div>

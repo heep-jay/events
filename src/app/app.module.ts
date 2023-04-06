@@ -20,6 +20,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatSliderModule } from '@angular/material/slider';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 
 
@@ -76,6 +77,7 @@ import { PasswordComponent } from './Component/password/password.component';
 import { DeleteComponent } from './Component/delete/delete.component';
 import { SeatingComponent } from './Component/seating/seating.component';
 import { ShuffletableComponent } from './Component/shuffletable/shuffletable.component';
+import { SeatingmodalComponent } from './Component/seatingmodal/seatingmodal.component';
 
 
 
@@ -139,6 +141,7 @@ import { ShuffletableComponent } from './Component/shuffletable/shuffletable.com
     DeleteComponent,
     SeatingComponent,
     ShuffletableComponent,
+    SeatingmodalComponent,
 
   ],
   imports: [
@@ -158,6 +161,7 @@ import { ShuffletableComponent } from './Component/shuffletable/shuffletable.com
     MatListModule,
     MatSlideToggleModule,
     MatSliderModule,
+    DragDropModule,
 
   ],
   providers: [],
