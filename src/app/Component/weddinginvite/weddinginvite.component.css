@@ -9,6 +9,8 @@
   border: 0.5px dashed black;
   background: url("/assets/wedding.png");
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .wedding-container {
   width: 60%;
@@ -29,7 +31,7 @@
 .husband,
 .wife,
 .wedding-dates {
-  font-size: clamp(0.0625rem, -0.1654rem + 1.8235vw, 2rem);
+  font-size: clamp(0.5rem, -0.1654rem + 1.8235vw, 2rem);
   font-weight: 700;
 }
 .wedding-address {
@@ -40,4 +42,10 @@
   position: absolute;
   bottom: 10px;
   font-weight: 700;
+}
+.wedding-you,
+.wedding-time,
+.wedding-address,
+.wed-rec {
+  font-size: clamp(0.5rem, 0.4412rem + 0.4706vw, 1rem);
 }

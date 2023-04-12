@@ -396,4 +396,10 @@
     width: 100%;
     border-bottom: none;
   }
+  .templateCanvas {
+    width: 100%;
+    /* max-width: 678px; */
+    height: 60vh;
+    /* height: fit-content; */
+  }
 }
