@@ -43,7 +43,9 @@ import { PartnerProfileComponent } from './Component/partner-profile/partner-pro
 import { SeatingComponent } from './Component/seating/seating.component';
 import { InvitetemplateComponent } from './Component/invitetemplate/invitetemplate.component';
 import { TemplatetwoComponent } from './Component/templatetwo/templatetwo.component';
-
+import { DoughnutchartComponent } from './Component/doughnutchart/doughnutchart.component';
+import { WeddinginviteComponent } from './Component/weddinginvite/weddinginvite.component';
+import { WedinviteComponent } from './Component/wedinvite/wedinvite.component';
 
 
 
@@ -203,6 +205,14 @@ const routes: Routes = [
   },  {
     component: TemplatetwoComponent,
     path: 'template'
+  },
+  {
+    component: DoughnutchartComponent,
+    path: 'chart'
+  },
+  {
+    component: WedinviteComponent,
+    path: 'wedding'
   },{
     component: CreateEventComponent,
     path: ""

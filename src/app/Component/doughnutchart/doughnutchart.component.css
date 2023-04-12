@@ -1,0 +1,17 @@
+.doughnut {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  position: relative;
+}
+.doughnut h3 {
+  position: absolute;
+  top: 150px;
+  left: 100px;
+}
+.canva {
+  display: flex;
+  width: 30%;
+  max-width: 300px;
+  height: 300px !important;
+}

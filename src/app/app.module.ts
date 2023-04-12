@@ -21,7 +21,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatSliderModule } from '@angular/material/slider';
 import {DragDropModule} from '@angular/cdk/drag-drop';
-
+import { NgChartsModule } from 'ng2-charts';
 
 
 
@@ -80,6 +80,9 @@ import { ShuffletableComponent } from './Component/shuffletable/shuffletable.com
 import { SeatingmodalComponent } from './Component/seatingmodal/seatingmodal.component';
 import { InvitetemplateComponent } from './Component/invitetemplate/invitetemplate.component';
 import { TemplatetwoComponent } from './Component/templatetwo/templatetwo.component';
+import { DoughnutchartComponent } from './Component/doughnutchart/doughnutchart.component';
+import { WeddinginviteComponent } from './Component/weddinginvite/weddinginvite.component';
+import { WedinviteComponent } from './Component/wedinvite/wedinvite.component';
 
 
 
@@ -146,6 +149,9 @@ import { TemplatetwoComponent } from './Component/templatetwo/templatetwo.compon
     SeatingmodalComponent,
     InvitetemplateComponent,
     TemplatetwoComponent,
+    DoughnutchartComponent,
+    WeddinginviteComponent,
+    WedinviteComponent,
 
   ],
   imports: [
@@ -166,6 +172,7 @@ import { TemplatetwoComponent } from './Component/templatetwo/templatetwo.compon
     MatSlideToggleModule,
     MatSliderModule,
     DragDropModule,
+    NgChartsModule,
 
   ],
   providers: [],

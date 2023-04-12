@@ -110,8 +110,18 @@
                 class="imgTemplates"
                 alt=""
               />
-              <img src="/assets/babe.png" class="imgTemplates" alt="" />
-              <img src="/assets/babe.png" class="imgTemplates" alt="" />
+              <img
+                (click)="setTemplateThree()"
+                src="/assets/temp3.png"
+                class="imgTemplates"
+                alt=""
+              />
+              <img
+                (click)="setTemplateFour()"
+                src="/assets/temp4.png"
+                class="imgTemplates"
+                alt=""
+              />
               <img src="/assets/babe.png" class="imgTemplates" alt="" />
               <img src="/assets/babe.png" class="imgTemplates" alt="" />
               <img src="/assets/babe.png" class="imgTemplates" alt="" />
@@ -127,6 +137,13 @@
               </ng-container>
               <ng-container *ngIf="template_two">
                 <app-templatetwo></app-templatetwo>
+              </ng-container>
+
+              .<ng-container *ngIf="template_three">
+                <app-weddinginvite></app-weddinginvite>
+              </ng-container>
+              <ng-container *ngIf="template_four">
+                <app-wedinvite></app-wedinvite>
               </ng-container>
             </div>
           </div>
