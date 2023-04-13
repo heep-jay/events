@@ -1,6 +1,6 @@
 .preview-invite {
   width: 100%;
-  background: #F6F7FC;
+  background: #f6f7fc;
   display: flex;
 }
 
@@ -40,7 +40,6 @@
   margin: 1rem auto;
 }
 
-
 .drawer-list {
   display: flex;
   flex-direction: column;
@@ -79,7 +78,7 @@
   flex-direction: column;
   gap: 1rem;
   margin: 0rem auto;
-  background: #F6F7FC;
+  background: #f6f7fc;
 }
 
 .pageTopTabs {
@@ -116,7 +115,6 @@
   color: white;
 }
 
-
 .pageTopBottomTabs {
   margin-top: 0;
   display: flex;
@@ -133,7 +131,6 @@
   width: 100%;
 }
 
-
 .bottomTabsLeft p {
   text-align: center;
   margin: 1.5rem 0;
@@ -141,29 +138,34 @@
   line-height: 15px;
   font-weight: 600;
   font-size: clamp(0.85rem, 0.7964rem + 0.1714vw, 1rem);
-
 }
 
 .preview-content {
   width: 100%;
   height: max-content;
-  background: #F6F7FC;
+  background: #f6f7fc;
   min-height: 85vh;
 }
 
 .preview-contentBody {
-  width: 45%;
+  width: 100%;
+  max-width: 678px;
+  height: 100vh;
   margin: 2rem auto;
   background: #fff;
   padding: 2rem 1rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   gap: 2rem;
   margin-top: 2rem;
 }
-
+.preview-inner {
+  flex: 1;
+  height: 80%;
+  width: 90%;
+}
 .preview-contentBody h4 {
   text-align: center;
   font-size: clamp(1rem, 0.8929rem + 0.3429vw, 1.3rem);
@@ -177,14 +179,13 @@
   display: flex;
   align-items: center;
   gap: 3rem;
-
 }
 
 .previewBtn {
   padding: 0.7rem 1.8rem;
   min-width: 170px;
   border: none;
-  border: 0.5px solid #1C2B66;
+  border: 0.5px solid #1c2b66;
   border-radius: 4px;
   background: #fff;
   font-size: clamp(0.75rem, 0.7964rem + 0.1714vw, 1rem);
@@ -195,23 +196,20 @@
   color: #fff;
 }
 
-@media screen and (max-width:990px) {
+@media screen and (max-width: 990px) {
   .preview-contentBody {
     width: 80%;
   }
-
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width: 500px) {
   .invite-pageTop {
     width: 100%;
-
   }
 
   .topTabsBtn button {
     height: unset;
     padding: 0.5rem 1rem;
-
   }
 
   .topTabsNav {
@@ -242,13 +240,13 @@
 
   .preview-contentBody {
     width: 90%;
+    height: 70vh;
   }
 
   .previewBtns {
     /* width: 60%; */
     /* width: 95%; */
     gap: 1rem;
-
   }
 
   .previewBtn {

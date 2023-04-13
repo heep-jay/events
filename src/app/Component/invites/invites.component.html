@@ -122,10 +122,30 @@
                 class="imgTemplates"
                 alt=""
               />
-              <img src="/assets/babe.png" class="imgTemplates" alt="" />
-              <img src="/assets/babe.png" class="imgTemplates" alt="" />
-              <img src="/assets/babe.png" class="imgTemplates" alt="" />
-              <img src="/assets/babe.png" class="imgTemplates" alt="" />
+              <img
+                (click)="setTemplateFive()"
+                src="/assets/temp5.png"
+                class="imgTemplates"
+                alt=""
+              />
+              <img
+                (click)="setTemplateSix()"
+                src="/assets/temp6.png"
+                class="imgTemplates"
+                alt=""
+              />
+              <img
+                (click)="setTemplateSeven()"
+                src="/assets/temp7.png"
+                class="imgTemplates"
+                alt=""
+              />
+              <img
+                (click)="setTemplateEight()"
+                src="/assets/temp8.png"
+                class="imgTemplates"
+                alt=""
+              />
               <img src="/assets/babe.png" class="imgTemplates" alt="" />
               <img src="/assets/babe.png" class="imgTemplates" alt="" />
             </div>
@@ -144,6 +164,18 @@
               </ng-container>
               <ng-container *ngIf="template_four">
                 <app-wedinvite></app-wedinvite>
+              </ng-container>
+              <ng-container *ngIf="template_five">
+                <app-dinner></app-dinner>
+              </ng-container>
+              <ng-container *ngIf="template_six">
+                <app-dinnerinvite></app-dinnerinvite>
+              </ng-container>
+              <ng-container *ngIf="template_seven">
+                <app-birthday></app-birthday>
+              </ng-container>
+              <ng-container *ngIf="template_eight">
+                <app-birthdayinvite></app-birthdayinvite>
               </ng-container>
             </div>
           </div>

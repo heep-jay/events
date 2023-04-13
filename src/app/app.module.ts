@@ -83,6 +83,10 @@ import { TemplatetwoComponent } from './Component/templatetwo/templatetwo.compon
 import { DoughnutchartComponent } from './Component/doughnutchart/doughnutchart.component';
 import { WeddinginviteComponent } from './Component/weddinginvite/weddinginvite.component';
 import { WedinviteComponent } from './Component/wedinvite/wedinvite.component';
+import { DinnerComponent } from './Component/dinner/dinner.component';
+import { DinnerinviteComponent } from './Component/dinnerinvite/dinnerinvite.component';
+import { BirthdayComponent } from './Component/birthday/birthday.component';
+import { BirthdayinviteComponent } from './Component/birthdayinvite/birthdayinvite.component';
 
 
 
@@ -152,6 +156,10 @@ import { WedinviteComponent } from './Component/wedinvite/wedinvite.component';
     DoughnutchartComponent,
     WeddinginviteComponent,
     WedinviteComponent,
+    DinnerComponent,
+    DinnerinviteComponent,
+    BirthdayComponent,
+    BirthdayinviteComponent,
 
   ],
   imports: [
