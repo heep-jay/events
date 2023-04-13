@@ -146,8 +146,18 @@
                 class="imgTemplates"
                 alt=""
               />
-              <img src="/assets/babe.png" class="imgTemplates" alt="" />
-              <img src="/assets/babe.png" class="imgTemplates" alt="" />
+              <img
+                (click)="setTemplateNine()"
+                src="/assets/temp9.png"
+                class="imgTemplates"
+                alt=""
+              />
+              <img
+                (click)="setTemplateTen()"
+                src="/assets/temp10.png"
+                class="imgTemplates"
+                alt=""
+              />
             </div>
           </div>
           <div class="canvasContentMain">
@@ -176,6 +186,12 @@
               </ng-container>
               <ng-container *ngIf="template_eight">
                 <app-birthdayinvite></app-birthdayinvite>
+              </ng-container>
+              <ng-container *ngIf="template_nine">
+                <app-engagement></app-engagement>
+              </ng-container>
+              <ng-container *ngIf="template_ten">
+                <app-engagementinvite></app-engagementinvite>
               </ng-container>
             </div>
           </div>

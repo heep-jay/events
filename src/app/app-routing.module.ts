@@ -50,6 +50,10 @@ import { DinnerComponent } from './Component/dinner/dinner.component';
 import { DinnerinviteComponent } from './Component/dinnerinvite/dinnerinvite.component';
 import { BirthdayComponent } from './Component/birthday/birthday.component';
 import { BirthdayinviteComponent } from './Component/birthdayinvite/birthdayinvite.component';
+import { EngagementComponent } from './Component/engagement/engagement.component';
+import { EngagementinviteComponent } from './Component/engagementinvite/engagementinvite.component';
+
+
 
 
 
@@ -214,7 +218,7 @@ const routes: Routes = [
     path: 'chart'
   },
   {
-    component: BirthdayinviteComponent,
+    component: EngagementinviteComponent,
     path: 'dinner'
   },{
     component: CreateEventComponent,

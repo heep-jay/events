@@ -17,6 +17,8 @@ export class InvitesComponent implements OnInit {
   template_six: boolean = false;
   template_seven: boolean = false;
   template_eight:boolean = false;
+  template_nine: boolean = false;
+  template_ten:boolean = false;
 
   constructor() { }
 
@@ -41,7 +43,10 @@ export class InvitesComponent implements OnInit {
     this.template_five = false;
     this.template_six = false;
     this.template_seven = false;
-    this.template_eight = false
+    this.template_eight = false;
+    this.template_nine = false;
+    this.template_ten = false;
+
   }
   setTemplateTwo(){
     this.template_one = false;
@@ -51,7 +56,9 @@ export class InvitesComponent implements OnInit {
     this.template_five = false;
     this.template_six = false;
     this.template_seven = false;
-    this.template_eight = false
+    this.template_eight = false;
+    this.template_nine = false;
+    this.template_ten = false;
   }
   setTemplateThree(){
     this.template_one = false;
@@ -61,6 +68,9 @@ export class InvitesComponent implements OnInit {
     this.template_five = false;
     this.template_six = false;
     this.template_seven = false;
+    this.template_eight = false;
+    this.template_nine = false;
+    this.template_ten = false;
   }
   setTemplateFour(){
     this.template_one = false;
@@ -70,7 +80,9 @@ export class InvitesComponent implements OnInit {
     this.template_five = false;
     this.template_six = false;
     this.template_seven = false;
-    this.template_eight = false
+    this.template_eight = false;
+    this.template_nine = false;
+    this.template_ten = false;
   }
   setTemplateFive(){
     this.template_one = false;
@@ -80,6 +92,10 @@ export class InvitesComponent implements OnInit {
     this.template_five = !this.template_five;
     this.template_six = false;
     this.template_seven = false;
+    this.template_eight = false;
+    this.template_nine = false;
+    this.template_ten = false;
+
   }
   setTemplateSix(){
     this.template_one = false;
@@ -90,6 +106,8 @@ export class InvitesComponent implements OnInit {
     this.template_six = !this.template_six;
     this.template_seven = false;
     this.template_eight = false
+    this.template_nine = false;
+    this.template_ten = false;
   }
   setTemplateSeven(){
     this.template_one = false;
@@ -99,7 +117,9 @@ export class InvitesComponent implements OnInit {
     this.template_five = false;
     this.template_six = false;
     this.template_seven = !this.template_seven;
-    this.template_eight = false
+    this.template_eight = false;
+    this.template_nine = false;
+    this.template_ten = false;
   }
   setTemplateEight(){
     this.template_one = false;
@@ -110,5 +130,31 @@ export class InvitesComponent implements OnInit {
     this.template_six = false;
     this.template_seven = false;
     this.template_eight = !this.template_eight
+    this.template_nine = false;
+    this.template_ten = false;
+  }
+  setTemplateNine(){
+    this.template_one = false;
+    this.template_two = false;
+    this.template_three = false;
+    this.template_four = false;
+    this.template_five = false;
+    this.template_six = false;
+    this.template_seven = false;
+    this.template_eight = false
+    this.template_nine = !this.template_nine;
+    this.template_ten = false;
+  }
+  setTemplateTen(){
+    this.template_one = false;
+    this.template_two = false;
+    this.template_three = false;
+    this.template_four = false;
+    this.template_five = false;
+    this.template_six = false;
+    this.template_seven = false;
+    this.template_eight = false;
+    this.template_nine = false;
+    this.template_ten = !this.template_ten;
   }
 }
