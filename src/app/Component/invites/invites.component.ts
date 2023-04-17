@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InvitesComponent implements OnInit {
   edit: boolean = false;
-  drawer: boolean = false;
-  drawer_min: boolean = true;
+  drawer: boolean = true;
+  drawer_min: boolean = false;
   template_one: boolean = false;
   template_two: boolean = false;
   template_three: boolean = false;
