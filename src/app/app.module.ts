@@ -89,6 +89,8 @@ import { BirthdayComponent } from './Component/birthday/birthday.component';
 import { BirthdayinviteComponent } from './Component/birthdayinvite/birthdayinvite.component';
 import { EngagementComponent } from './Component/engagement/engagement.component';
 import { EngagementinviteComponent } from './Component/engagementinvite/engagementinvite.component';
+import { BirthdayDupComponent } from './Component/birthday-dup/birthday-dup.component';
+import { DinnerdupComponent } from './Component/dinnerdup/dinnerdup.component';
 
 
 
@@ -164,6 +166,8 @@ import { EngagementinviteComponent } from './Component/engagementinvite/engageme
     BirthdayinviteComponent,
     EngagementComponent,
     EngagementinviteComponent,
+    BirthdayDupComponent,
+    DinnerdupComponent,
 
   ],
   imports: [
