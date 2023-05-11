@@ -1,6 +1,6 @@
 <div class="invite-page">
   <div class="invite-page-innerContainer">
-    <ng-container *ngIf="drawer">
+    <!-- <ng-container *ngIf="drawer">
       <div class="invite-drawer">
         <div class="drawer-container">
           <ul class="drawer-list">
@@ -21,7 +21,7 @@
           <mat-icon>chevron_right</mat-icon>
         </button>
       </div>
-    </ng-container>
+    </ng-container> -->
     <div class="invite-content">
       <div class="invite-pageTop">
         <div class="pageTopTabs">
@@ -29,8 +29,11 @@
             <button class="tabsNavBtn tabsNavBtn-active" routerLink="/invites">
               Design
             </button>
-            <button class="tabsNavBtn" routerLink="/invites/preview">
-              Preview
+            <button class="tabsNavBtn" routerLink="/invites/grouping">
+              Invitee Grouping
+            </button>
+            <button class="tabsNavBtn" routerLink="/invites/seating">
+              Seating
             </button>
           </div>
         </div>
@@ -168,8 +171,7 @@
               <ng-container *ngIf="template_two">
                 <app-templatetwo></app-templatetwo>
               </ng-container>
-
-              .<ng-container *ngIf="template_three">
+              <ng-container *ngIf="template_three">
                 <app-weddinginvite></app-weddinginvite>
               </ng-container>
               <ng-container *ngIf="template_four">
@@ -179,13 +181,13 @@
                 <app-dinner></app-dinner>
               </ng-container>
               <ng-container *ngIf="template_six">
-                <app-dinnerinvite></app-dinnerinvite>
+                <app-dinnerinvdup></app-dinnerinvdup>
               </ng-container>
               <ng-container *ngIf="template_seven">
                 <app-birthday-dup></app-birthday-dup>
               </ng-container>
               <ng-container *ngIf="template_eight">
-                <app-birthdayinvite></app-birthdayinvite>
+                <app-birthdayinvdup></app-birthdayinvdup>
               </ng-container>
               <ng-container *ngIf="template_nine">
                 <app-engagement></app-engagement>

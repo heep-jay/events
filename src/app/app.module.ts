@@ -91,6 +91,11 @@ import { EngagementComponent } from './Component/engagement/engagement.component
 import { EngagementinviteComponent } from './Component/engagementinvite/engagementinvite.component';
 import { BirthdayDupComponent } from './Component/birthday-dup/birthday-dup.component';
 import { DinnerdupComponent } from './Component/dinnerdup/dinnerdup.component';
+import { BirthdayinvdupComponent } from './Component/birthdayinvdup/birthdayinvdup.component';
+import { DinnerinvdupComponent } from './Component/dinnerinvdup/dinnerinvdup.component';
+import { PreviewoneComponent } from './Component/previewone/previewone.component';
+import { NewgroupingComponent } from './Component/newgrouping/newgrouping.component';
+import { NewseatingComponent } from './Component/newseating/newseating.component';
 
 
 
@@ -168,6 +173,11 @@ import { DinnerdupComponent } from './Component/dinnerdup/dinnerdup.component';
     EngagementinviteComponent,
     BirthdayDupComponent,
     DinnerdupComponent,
+    BirthdayinvdupComponent,
+    DinnerinvdupComponent,
+    PreviewoneComponent,
+    NewgroupingComponent,
+    NewseatingComponent,
 
   ],
   imports: [

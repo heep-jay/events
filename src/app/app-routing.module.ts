@@ -52,9 +52,9 @@ import { BirthdayComponent } from './Component/birthday/birthday.component';
 import { BirthdayinviteComponent } from './Component/birthdayinvite/birthdayinvite.component';
 import { EngagementComponent } from './Component/engagement/engagement.component';
 import { EngagementinviteComponent } from './Component/engagementinvite/engagementinvite.component';
-
-
-
+import { PreviewoneComponent } from './Component/previewone/previewone.component';
+import { NewgroupingComponent } from './Component/newgrouping/newgrouping.component';
+import { NewseatingComponent } from './Component/newseating/newseating.component';
 
 
 
@@ -187,6 +187,13 @@ const routes: Routes = [
     path: 'invites/preview'
   },
   {
+    component: NewgroupingComponent,
+    path: 'invites/grouping'
+  },{
+    component: NewseatingComponent,
+    path: 'invites/seating'
+  },
+  {
     component: BankAccountComponent,
     path: 'add-bank'
   }, {
@@ -220,6 +227,10 @@ const routes: Routes = [
   {
     component: EngagementinviteComponent,
     path: 'dinner'
+  },
+  {
+    component: PreviewoneComponent,
+    path: 'preee'
   },{
     component: CreateEventComponent,
     path: ""

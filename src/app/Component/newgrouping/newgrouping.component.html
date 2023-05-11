@@ -1,0 +1,255 @@
+<div class="preview-invite">
+  <div class="invite-page-innerContainer">
+    <div class="invite-content">
+      <div class="invite-pageTop">
+        <div class="pageTopTabs">
+          <div class="topTabsNav">
+            <button class="tabsNavBtn" routerLink="/invites">Design</button>
+            <button
+              class="tabsNavBtn tabsNavBtn-active"
+              routerLink="/invites/grouping"
+            >
+              Invitee Grouping
+            </button>
+            <button class="tabsNavBtn" routerLink="/invites/seating">
+              Seating
+            </button>
+          </div>
+        </div>
+        <!-- <div class="pageTopBottomTabs">
+          <div class="bottomTabsLeft">
+            <p>
+              Here is a preview of how your invite will appear in your
+              recipient's inbox.
+            </p>
+          </div>
+        </div> -->
+      </div>
+      <div class="invitee-content">
+        <div class="invitee-cards">
+          <div class="invitee-card att">
+            <h2 class="inv-cardTitle">1</h2>
+            <p class="inv-cardSubtitle">Attending</p>
+          </div>
+          <div class="invitee-card not-att">
+            <h2 class="inv-cardTitle">1</h2>
+            <p class="inv-cardSubtitle">Not Attending</p>
+          </div>
+          <div class="invitee-card pend">
+            <h2 class="inv-cardTitle">1</h2>
+            <p class="inv-cardSubtitle">Pending</p>
+          </div>
+        </div>
+        <div class="invitee-containerTop">
+          <div class="invitee-left">
+            <div class="invitee-search">
+              <input type="text" placeholder="Search name or email" />
+              <button><mat-icon>search</mat-icon></button>
+            </div>
+            <div class="invitee-leftUtils">
+              <button class="util-btn" (click)="open(invite)">
+                <mat-icon>person_add</mat-icon>
+              </button>
+              <button class="util-btn" (click)="open(csv)">
+                <mat-icon>fact_check</mat-icon>
+              </button>
+            </div>
+          </div>
+          <div class="invitee-utils">
+            <button class="util-btns delete">
+              <mat-icon>delete</mat-icon>
+            </button>
+            <button class="util-btns delete">
+              <mat-icon>outgoing_mail</mat-icon>
+            </button>
+            <div class="util-filter">
+              <select name="" id="">
+                <option value="">Filter</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="invitee-table">
+          <div class="group">
+            <div class="groupa-head">
+              <div class="form-check">
+                <input type="checkbox" name="group-a" id="" />
+                <label for="group-a"> Group A</label>
+              </div>
+              <mat-icon (click)="onTableToggle()">chevron_right</mat-icon>
+            </div>
+            <ng-container *ngIf="groupa">
+              <div class="table-responsive">
+                <table class="table">
+                  <thead class="invitee-tableHead">
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">INVITEE INFO</th>
+                      <th scope="col">EMAIL</th>
+                      <th scope="col">GUESTS</th>
+                      <th scope="col">DATE ADDED</th>
+                      <th scope="col">STATUS</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let invite of invites" class="invitee-row">
+                      <th style="padding-top: 2rem" scope="row">
+                        <input type="checkbox" name="" id="" />
+                      </th>
+                      <td class="invitee-column">
+                        <div class="invitee-info">
+                          <img
+                            class="invitee-avatar"
+                            src="/assets/babe.png"
+                            alt=""
+                          />
+                          {{ invite.name }}
+                        </div>
+                      </td>
+                      <td class="invitee-column">{{ invite.email }}</td>
+                      <td class="invitee-column">{{ invite.guests }}</td>
+                      <td class="invitee-column">{{ invite.date }}</td>
+
+                      <td class="invitee-column">
+                        <p
+                          [className]="
+                            invite.status === 'Pending'
+                              ? 'pill pending-pill'
+                              : invite.status === 'Attending'
+                              ? 'pill att-pill'
+                              : 'pill not-pill'
+                          "
+                        >
+                          {{ invite.status }}
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </ng-container>
+          </div>
+          <div class="group">
+            <div class="groupa-head">
+              <div class="form-check">
+                <input type="checkbox" name="group-b" id="" />
+                <label for="group-b"> Group B</label>
+              </div>
+              <mat-icon (click)="toggleb()">chevron_right</mat-icon>
+            </div>
+            <ng-container *ngIf="groupb">
+              <div class="table-responsive">
+                <table class="table">
+                  <thead class="invitee-tableHead">
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">INVITEE INFO</th>
+                      <th scope="col">EMAIL</th>
+                      <th scope="col">GUESTS</th>
+                      <th scope="col">DATE ADDED</th>
+                      <th scope="col">STATUS</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let invite of invites" class="invitee-row">
+                      <th style="padding-top: 2rem" scope="row">
+                        <input type="checkbox" name="" id="" />
+                      </th>
+                      <td class="invitee-column">
+                        <div class="invitee-info">
+                          <img
+                            class="invitee-avatar"
+                            src="/assets/babe.png"
+                            alt=""
+                          />
+                          {{ invite.name }}
+                        </div>
+                      </td>
+                      <td class="invitee-column">{{ invite.email }}</td>
+                      <td class="invitee-column">{{ invite.guests }}</td>
+                      <td class="invitee-column">{{ invite.date }}</td>
+
+                      <td class="invitee-column">
+                        <p
+                          [className]="
+                            invite.status === 'Pending'
+                              ? 'pill pending-pill'
+                              : invite.status === 'Attending'
+                              ? 'pill att-pill'
+                              : 'pill not-pill'
+                          "
+                        >
+                          {{ invite.status }}
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </ng-container>
+          </div>
+
+          <ng-template #invite let-modal class="moddd">
+            <div class="invitee-popup">
+              <div class="popup-header">
+                <h4>Add Invitee</h4>
+                <p class="popup-subtitle">
+                  Quickly add an Invitee to your Invite list
+                </p>
+              </div>
+              <form class="popup-form">
+                <div class="form_input">
+                  <label for="firstname">First Name</label>
+                  <input type="text" name="firstname" />
+                </div>
+                <div class="form_input">
+                  <label for="lastname">Last Name</label>
+                  <input type="text" name="lastname" />
+                </div>
+                <div class="form_input">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" />
+                </div>
+                <div class="form_select">
+                  <label for="guest">Guest Allowed</label>
+                  <div class="selectDiv">
+                    <select name="guest" id="">
+                      <option value="">&nbsp;</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="pop-up-btns">
+                  <button
+                    class="pop-up-btn cancel-btn"
+                    (click)="modal.dismiss()"
+                  >
+                    Cancel
+                  </button>
+                  <button class="pop-up-btn save-btn" (click)="modal.dismiss()">
+                    Save & Cancel
+                  </button>
+                </div>
+              </form>
+            </div>
+          </ng-template>
+          <ng-template #csv let-modal class="moddd">
+            <div class="csv-popup">
+              <h4>Import a list of Invitees</h4>
+              <h6>Import a .csv file.</h6>
+              <img src="/assets/import.png" alt="" />
+
+              <div class="csv-btns">
+                <button class="download-btn" (click)="modal.dismiss()">
+                  <mat-icon>download</mat-icon> Download Template
+                </button>
+                <button class="import-btn" (click)="modal.dismiss()">
+                  Import CSV
+                </button>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
